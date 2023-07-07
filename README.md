@@ -1,2 +1,2 @@
-# training
-Selft training repo
+# Data Driven Docs
+Selft training documentation repo
