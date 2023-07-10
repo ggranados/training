@@ -3,7 +3,7 @@
 - Programming Languages
    - JavaScript (Node.js)
    - Python
-   - [Java](../programming-languages/java/main.md)
+   - [Java](../programming-languages/java/java.md)
    - PHP
    - Ruby
    - C#
@@ -16,9 +16,9 @@
    - HTML
    - CSS
    - TypeScript
-- Programming styles
-   - Object Oriented Programming (OOP)
-   - Functional
+- Programming paradigms
+    - Object Oriented Programming (OOP)
+    - Functional
 - Web development frameworks
    - Spring
    - SpringBoot
