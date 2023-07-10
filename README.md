@@ -4,4 +4,4 @@ Welcome to the Data Driven Docs Repository! This repository serves as a comprehe
 Data Driven Docs is a collection of Markdown documents managed to be rendered in GitHub Page
 To navigate latest version, please visit https://ggranados.github.io/data-driven-docs/
 
-![elearning.png](docs/img/elearning.png)
+![elearning.png](./docs/img/elearning.png)
