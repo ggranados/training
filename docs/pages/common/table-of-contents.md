@@ -1,9 +1,9 @@
 # Table of Contents
 
-1. Programming Languages
+- Programming Languages
    - JavaScript (Node.js)
    - Python
-   - Java
+   - [Java](../programming-languages/java/java.md)
    - PHP
    - Ruby
    - C#
@@ -16,7 +16,10 @@
    - HTML
    - CSS
    - TypeScript
-2. Web development frameworks
+- Programming paradigms
+    - Object Oriented Programming (OOP)
+    - Functional
+- Web development frameworks
    - Spring
    - SpringBoot
    - Quarkus
@@ -28,7 +31,7 @@
    - Sass
    - LESS
    - Bootstrap
-3. Database management systems
+- Database management systems
    - MySQL
    - PostgreSQL
    - Microsoft SQL Server
@@ -49,7 +52,7 @@
    - Neo4j
    - Elasticsearch
    - Amazon DocumentDB
-4. Networking concepts
+- Networking concepts
    - IP Addressing
    - Subnetting
    - Routing
@@ -65,7 +68,7 @@
    - Load Balancing
    - Bandwidth
    - Latency
-5. Cloud computing platform
+- Cloud computing platform
    - Amazon Web Services (AWS)
    - Microsoft Azure
    -  Google Cloud Platform (GCP)
@@ -76,7 +79,7 @@
    -  DigitalOcean
    -  VMware Cloud
    -  Rackspace
-6. DevOps practices 
+- DevOps practices 
    - Continuous Integration (CI)
    - Continuous Delivery (CD)
    - Infrastructure as Code (IaC)
@@ -89,7 +92,7 @@
    - Collaboration and Communication
    - Version Control
    - DevOps Culture
-7. Data Structures
+- Data Structures
    - Array
    - Linked List
    - Stack
