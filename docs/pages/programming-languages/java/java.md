@@ -20,7 +20,7 @@ Java is also free for development. [^2]
 [^3]
 
 ## Whats's OOP?
-[Object-Oriented Programming (OOP)][^5] is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
+[Object-Oriented Programming (OOP)](../../programming-paradigms/oop.md) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
 
 ## Whats's WORA?
 WORA, which is abbreviated as Write Once Run Anywhere, is the feature applicable to those programs which hold the capability to execute itself on any operating systems or any machine. Sun Microsystem gave this terminology for their programming language - Java. [^6]
@@ -46,9 +46,12 @@ To begin programming in Java, you need to install a Java Edition on your system.
  [^3]
 
 ## How is Java versioned?
-The Java language has undergone [several changes since JDK 1.0][^9] as well as numerous additions of classes and packages to the standard library.
+The Java language has undergone [several changes since JDK 1.0](versions.md) as well as numerous additions of classes and packages to the standard library.
 Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and versions 17, 11 and 8 are the currently supported long-term support (LTS) versions
 Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and versions 17, 11 and 8 are the currently supported long-term support (LTS) versions. [^8]
+
+
+[table-of-contents.md](../../common/table-of-contents.md)
 
 _____________
 ### Ref.
@@ -57,8 +60,7 @@ _____________
 [^2]: https://www.oracle.com/java/
 [^3]: https://aws.amazon.com/what-is/java/?nc1=h_ls
 [^4]: https://www.educative.io/blog/object-oriented-programming
-[^5]: ../../programming-paradigms/oop.md
 [^6]: https://www.w3schools.in/java/questions-answers/write-once-run-anywhere-wora
 [^7]: https://bytesofgigabytes.com/java/why-java-is-platform-independent/
 [^8]: https://en.wikipedia.org/wiki/Java_version_history
-[^9]: versions.md
+

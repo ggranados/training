@@ -3,28 +3,28 @@
 All language features from Java 8 serve as very good Java base knowledge and everything else (Java 9-20) is pretty much additional features on top of that baseline
 
 ## Table of Contents
-1. [Java 1](#Java-1)
-2. [Java 1.1](#Java-11)
-3. [Java 1.2](#Java-12)
-4. [Java 1.3](#Java-13)
-5. [Java 1.4](#Java-14)
-6. [Java 5](#Java-5)
-7. [Java 6](#Java-6)
-8. [Java 7](#Java-7)
-9. [Java 8](#Java-8)
-10. [Java 9](#Java-9)
-11. [Java 10](#Java-10)
-12. [Java 11](#Java-5)
-13. [Java 12](#Java-5)
-14. [Java 13](#Java-5)
-15. [Java 14](#Java-5)
-16. [Java 15](#Java-5)
-17. [Java 16](#Java-5)
-18. [Java 17](#Java-5)
-19. [Java 18](#Java-5)
-20. [Java 19](#Java-5)
-21. [Java 20](#Java-20)
-22. [Java 21](#Java-21)
+1. [Java 1](#java-1)
+2. [Java 1.1](#java-11)
+3. [Java 1.2](#java-12)
+4. [Java 1.3](#java-13)
+5. [Java 1.4](#java-14)
+6. [Java 5](#java-5)
+7. [Java 6](#java-6)
+8. [Java 7](#java-7)
+9. [Java 8](#java-8)
+10. [Java 9](#java-9)
+11. [Java 10](#java-10)
+12. [Java 11](#java-11-1)
+13. [Java 12](#java-12-1)
+14. [Java 13](#java-13-1)
+15. [Java 14](#java-14-1)
+16. [Java 15](#java-15)
+17. [Java 16](#java-16)
+18. [Java 17](#java-17)
+19. [Java 18](#java-18)
+20. [Java 19](#java-19)
+21. [Java 20](#java-20)
+22. [Java 21](#java-21)
 
 ## Java 1
 (released in January 1996)
@@ -276,7 +276,7 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Structured Concurrency (Preview)
 
 
-[:arrow_up:Back to top](#table-of-contents)
+[Back to top](#table-of-contents)
 
 ---
 ### Ref.
