@@ -9,3 +9,10 @@ _____
 
 [^1]: https://www.educative.io/blog/object-oriented-programming
 [^2]: ../programming-languages/java/java.md
+
+___
+
+[Java](../programming-languages/java/java.md#whatss-oop) |
+[Index](../common/table-of-contents.md)
+
+___

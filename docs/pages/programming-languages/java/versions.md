@@ -25,11 +25,13 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 20. [Java 19](#java-19)
 21. [Java 20](#java-20)
 22. [Java 21](#java-21)
-
+___
 ## Java 1
 (released in January 1996)
 
 - The first stable version
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 1.1
 (released in February 1997)
@@ -43,6 +45,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - JIT (Just In Time) compiler for Windows
 - Internationalization and Unicode support originating from Taligent
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 1.2
 (released in December 1998)
 
@@ -53,6 +57,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Collections framework
 - Reference Types
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 1.3
 (released in May 2000)
 
@@ -61,6 +67,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Java Platform Debugger Architecture (JPDA)
 - JavaSound
 - Synthetic proxy classes
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 1.4
 (released in February 2002)
@@ -77,6 +85,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Java Web Start
 - Preferences API (java.util.prefs)
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 5
 (released in September 2004)
 
@@ -90,6 +100,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - New concurrency utilities in java.util.concurrent
 - Scanner class for parsing data from various input streams and buffers.
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 6
 (released in December 2006)
 
@@ -101,6 +113,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - JAXB 2.0 and StAX parser
 - Pluggable annotations
 - New GC algorithms
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 7
 (released in July 2011)
@@ -121,6 +135,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
  - APIs for the graphics features
  - Support for new network protocols, including SCTP and Sockets Direct Protocol
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 8
 (released in March 2014):
 
@@ -138,6 +154,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
  - Launch JavaFX applications from jar files
  - Remove the permanent generation from GC
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 9
 (released in September 2017):
 
@@ -149,6 +167,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Private methods in interfaces
 - Improved version string scheme 
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 10
 (released in March 2018):
 
@@ -156,6 +176,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Application class-data sharing
 - Garbage Collector Interface
 - Time-based release versioning
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 11
 (released in September 2018):
@@ -166,6 +188,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Launch Single-File Source-Code Programs
 - Epsilon Garbage Collector
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 12
 (released in March 2019):
 
@@ -174,6 +198,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Teeing Collectors
 - Shenandoah Garbage Collector (experimental)
 - Microbenchmark Suite
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 13
 (released in September 2019):
@@ -184,6 +210,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - ZGC (experimental garbage collector)
 - Reimplement the Legacy Socket API
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 14
 (released in March 2020):
 
@@ -192,6 +220,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Helpful NullPointerExceptions
 - ZGC: Concurrent Thread-Stack Processing
 - Non-Volatile Mapped Byte Buffers
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 15
 (released in September 2020):
@@ -202,6 +232,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - ZGC: NUMA-Aware Memory Allocation
 - Unix-Domain Socket Channels
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 16
 (released in March 2021):
 
@@ -210,6 +242,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Pattern matching for instanceof (standard feature)
 - Foreign function and memory API (Incubator)
 - Alpine Linux Support
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 17
 (released in September 2021):
@@ -220,6 +254,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Foreign function and memory API (standard feature)
 - Sealed class JARs
 - macOS rendering pipeline for AWT and Swing
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 18
 (released in March 2022):
@@ -234,6 +270,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Pattern Matching for switch (Second Preview)
 -  Deprecate Finalization for Removal
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 19
 (released in September 2022):
 
@@ -245,6 +283,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Pattern Matching for switch (Third Preview)
 -  Structured Concurrency (Incubator)
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 20
 (released in March 2023):
 
@@ -255,6 +295,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Virtual Threads (Second Preview)
 -  Structured Concurrency (Second Incubator)
 -  Vector API (Fifth Incubator)
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 21
 (to be released in September 2023):
@@ -275,10 +317,15 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Key Encapsulation Mechanism API
 -  Structured Concurrency (Preview)
 
+<sub>[Back to top](#table-of-contents)</sub>
 
-[Back to top](#table-of-contents)
 
----
+___
+
+[Back to top](#table-of-contents) | 
+[Index](../../common/table-of-contents.md)
+
+___
 ### Ref.
 
  - https://medium.com/codex/java-history-from-1-0-to-java-18-d62f69b2a48a

@@ -14,3 +14,10 @@ Or, we can use a method reference to simply refer to the capitalize static metho
    ````java 
    messages.forEach(StringUtils::capitalize);
    ````
+
+___
+
+[Back](../../versions.md) |
+[Index](../../../../common/table-of-contents.md)
+
+___

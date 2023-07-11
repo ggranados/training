@@ -29,4 +29,6 @@ To start exploring the study guide, simply browse the repository's directory str
 
 We hope this study guide serves as a valuable resource on your learning journey. Happy studying!
 
-[Table of Contents](pages/common/table-of-contents.md)
+___
+
+[Index](pages/common/table-of-contents.md)

@@ -1,4 +1,20 @@
-# Table of Contents
+# Index
+
+## Table of Contents
+1. [Programming Languajes](#programming-languages)
+2. [Programming Paradigms](#programming-paradigms)
+3. [Web Development Frameworks](#web-development-frameworks)
+4. [Database Management Systems](#database-management-systems)
+5. [Networking Concepts](#networking-concepts)
+6. [Cloud Computing Platform](#cloud-computing-platform)
+7. [DevOps Practices](#devops-practices)
+8. [Data Structures](#data-structures)
+9. [Algorithms](#algorithms)
+10. [Cyber-security Fundamentals](#cyber-security-fundamentals)
+11. [Design Patterns](#design-patterns)
+12. [Web Services and API Design](#web-services-and-api-design)
+
+---
 
 ## Programming Languages
 - JavaScript (Node.js)
@@ -17,11 +33,15 @@
 - CSS
 - TypeScript
 
-## Programming paradigms
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Programming Paradigms
 - Object Oriented Programming (OOP)
 - Functional
 
-## Web development frameworks
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Web Development Frameworks
 - Spring
 - SpringBoot
 - Quarkus
@@ -34,7 +54,9 @@
 - LESS
 - Bootstrap
 
-## Database management systems
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Database Management Systems
 - MySQL
 - PostgreSQL
 - Microsoft SQL Server
@@ -56,7 +78,9 @@
 - Elasticsearch
 - Amazon DocumentDB
 
-## Networking concepts
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Networking Concepts
    - IP Addressing
    - Subnetting
    - Routing
@@ -73,7 +97,9 @@
    - Bandwidth
    - Latency
 
-## Cloud computing platform
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Cloud Computing Platform
 - Amazon Web Services (AWS)
 - Microsoft Azure
 -  Google Cloud Platform (GCP)
@@ -85,7 +111,9 @@
 -  VMware Cloud
 -  Rackspace
 
-## DevOps practices 
+<sub>[Back to top](#table-of-contents)</sub>
+
+## DevOps Practices
 - Continuous Integration (CI)
 - Continuous Delivery (CD)
 - Infrastructure as Code (IaC)
@@ -99,6 +127,8 @@
 - Version Control
 - DevOps Culture
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Data Structures
 - Array
 - Linked List
@@ -110,6 +140,8 @@
 - Graph
 - Trie
 - AVL Tree
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Algorithms
 - Sorting Algorithms 
@@ -138,8 +170,10 @@
 - Hashing Algorithms 
   - SHA-1
   - MD5
-  
-## Cyber-security fundamentals
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Cyber-security Fundamentals
 - Network Security
 - Information Security
 - Cryptography
@@ -155,6 +189,8 @@
 - Security Operations and Monitoring
 - Security Architecture and Design
 - Data Privacy and Protection 
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Design Patterns
 - Creational Patterns:
@@ -198,6 +234,8 @@
   - Aspect-Oriented Programming (AOP)
   - Service Locator
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Web Services and API Design
 - RESTful Architecture
 - SOAP
@@ -218,5 +256,9 @@
 - Webhooks and Event-Driven Architectures
 - Cross-Origin Resource Sharing (CORS)
 - API Governance and Maintenance
+  
+<sub>[Back to top](#table-of-contents)</sub>
 
-[Back to top](#table-of-contents)
+---
+
+[Back to top](#table-of-contents) | [Read Me](../../index.md)

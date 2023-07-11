@@ -15,3 +15,10 @@ With lambdas, the same code looks like this:
 ````java
 Runnable runnable = () -> System.out.println("Hello world two!");
 ````
+
+___
+
+[Back](../../versions.md) |
+[Index](../../../../common/table-of-contents.md)
+
+___
