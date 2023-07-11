@@ -17,7 +17,7 @@ Or, we can use a method reference to simply refer to the capitalize static metho
 
 ___
 
-[Back](../../versions.md) |
-[Index](../../../../common/table-of-contents.md)
+[Index](../../../../common/table-of-contents.md) |
+[Java 8](../../versions.md#java-8)
 
 ___

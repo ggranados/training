@@ -89,9 +89,8 @@ In this example, we use reflection to obtain the Roles annotation from the MyCla
 Starting from Spring Framework 4.0, Spring introduced support for repeating annotations.It leverages Java's @Repeatable meta-annotation and provides utility methods to work with repeating annotations.[^1]
 
 ___
-
-[Back](../../versions.md) |
-[Index](../../../../common/table-of-contents.md)
+[Index](../../../../common/table-of-contents.md) |
+[Java 8](../../versions.md#java-8)
 
 ___
 

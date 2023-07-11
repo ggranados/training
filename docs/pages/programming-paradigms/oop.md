@@ -12,7 +12,7 @@ _____
 
 ___
 
-[Java](../programming-languages/java/java.md#whatss-oop) |
-[Index](../common/table-of-contents.md)
+[Index](../common/table-of-contents.md) |
+[Java](../programming-languages/java/java.md#whatss-oop)
 
 ___

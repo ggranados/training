@@ -18,7 +18,7 @@ Runnable runnable = () -> System.out.println("Hello world two!");
 
 ___
 
-[Back](../../versions.md) |
-[Index](../../../../common/table-of-contents.md)
+[Index](../../../../common/table-of-contents.md) |
+[Java 8](../../versions.md#java-8)
 
 ___

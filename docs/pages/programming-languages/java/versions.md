@@ -25,7 +25,9 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 20. [Java 19](#java-19)
 21. [Java 20](#java-20)
 22. [Java 21](#java-21)
+
 ___
+
 ## Java 1
 (released in January 1996)
 
@@ -322,9 +324,9 @@ ___
 
 ___
 
-[Back to top](#table-of-contents) | 
-[Index](../../common/table-of-contents.md)
-
+[Index](../../common/table-of-contents.md) |
+[Java](java.md#how-is-java-versioned) |
+[Back to top](#table-of-contents)
 ___
 ### Ref.
 
