@@ -324,7 +324,7 @@ ___
 
 ___
 
-[Index](../../common/table-of-contents.md) |
+[Index](../../../common/table-of-contents.md) |
 [Java](java.md#how-is-java-versioned) |
 [Back to top](#table-of-contents)
 ___

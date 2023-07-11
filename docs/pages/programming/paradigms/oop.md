@@ -11,7 +11,7 @@ _____
 
 ___
 
-[Index](../common/table-of-contents.md) |
+[Index](../../common/table-of-contents.md) |
 [Java](../languages/java/java.md#whats-oop)
 
 ___

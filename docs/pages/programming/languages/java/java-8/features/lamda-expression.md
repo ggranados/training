@@ -95,7 +95,7 @@ public class Lambda1 {
 
 ___
 
-[Index](../../../../common/table-of-contents.md) |
-[Java 8](../../versions.md#java-8)
+[Index](../../../../../common/table-of-contents.md) |
+[Java 8](../../versions.md#java-8-lts)
 
 ___

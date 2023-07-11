@@ -85,7 +85,7 @@ Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and vers
 
 ___
 
-[Index](../../common/table-of-contents.md) |
+[Index](../../../common/table-of-contents.md) |
 [Back to top](#table-of-contents)
 
 ___
