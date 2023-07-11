@@ -1,52 +1,57 @@
 # Index
 
 ## Table of Contents
-1. [Programming Languajes](#programming-languages)
-2. [Programming Paradigms](#programming-paradigms)
-3. [Web Development Frameworks](#web-development-frameworks)
-4. [Database Management Systems](#database-management-systems)
-5. [Networking Concepts](#networking-concepts)
-6. [Cloud Computing Platform](#cloud-computing-platform)
-7. [DevOps Practices](#devops-practices)
-8. [Data Structures](#data-structures)
-9. [Algorithms](#algorithms)
-10. [Cyber-security Fundamentals](#cyber-security-fundamentals)
-11. [Design Patterns](#design-patterns)
-12. [Web Services and API Design](#web-services-and-api-design)
+1. [Programming](#programming)
+   - [Languages](#languages)
+   - [Paradigms](#paradigms)
+2. [Web Development Frameworks](#web-development-frameworks)
+   - [Backend](#backend)
+   - [Frontend](#frontend)
+3. [Database Management Systems](#database-management-systems)
+   - [SQL](#sql)
+   - [NoSQL](#nosql)
+4. [Networking Concepts](#networking-concepts)
+5. [Cloud Computing Platform](#cloud-computing-platform)
+6. [DevOps Practices](#devops-practices)
+7. [Data Structures](#data-structures)
+8. [Algorithms](#algorithms)
+9. [Cyber-security Fundamentals](#cyber-security-fundamentals)
+10. [Design Patterns](#design-patterns)
+11. [Web Services and API Design](#web-services-and-api-design)
 
 ---
 
-## Programming Languages
-- JavaScript (Node.js)
-- Python
-- [Java](../programming-languages/java/java.md)
-- PHP
-- Ruby
-- C#
-- Go
-- Rust
-- Kotlin
-- Clojure
-- Swift
-- JavaScript
-- HTML
-- CSS
-- TypeScript
-
-<sub>[Back to top](#table-of-contents)</sub>
-
-## Programming Paradigms
-- Object Oriented Programming (OOP)
-- Functional
+## Programming
+### Languages
+  - JavaScript (Node.js)
+  - Python
+  - [Java](../programming/languages/java/java.md)
+  - PHP
+  - Ruby
+  - C#
+  - Go
+  - Rust
+  - Kotlin
+  - Clojure
+  - Swift
+  - JavaScript
+  - HTML
+  - CSS
+  - TypeScript
+### Paradigms
+  - [Object Oriented Programming (OOP)](../programming/paradigms/oop.md)
+  - Functional
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Web Development Frameworks
+### Backend
 - Spring
 - SpringBoot
 - Quarkus
 - Express.js
 - Nest.js
+### Frontend
 - React
 - Angular
 - Vue.js
@@ -57,6 +62,7 @@
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Database Management Systems
+### SQL
 - MySQL
 - PostgreSQL
 - Microsoft SQL Server
@@ -67,6 +73,7 @@
 - Amazon RDS (Relational Database Service)
 - Google Cloud SQL
 - Azure SQL Database
+### NoSQL
 - MongoDB
 - Cassandra
 - Couchbase

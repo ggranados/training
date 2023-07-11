@@ -9,22 +9,22 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 4. [Java 1.3](#java-13)
 5. [Java 1.4](#java-14)
 6. [Java 5](#java-5)
-7. [Java 6](#java-6)
+7. [Java 6 LTS](#java-6-lts)
 8. [Java 7](#java-7)
-9. [Java 8](#java-8)
+9. [Java 8 LTS](#java-8-lts)
 10. [Java 9](#java-9)
 11. [Java 10](#java-10)
-12. [Java 11](#java-11-1)
+12. [Java 11 LTS](#java-11-lts)
 13. [Java 12](#java-12-1)
 14. [Java 13](#java-13-1)
 15. [Java 14](#java-14-1)
 16. [Java 15](#java-15)
 17. [Java 16](#java-16)
-18. [Java 17](#java-17)
+18. [Java 17 LTS](#java-17-lts)
 19. [Java 18](#java-18)
 20. [Java 19](#java-19)
 21. [Java 20](#java-20)
-22. [Java 21](#java-21)
+22. [Java 21 LTS](#java-21-lts)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Java 6
+## Java 6 LTS
 (released in December 2006)
 
 - Scripting Language Support
@@ -139,7 +139,7 @@ ___
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Java 8
+## Java 8 LTS
 (released in March 2014):
 
  - [Lambda expression support in APIs](java-8/features/lamda-expression.md)
@@ -181,7 +181,7 @@ ___
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Java 11
+## Java 11 LTS
 (released in September 2018):
 
 - Local variable syntax for lambda parameters
@@ -247,7 +247,7 @@ ___
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Java 17
+## Java 17 LTS
 (released in September 2021):
 
 - Sealed classes (final form)
@@ -300,7 +300,7 @@ ___
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Java 21
+## Java 21 LTS
 (to be released in September 2023):
 
 -  String Templates (Preview)
