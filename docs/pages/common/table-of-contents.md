@@ -38,6 +38,7 @@
   - HTML
   - CSS
   - TypeScript
+
 ### Paradigms
   - [Object Oriented Programming (OOP)](../programming/paradigms/oop.md)
   - Functional
@@ -51,6 +52,7 @@
 - Quarkus
 - Express.js
 - Nest.js
+
 ### Frontend
 - React
 - Angular

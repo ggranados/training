@@ -16,6 +16,8 @@ With lambdas, the same code looks like this:
 Runnable runnable = () -> System.out.println("Hello world two!");
 ```
 
+---
+
 ### Exercises
 
 - [Lambda sintaxis on GitHub](https://github.com/ggranados/java/blob/1fcad199e4f05cbd866a31f49e116a4bb33cfba9/FunctionalProgramming/src/org/linkedinlearning/functionalprogramming/lambda/Lambda1.java)
