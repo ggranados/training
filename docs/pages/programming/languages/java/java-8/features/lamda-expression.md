@@ -33,6 +33,7 @@ Lastly, the code showcases a lambda expression with a single parameter using the
 <div style="max-height: 300px; overflow: auto;">
 
 ```java
+
 package org.linkedinlearning.functionalprogramming.lambda;
 
 import org.linkedinlearning.functionalprogramming.pojo.Employee;
@@ -86,9 +87,11 @@ public class Lambda1 {
                 s -> System.out.println(s.length());
     }
 }
+
 ```
 
 </div>
+
 
 <sub>[View on Github](https://github.com/ggranados/java/blob/1fcad199e4f05cbd866a31f49e116a4bb33cfba9/FunctionalProgramming/src/org/linkedinlearning/functionalprogramming/lambda/Lambda1.java)</sub>
 
