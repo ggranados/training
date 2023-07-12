@@ -22,7 +22,7 @@ Software objects are conceptually similar to real-world objects: they too consis
 
 Methods operate on an object's internal state and serve as the primary mechanism for object-to-object communication. Hiding internal state and requiring all interaction to be performed through an object's methods is known as data encapsulation
 
-![concepts-object.gif](../../../img/concepts-object.gif)
+![concepts-object.gif](../../../../img/concepts-object.gif)
 [^2]
 
 <sub>[Back to top](#table-of-contents)</sub>
@@ -71,7 +71,7 @@ The fields cadence, speed, and gear represent the object's state, and the method
 ## What Is Inheritance?
 Object-oriented programming allows classes to inherit commonly used state and behavior from other classes.
 
-![concepts-bikeHierarchy.gif](../../../img/concepts-bikeHierarchy.gif)
+![concepts-bikeHierarchy.gif](../../../../img/concepts-bikeHierarchy.gif)
 
 The syntax for creating a subclass is simple.
 
@@ -172,8 +172,8 @@ _____
 
 ___
 
-[Get Started](../../common/get-started.md) |
-[Java](../languages/java/java.md#whats-oop) |
-[OOP](oop.md)
+[Get Started](../../../common/get-started.md) |
+[Java](java.md#whats-oop) |
+[OOP](../../paradigms/oop.md)
 
 ___

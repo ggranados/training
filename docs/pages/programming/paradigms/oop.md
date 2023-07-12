@@ -86,7 +86,7 @@ In OOP, communication between objects occurs through message passing. Objects se
 
 ## OOP Languages
 
-- [Java](oop-java.md)
+- [Java](../languages/java/oop-java.md)
 - C++
 - C#
 - Python
@@ -123,4 +123,4 @@ ___
 [Get Started](../../common/get-started.md) |
 [Java](../languages/java/java.md#whats-oop)
 
-___
+---

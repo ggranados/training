@@ -259,6 +259,7 @@ ___
 - https://blogs.oracle.com/javamagazine/post/java-quiz-nested-lambdas
 
   [^1]: https://lifebeginsatfortyblog.wordpress.com/2016/07/01/the-java-tutorials-lambda-expressions/
+
 ___
 
 [Get Started](../../../../../common/get-started.md) |
