@@ -1,14 +1,20 @@
-## Lambda Expression
+# Lambda Expression
 
-### Table of Contents
-
-1. [Introduction](#introduction)
-2. [Examples](#examples)
-3. [References](#ref)
+## Table of Contents
+<!-- TOC -->
+* [Lambda Expression](#lambda-expression)
+  * [Introduction](#introduction)
+  * [Examples](#examples)
+    * [Lambda Expression Syntax](#lambda-expression-syntax)
+    * [Lambda Listener](#lambda-listener)
+    * [Lambda Capture](#lambda-capture)
+    * [Lambda Inference](#lambda-inference)
+  * [Ref.](#ref)
+<!-- TOC -->
 
 ___
 
-### Introduction
+## Introduction
 
 Before Java 8, whenever you wanted to instantiate, for example, a new Runnable, you had to write an anonymous inner class like so:
 
@@ -31,7 +37,7 @@ Runnable runnable = () -> System.out.println("Hello world two!");
 
 ---
 
-### Examples
+## Examples
 
 1. [Lambda Expression Syntax](#lambda-expression-syntax)
 2. [Lambda Listener](#lambda-listener)
@@ -40,7 +46,7 @@ Runnable runnable = () -> System.out.println("Hello world two!");
 
 ___
 
-#### Lambda Expression Syntax
+### Lambda Expression Syntax
 
 Overall, the code aims to illustrate how lambda expressions can simplify the implementation of functional interfaces and make the code more readable and concise.
 
@@ -98,7 +104,7 @@ Lastly, the code showcases a lambda expression with a single parameter using the
 ___
 
 
-#### Lambda Listener
+### Lambda Listener
 
 This Java code demonstrates the usage of anonymous classes and lambda expressions in the context of Swing GUI programming.
 
@@ -132,7 +138,7 @@ Clicking the "Say Goodbye" button updates the text fields with "Goodbye, world!"
 
 ---
 
-#### Lambda Capture
+### Lambda Capture
 
 By capturing variables from their surrounding scope, lambda expressions provide convenient access to those variables without explicitly passing them as parameters. The type of capturing (non-capturing, instance-capturing, or constant-capturing) determines which variables are accessible within the lambda expression.
 
@@ -188,7 +194,7 @@ A constant-capturing lambda expression captures (or accesses) final or effective
 
 ___
 
-#### Lambda Inference
+### Lambda Inference
 
 This Java code demonstrates the inference rules for lambda expressions and shows different scenarios related to type inference.
 
@@ -245,7 +251,7 @@ e. The commented line `Consumer<?> c3 = msg -> System.out.println(msg.length());
 
 ___
 
-### Ref.
+## Ref.
 
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html#section2
 - https://blogs.oracle.com/javamagazine/post/quiz-yourself-lambda-types-advanced
@@ -254,7 +260,7 @@ ___
   [^1]: https://lifebeginsatfortyblog.wordpress.com/2016/07/01/the-java-tutorials-lambda-expressions/
 ___
 
-[Index](../../../../../common/table-of-contents.md) |
+[Index](../../../../../common/get-started.md) |
 [Java 8](../../versions.md#java-8-lts)
 
 ___

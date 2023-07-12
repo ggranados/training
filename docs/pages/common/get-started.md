@@ -1,23 +1,25 @@
-# Index
+# Data-Driven-Docs
 
 ## Table of Contents
-1. [Programming](#programming)
-   - [Languages](#languages)
-   - [Paradigms](#paradigms)
-2. [Web Development Frameworks](#web-development-frameworks)
-   - [Backend](#backend)
-   - [Frontend](#frontend)
-3. [Database Management Systems](#database-management-systems)
-   - [SQL](#sql)
-   - [NoSQL](#nosql)
-4. [Networking Concepts](#networking-concepts)
-5. [Cloud Computing Platform](#cloud-computing-platform)
-6. [DevOps Practices](#devops-practices)
-7. [Data Structures](#data-structures)
-8. [Algorithms](#algorithms)
-9. [Cyber-security Fundamentals](#cyber-security-fundamentals)
-10. [Design Patterns](#design-patterns)
-11. [Web Services and API Design](#web-services-and-api-design)
+<!-- TOC -->
+* [Programming](#programming)
+  * [Languages](#languages)
+  * [Paradigms](#paradigms)
+* [Web Development Frameworks](#web-development-frameworks)
+  * [Backend](#backend)
+  * [Frontend](#frontend)
+* [Database Management Systems](#database-management-systems)
+  * [SQL](#sql)
+  * [NoSQL](#nosql)
+* [Networking Concepts](#networking-concepts)
+* [Cloud Computing Platform](#cloud-computing-platform)
+* [DevOps Practices](#devops-practices)
+* [Data Structures](#data-structures)
+* [Algorithms](#algorithms)
+* [Cyber-security Fundamentals](#cyber-security-fundamentals)
+* [Design Patterns](#design-patterns)
+* [Web Services and API Design](#web-services-and-api-design)
+<!-- TOC -->
 
 ---
 

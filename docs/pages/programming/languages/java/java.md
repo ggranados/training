@@ -1,17 +1,21 @@
 # Java
 
 ## Table of Contents
-1. [What's Java](#whats-java)
-2. [What is Java programming language used for?](#what-is-java-programming-language-used-for)
-3. [What's OOP?](#whats-oop)
-   - [Object Oriented Programming](../../paradigms/oop.md)
-4. [What's WORA?](#whats-wora)
-5. [How is java Multi-plataform?](#how-is-java-multi-plataform)
-6. [What is Java Virtual Machine?](#what-is-java-virtual-machine)
-7. [How to program in Java?](#how-to-program-in-java)
-   - [Oracle Java SE Documentation](https://docs.oracle.com/en/java/javase/index.html)
-8. [How is Java versioned?](#how-is-java-versioned)
-   - [Main Java Version Changes](versions.md#table-of-contents)
+<!-- TOC -->
+* [Java](#java)
+  * [Table of Contents](#table-of-contents)
+  * [What's Java?](#whats-java)
+  * [What is Java programming language used for?](#what-is-java-programming-language-used-for)
+  * [What's OOP?](#whats-oop)
+      * [Visit: Object Oriented Programming](#visit-object-oriented-programming)
+  * [What's WORA?](#whats-wora)
+  * [How is java Multi-plataform?](#how-is-java-multi-plataform)
+  * [What is Java Virtual Machine?](#what-is-java-virtual-machine)
+  * [How to program in Java?](#how-to-program-in-java)
+      * [Visit: Oracle Java SE Documentation](#visit-oracle-java-se-documentation)
+  * [How is Java versioned?](#how-is-java-versioned)
+  * [Ref.](#ref)
+<!-- TOC -->
 
 ___
 
@@ -41,7 +45,7 @@ Java is also free for development. [^2]
 ## What's OOP?
 [Object-Oriented Programming (OOP)](../../paradigms/oop.md) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
 
-Visit: [Object Oriented Programming](../../paradigms/oop.md)
+#### Visit: [Object Oriented Programming](../../paradigms/oop.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -74,7 +78,7 @@ To begin programming in Java, you need to install a Java Edition on your system.
  - Java Micro Edition (Java ME)
  [^3]
 
-Visit: [Oracle Java SE Documentation](https://docs.oracle.com/en/java/javase/index.html)
+#### Visit: [Oracle Java SE Documentation](https://docs.oracle.com/en/java/javase/index.html)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -88,11 +92,14 @@ Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and vers
 
 ___
 
-[Index](../../../common/table-of-contents.md) |
+[Index](../../../common/get-started.md) |
 [Back to top](#table-of-contents)
 
 ___
-### Ref.
+## Ref.
+
+- https://docs.oracle.com/en/java/index.html
+- https://docs.oracle.com/en/java/javase/20/
 
 [^1]: https://www.java.com/en/download/help/whatis_java.html
 [^2]: https://www.oracle.com/java/

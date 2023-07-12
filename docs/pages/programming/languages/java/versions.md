@@ -5,28 +5,33 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 Visit: [Oracle Java Language Updates](https://docs.oracle.com/en/java/javase/20/language/java-language-changes.html#GUID-6459681C-6881-45D8-B0DB-395D1BD6DB9B)
 
 ## Table of Contents
-1. [Java 1](#java-1)
-2. [Java 1.1](#java-11)
-3. [Java 1.2](#java-12)
-4. [Java 1.3](#java-13)
-5. [Java 1.4](#java-14)
-6. [Java 5](#java-5)
-7. [Java 6 LTS](#java-6-lts)
-8. [Java 7](#java-7)
-9. [Java 8 LTS](#java-8-lts)
-10. [Java 9](#java-9)
-11. [Java 10](#java-10)
-12. [Java 11 LTS](#java-11-lts)
-13. [Java 12](#java-12-1)
-14. [Java 13](#java-13-1)
-15. [Java 14](#java-14-1)
-16. [Java 15](#java-15)
-17. [Java 16](#java-16)
-18. [Java 17 LTS](#java-17-lts)
-19. [Java 18](#java-18)
-20. [Java 19](#java-19)
-21. [Java 20](#java-20)
-22. [Java 21 LTS](#java-21-lts)
+<!-- TOC -->
+* [Main Java Version Changes](#main-java-version-changes-)
+  * [Table of Contents](#table-of-contents)
+  * [Java 1](#java-1)
+  * [Java 1.1](#java-11)
+  * [Java 1.2](#java-12)
+  * [Java 1.3](#java-13)
+  * [Java 1.4](#java-14)
+  * [Java 5](#java-5)
+  * [Java 6 LTS](#java-6-lts)
+  * [Java 7](#java-7)
+  * [Java 8 LTS](#java-8-lts)
+  * [Java 9](#java-9)
+  * [Java 10](#java-10)
+  * [Java 11 LTS](#java-11-lts)
+  * [Java 12](#java-12-1)
+  * [Java 13](#java-13-1)
+  * [Java 14](#java-14-1)
+  * [Java 15](#java-15)
+  * [Java 16](#java-16)
+  * [Java 17 LTS](#java-17-lts)
+  * [Java 18](#java-18)
+  * [Java 19](#java-19)
+  * [Java 20](#java-20)
+  * [Java 21 LTS](#java-21-lts)
+  * [Ref.](#ref)
+<!-- TOC -->
 
 ___
 
@@ -326,13 +331,13 @@ ___
 
 ___
 
-[Index](../../../common/table-of-contents.md) |
+[Index](../../../common/get-started.md) |
 [Java](java.md#how-is-java-versioned) |
 [Back to top](#table-of-contents)
 
 ___
 
-### Ref.
+## Ref.
 
  - https://docs.oracle.com/en/java/javase/20/language/java-language-changes.html#GUID-6459681C-6881-45D8-B0DB-395D1BD6DB9B
  - https://medium.com/codex/java-history-from-1-0-to-java-18-d62f69b2a48a

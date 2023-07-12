@@ -1,4 +1,20 @@
-### Method references
+# Method references
+
+<!-- TOC -->
+* [Method references](#method-references)
+  * [Examples](#examples)
+  * [Ref.](#ref)
+<!-- TOC -->
+
+___
+
+Shorthand syntax for referring to an existing method by its name. They provide a concise way to pass a method as an argument or to assign a method to a functional interface. 
+
+Method references can be seen as a more compact alternative to lambda expressions when the lambda expression simply calls an existing method without any additional logic.
+
+___
+
+## Examples
 
 Capitalizing and printing a list of Strings:
    ````java
@@ -14,10 +30,13 @@ Or, we can use a method reference to simply refer to the capitalize static metho
    ````java 
    messages.forEach(StringUtils::capitalize);
    ````
+___
+
+## Ref.
 
 ___
 
-[Index](../../../../../common/table-of-contents.md) |
+[Index](../../../../../common/get-started.md) |
 [Java 8](../../versions.md#java-8-lts)
 
 ___
