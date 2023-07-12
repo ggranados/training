@@ -46,7 +46,7 @@
 
 ### Paradigms
   - [Imperative Programming](../programming/paradigms/ip.md)
-  - Procedural Programming
+  - [Procedural Programming](../programming/paradigms/pp.md)
   - Structured programming
   - [Object Oriented Programming (OOP)](../programming/paradigms/oop.md)
   - Functional Programming
@@ -287,3 +287,5 @@
 
 [Read Me](../../index.md) |
 [Back to top](#table-of-contents)
+
+---
