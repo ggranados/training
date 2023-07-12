@@ -8,6 +8,7 @@
   * [What is Java programming language used for?](#what-is-java-programming-language-used-for)
   * [What's OOP?](#whats-oop)
       * [Visit: Object Oriented Programming](#visit-object-oriented-programming)
+      * [Visit: OOP in Java](#visit-oop-in-java)
   * [What's WORA?](#whats-wora)
   * [How is java Multi-plataform?](#how-is-java-multi-plataform)
   * [What is Java Virtual Machine?](#what-is-java-virtual-machine)
@@ -46,6 +47,7 @@ Java is also free for development. [^2]
 [Object-Oriented Programming (OOP)](../../paradigms/oop.md) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
 
 #### Visit: [Object Oriented Programming](../../paradigms/oop.md)
+#### Visit: [OOP in Java](../../paradigms/oop-java.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
