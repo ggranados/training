@@ -1,24 +1,27 @@
 # Data-Driven-Docs
 
 ## Table of Contents
+
 <!-- TOC -->
-* [Programming](#programming)
-  * [Languages](#languages)
-  * [Paradigms](#paradigms)
-* [Web Development Frameworks](#web-development-frameworks)
-  * [Backend](#backend)
-  * [Frontend](#frontend)
-* [Database Management Systems](#database-management-systems)
-  * [SQL](#sql)
-  * [NoSQL](#nosql)
-* [Networking Concepts](#networking-concepts)
-* [Cloud Computing Platform](#cloud-computing-platform)
-* [DevOps Practices](#devops-practices)
-* [Data Structures](#data-structures)
-* [Algorithms](#algorithms)
-* [Cyber-security Fundamentals](#cyber-security-fundamentals)
-* [Design Patterns](#design-patterns)
-* [Web Services and API Design](#web-services-and-api-design)
+* [Data-Driven-Docs](#data-driven-docs)
+  * [Table of Contents](#table-of-contents)
+  * [Programming](#programming)
+    * [Languages](#languages)
+    * [Paradigms](#paradigms)
+  * [Web Development Frameworks](#web-development-frameworks)
+    * [Backend](#backend)
+    * [Frontend](#frontend)
+  * [Database Management Systems](#database-management-systems)
+    * [SQL](#sql)
+    * [NoSQL](#nosql)
+  * [Networking Concepts](#networking-concepts)
+  * [Cloud Computing Platform](#cloud-computing-platform)
+  * [DevOps Practices](#devops-practices)
+  * [Data Structures](#data-structures)
+  * [Algorithms](#algorithms)
+  * [Cyber-security Fundamentals](#cyber-security-fundamentals)
+  * [Design Patterns](#design-patterns)
+  * [Web Services and API Design](#web-services-and-api-design)
 <!-- TOC -->
 
 ---

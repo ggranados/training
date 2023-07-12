@@ -12,6 +12,38 @@ Shorthand syntax for referring to an existing method by its name. They provide a
 
 Method references can be seen as a more compact alternative to lambda expressions when the lambda expression simply calls an existing method without any additional logic.
 
+The syntax for method references in Java is as follows:
+
+```java
+ClassName::methodName
+```
+
+There are several types of method references in Java:
+
+Reference to a static method:
+
+```java
+ClassName::staticMethodName
+```
+        
+Reference to an instance method of a particular object:
+
+```java
+instance::instanceMethodName
+```
+
+Reference to an instance method of an arbitrary object of a particular type:
+
+```java
+ClassName::instanceMethodName
+```        
+        
+Reference to a constructor:
+
+```java
+ClassName::new
+```
+
 ___
 
 ## Examples
