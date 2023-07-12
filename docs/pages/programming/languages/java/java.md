@@ -96,7 +96,7 @@ Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and vers
 
 ___
 
-[Index](../../../common/get-started.md) |
+[Get Started](../../../common/get-started.md) |
 [Back to top](#table-of-contents)
 
 ___

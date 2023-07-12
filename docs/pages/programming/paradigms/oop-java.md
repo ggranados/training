@@ -172,7 +172,7 @@ _____
 
 ___
 
-[Index](../../common/get-started.md) |
+[Get Started](../../common/get-started.md) |
 [Java](../languages/java/java.md#whats-oop) |
 [OOP](oop.md)
 

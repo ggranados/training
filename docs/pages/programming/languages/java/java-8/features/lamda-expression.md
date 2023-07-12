@@ -261,7 +261,7 @@ ___
   [^1]: https://lifebeginsatfortyblog.wordpress.com/2016/07/01/the-java-tutorials-lambda-expressions/
 ___
 
-[Index](../../../../../common/get-started.md) |
+[Get Started](../../../../../common/get-started.md) |
 [Java 8](../../versions.md#java-8-lts)
 
 ___

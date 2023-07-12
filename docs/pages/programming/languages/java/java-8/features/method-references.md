@@ -68,7 +68,7 @@ ___
 
 ___
 
-[Index](../../../../../common/get-started.md) |
+[Get Started](../../../../../common/get-started.md) |
 [Java 8](../../versions.md#java-8-lts)
 
 ___
