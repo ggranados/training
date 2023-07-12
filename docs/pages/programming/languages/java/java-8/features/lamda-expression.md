@@ -3,6 +3,7 @@
 ## Table of Contents
 <!-- TOC -->
 * [Lambda Expression](#lambda-expression)
+  * [Table of Contents](#table-of-contents)
   * [Introduction](#introduction)
   * [Examples](#examples)
     * [Lambda Expression Syntax](#lambda-expression-syntax)
