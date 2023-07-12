@@ -49,17 +49,13 @@ Polymorphism means the ability of objects to take on multiple forms or behave di
 
 There are two main types of polymorphism in object-oriented programming:
 
-<sub>[Back to top](#table-of-contents)</sub>
 
 #### Static (Compile-time) Polymorphism:
 Static polymorphism is achieved through method overloading and operator overloading. 
 
 - **Method overloading** allows multiple methods with the same name but different parameter types or a different number of parameters to coexist in a class. The appropriate method to execute is determined by the compiler based on the method's signature at compile-time. 
 
-
 - **Operator overloading** (in some languages) enables the use of operators (such as +, -, *, /) with custom classes, defining their behavior according to the operands' types.
-
-<sub>[Back to top](#table-of-contents)</sub>
 
 #### Dynamic (Runtime) Polymorphism:
 Dynamic polymorphism is achieved through method overriding and inheritance. Method overriding allows a subclass to provide a different implementation of a method that is already defined in its superclass. The decision on which implementation to execute is made at runtime based on the actual type of the object being referenced. This allows for the invocation of the appropriate method based on the specific object's type during runtime. Dynamic polymorphism is commonly associated with the "IS-A" relationship, where a subclass is considered an instance of its superclass.

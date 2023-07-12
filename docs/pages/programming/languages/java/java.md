@@ -88,7 +88,8 @@ To begin programming in Java, you need to install a Java Edition on your system.
 The Java language has undergone [several changes since JDK 1.0](versions.md#table-of-contents) as well as numerous additions of classes and packages to the standard library.
 Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and versions 17, 11 and 8 are the currently supported long-term support (LTS) versions
 Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and versions 17, 11 and 8 are the currently supported long-term support (LTS) versions. [^8]
-- Visit: [Main Java Version Changes](versions.md#table-of-contents)
+
+#### Visit: [Main Java Version Changes](versions.md#main-java-version-changes)
 
 <sub>[Back to top](#table-of-contents)</sub>
 

@@ -1,4 +1,4 @@
-# Main Java Version Changes 
+# Main Java Version Changes
 
 All language features from Java 8 serve as very good Java base knowledge and everything else (Java 9-20) is pretty much additional features on top of that baseline
 
@@ -6,7 +6,7 @@ Visit: [Oracle Java Language Updates](https://docs.oracle.com/en/java/javase/20/
 
 ## Table of Contents
 <!-- TOC -->
-* [Main Java Version Changes](#main-java-version-changes-)
+* [Main Java Version Changes](#main-java-version-changes)
   * [Table of Contents](#table-of-contents)
   * [Java 1](#java-1)
   * [Java 1.1](#java-11)
