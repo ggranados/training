@@ -1,5 +1,15 @@
 ## Lambda Expression
 
+### Table of Contents
+
+1. [Introduction](#introduction)
+2. [Examples](#examples)
+3. [References](#ref)
+
+___
+
+### Introduction
+
 Before Java 8, whenever you wanted to instantiate, for example, a new Runnable, you had to write an anonymous inner class like so:
 
 ```java
@@ -15,6 +25,9 @@ With lambdas, the same code looks like this:
 ```java
 Runnable runnable = () -> System.out.println("Hello world two!");
 ```
+
+![Anatomy of Lambda Expression](../../../../../../img/lambda-expression.jpg) 
+[^1]
 
 ---
 
@@ -78,7 +91,7 @@ Lastly, the code showcases a lambda expression with a single parameter using the
 ```
 
 <sub>[View on Github](https://github.com/ggranados/java/blob/master/FunctionalProgramming/src/org/linkedinlearning/functionalprogramming/lambda/LambdaExpressionSyntax.java)</sub> |
-<sub>[Back to top](#lambda-expression)</sub>
+<sub>[Back to top](#table-of-contents)</sub>
 
 
 
@@ -114,7 +127,7 @@ Clicking the "Say Goodbye" button updates the text fields with "Goodbye, world!"
 ```
 
 <sub>[View on Github](https://github.com/ggranados/java/blob/master/FunctionalProgramming/src/org/linkedinlearning/functionalprogramming/lambda/LambdaListener.java)</sub> |
-<sub>[Back to top](#lambda-expression)</sub>
+<sub>[Back to top](#table-of-contents)</sub>
 
 
 ---
@@ -171,7 +184,7 @@ A constant-capturing lambda expression captures (or accesses) final or effective
 ```
 
 <sub>[View on Github](https://github.com/ggranados/java/blob/master/FunctionalProgramming/src/org/linkedinlearning/functionalprogramming/lambda/LambdaCapture.java)</sub> |
-<sub>[Back to top](#lambda-expression)</sub>
+<sub>[Back to top](#table-of-contents)</sub>
 
 ___
 
@@ -228,8 +241,17 @@ e. The commented line `Consumer<?> c3 = msg -> System.out.println(msg.length());
 ```
 
 <sub>[View on Github](https://github.com/ggranados/java/blob/master/FunctionalProgramming/src/org/linkedinlearning/functionalprogramming/lambda/LambdaInference.java)</sub> |
-<sub>[Back to top](#lambda-expression)</sub>
+<sub>[Back to top](#table-of-contents)</sub>
 
+___
+
+### Ref.
+
+- https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html#section2
+- https://blogs.oracle.com/javamagazine/post/quiz-yourself-lambda-types-advanced
+- https://blogs.oracle.com/javamagazine/post/java-quiz-nested-lambdas
+
+  [^1]: https://lifebeginsatfortyblog.wordpress.com/2016/07/01/the-java-tutorials-lambda-expressions/
 ___
 
 [Index](../../../../../common/table-of-contents.md) |

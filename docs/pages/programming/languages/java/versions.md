@@ -2,6 +2,8 @@
 
 All language features from Java 8 serve as very good Java base knowledge and everything else (Java 9-20) is pretty much additional features on top of that baseline
 
+Visit: [Oracle Java Language Updates](https://docs.oracle.com/en/java/javase/20/language/java-language-changes.html#GUID-6459681C-6881-45D8-B0DB-395D1BD6DB9B)
+
 ## Table of Contents
 1. [Java 1](#java-1)
 2. [Java 1.1](#java-11)
@@ -327,9 +329,12 @@ ___
 [Index](../../../common/table-of-contents.md) |
 [Java](java.md#how-is-java-versioned) |
 [Back to top](#table-of-contents)
+
 ___
+
 ### Ref.
 
+ - https://docs.oracle.com/en/java/javase/20/language/java-language-changes.html#GUID-6459681C-6881-45D8-B0DB-395D1BD6DB9B
  - https://medium.com/codex/java-history-from-1-0-to-java-18-d62f69b2a48a
  - https://www.marcobehler.com/guides/a-guide-to-java-versions-and
  - https://ondro.inginea.eu/index.php/new-in-java-versions-since-java-8/
