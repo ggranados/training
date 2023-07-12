@@ -248,6 +248,7 @@
   - Repository Pattern
   - Layered Architecture
   - Hexagonal Architecture
+  - CQRS
 - ACID
 - SOLID
 - Inversion of Control (IoC)

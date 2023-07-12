@@ -47,3 +47,10 @@ System.out.println("Sum: " + sum);
 
 - https://www.techtarget.com/whatis/definition/imperative-programming#:~:text=Imperative%20programming%20is%20a%20software,models%20are%20not%20called%20on.
 - https://en.wikipedia.org/wiki/Imperative_programming
+
+___
+
+[Get Started](../../common/get-started.md) |
+[Java](../languages/java/java.md#whats-oop)
+
+___
