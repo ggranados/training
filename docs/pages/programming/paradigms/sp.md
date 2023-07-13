@@ -6,14 +6,16 @@
 <!-- TOC -->
 * [Structured Programming](#structured-programming)
   * [Table of Contents](#table-of-contents)
-  * [Structured programming is a programming paradigm that aims to improve the clarity, maintainability, and efficiency of code by enforcing a set of structured control flow constructs. It advocates for the use of structured control flow statements like loops and conditionals to create well-organized and readable code.](#structured-programming-is-a-programming-paradigm-that-aims-to-improve-the-clarity-maintainability-and-efficiency-of-code-by-enforcing-a-set-of-structured-control-flow-constructs-it-advocates-for-the-use-of-structured-control-flow-statements-like-loops-and-conditionals-to-create-well-organized-and-readable-code)
+  * [What's Structured Programming](#whats-structured-programming)
   * [Examples](#examples)
   * [Languages](#languages)
   * [Ref.](#ref)
 <!-- TOC -->
 
 
-## Structured programming is a programming paradigm that aims to improve the clarity, maintainability, and efficiency of code by enforcing a set of structured control flow constructs. It advocates for the use of structured control flow statements like loops and conditionals to create well-organized and readable code.
+## What's Structured Programming
+
+Structured programming is a programming paradigm that aims to improve the clarity, maintainability, and efficiency of code by enforcing a set of structured control flow constructs. It advocates for the use of structured control flow statements like loops and conditionals to create well-organized and readable code.
 
 Key principles of structured programming include:
 
@@ -98,6 +100,6 @@ By structuring the code in this way, it becomes more organized, easier to follow
 
 ---
 
-[Get Started](../../common/get-started.md)
+[Get Started](../../common/get-started.md#paradigms)
 
 ---

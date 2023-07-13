@@ -52,7 +52,7 @@ System.out.println("Sum: " + sum);
 
 ___
 
-[Get Started](../../common/get-started.md) |
+[Get Started](../../common/get-started.md#paradigms) |
 [Java](../languages/java/java.md#whats-oop)
 
 ---
