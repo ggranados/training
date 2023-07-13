@@ -1,5 +1,7 @@
 # Object-Oriented Programming (OOP)
 
+---
+
 ## Table of Contents
 <!-- TOC -->
 * [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)

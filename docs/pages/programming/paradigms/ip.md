@@ -1,5 +1,7 @@
 # Imperative Programming
 
+---
+
 ## Table of Contents
 <!-- TOC -->
 * [Imperative Programming](#imperative-programming)

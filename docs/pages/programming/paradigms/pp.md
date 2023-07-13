@@ -1,5 +1,7 @@
 # Procedural Programming
 
+---
+
 ## Table of Contents
 <!-- TOC -->
 * [Procedural Programming](#procedural-programming)
@@ -49,7 +51,7 @@ The first major procedural programming languages appeared circa 1957–1964, inc
 
 ---
 
-[Get Started](../../common/get-started.md) |
+[Get Started](../../common/get-started.md) 
 
 ---
 

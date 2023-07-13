@@ -1,6 +1,8 @@
 # OOP in Java
 
 
+---
+
 ## Table of Contents
 <!-- TOC -->
 * [OOP in Java](#oop-in-java)

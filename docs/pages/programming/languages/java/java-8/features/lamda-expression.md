@@ -1,5 +1,7 @@
 # Lambda Expression
 
+---
+
 ## Table of Contents
 <!-- TOC -->
 * [Lambda Expression](#lambda-expression)

@@ -1,5 +1,7 @@
 # Data-Driven-Docs
 
+---
+
 ## Table of Contents
 
 <!-- TOC -->

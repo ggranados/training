@@ -1,5 +1,7 @@
 # Java
 
+---
+
 ## Table of Contents
 <!-- TOC -->
 * [Java](#java)
