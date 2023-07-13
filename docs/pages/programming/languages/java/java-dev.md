@@ -24,6 +24,7 @@
     * [Java for Web Development](#java-for-web-development)
     * [Java for Android Development](#java-for-android-development)
     * [Java Security](#java-security)
+  * [Ref.](#ref)
 <!-- TOC -->
 
 
@@ -41,7 +42,7 @@
   - [Objects](java-oop.md#what-is-an-object)
   - [Classes](java-oop.md#what-is-a-class)
   - [Inheritance](java-oop.md#what-is-inheritance)
-  - [Polymorphism](java-oop.md#)
+  - [Polymorphism](java-oop.md#polymorphism)
   - [Encapsulation and data hiding](java-oop.md#encapsulation-and-data-hiding)
   - [Abstraction and interfaces](java-oop.md#what-is-an-interface)
   - [Packages and modules](java-oop.md#what-is-a-package)
@@ -171,3 +172,15 @@
   - Authentication and authorization
   - Secure network communication
   - Java Security API
+
+_____
+
+## Ref.
+
+
+___
+
+[Get Started](../../../common/get-started.md) |
+[Java](java.md#java) |
+
+___

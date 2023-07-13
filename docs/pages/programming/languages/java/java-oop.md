@@ -15,6 +15,10 @@
     * [Data Hiding](#data-hiding)
     * [Example](#example)
   * [What Is an Interface?](#what-is-an-interface)
+  * [Polymorphism](#polymorphism)
+    * [Method Overriding](#method-overriding)
+    * [Method Overloading](#method-overloading)
+      * [Example](#example-1)
   * [What Is a Package?](#what-is-a-package)
   * [Ref.](#ref)
 <!-- TOC -->
@@ -231,6 +235,80 @@ class ACMEBicycle implements Bicycle {
 
 Implementing an interface allows a class to become more formal about the behavior it promises to provide.
 [^5]
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Polymorphism
+Refers to the ability of objects of different classes to be treated as instances of a common superclass or interface. It allows for the use of a single interface to represent multiple types and the ability to provide different implementations based on the actual type of the object at runtime. 
+
+In Java, polymorphism is primarily achieved through method overriding and method overloading.
+
+### Method Overriding
+Method overriding allows a subclass to provide a different implementation of a method that is already defined in its superclass. It involves creating a method in the subclass with the same name, return type, and parameters as the method in the superclass. The subclass method overrides the superclass method, and the appropriate method is invoked based on the actual type of the object at runtime.
+Example:
+
+```java
+class Animal {
+  public void makeSound() {
+    System.out.println("Animal makes a sound");
+  }
+}
+
+class Dog extends Animal {
+  @Override
+  public void makeSound() {
+    System.out.println("Dog barks");
+  }
+}
+
+class Cat extends Animal {
+  @Override
+  public void makeSound() {
+    System.out.println("Cat meows");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Animal animal1 = new Dog();
+    Animal animal2 = new Cat();
+
+    animal1.makeSound(); // Output: "Dog barks"
+    animal2.makeSound(); // Output: "Cat meows"
+  }
+}
+```
+
+In this example, the Animal class has a makeSound method. The Dog and Cat classes extend the Animal class and provide their own implementation of the makeSound method. When objects of Dog and Cat are assigned to Animal references and the makeSound method is called, the appropriate method for the actual object type is invoked.
+
+### Method Overloading
+
+Method overloading allows multiple methods with the same name but different parameter types or a different number of parameters to coexist within a class. It enables the use of the same method name for different operations or variations of a task, providing convenience and flexibility in method invocation.
+
+#### Example
+
+```java
+class Calculator {
+  public int add(int num1, int num2) {
+    return num1 + num2;
+  }
+
+  public double add(double num1, double num2) {
+    return num1 + num2;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Calculator calculator = new Calculator();
+
+    int sum1 = calculator.add(2, 3); // Output: 5
+    double sum2 = calculator.add(2.5, 3.7); // Output: 6.2
+  }
+}
+```
+
+In this example, the Calculator class has two add methods, one accepting two integers and the other accepting two doubles. The method overloading allows different types of parameters to be passed, and the appropriate method is selected based on the arguments passed at compile-time.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
