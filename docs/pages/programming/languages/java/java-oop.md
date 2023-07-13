@@ -7,9 +7,13 @@
 <!-- TOC -->
 * [OOP in Java](#oop-in-java)
   * [Table of Contents](#table-of-contents)
-  * [What Is an Object?](#what-is-an-object)
   * [What Is a Class?](#what-is-a-class)
+  * [What Is an Object?](#what-is-an-object)
   * [What Is Inheritance?](#what-is-inheritance)
+  * [Encapsulation and Data Hiding](#encapsulation-and-data-hiding)
+    * [Encapsulation](#encapsulation)
+    * [Data Hiding](#data-hiding)
+    * [Example](#example)
   * [What Is an Interface?](#what-is-an-interface)
   * [What Is a Package?](#what-is-a-package)
   * [Ref.](#ref)
@@ -99,6 +103,74 @@ class MountainBike extends Bicycle {
 [^4]
 
 <sub>[Back to top](#table-of-contents)</sub>
+
+## Encapsulation and Data Hiding
+Encapsulation and data hiding are fundamental concepts in Java that support the principle of information hiding and help in creating robust and maintainable code
+
+
+### Encapsulation
+Encapsulation is the process of bundling data (variables) and methods (functions) that operate on that data into a single unit called an object. It involves grouping related data and behaviors together to form a cohesive entity. Encapsulation helps in organizing code, improving code maintainability, and protecting data integrity.
+
+In Java, encapsulation is achieved by declaring variables as private and providing public methods (getters and setters) to access and modify the data. This allows controlled access to the internal state of an object, ensuring that it can be manipulated only through well-defined interfaces.
+
+### Data Hiding
+Data hiding is a principle of encapsulation that emphasizes restricting direct access to the internal data of an object from outside code. It ensures that data can be accessed and modified only through the defined public methods, providing a layer of abstraction and preventing unauthorized modifications.
+
+By hiding the internal data, Java enforces encapsulation, allowing objects to maintain their own internal state and behavior while controlling how external code interacts with them. This reduces dependencies, increases code flexibility, and protects data from accidental modifications or inconsistencies.
+
+### Example
+
+```java
+public class Person {
+private String name;
+private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age >= 0) {
+            this.age = age;
+        } else {
+            System.out.println("Invalid age. Age must be non-negative.");
+        }
+    }
+}
+```
+
+In this example, the Person class encapsulates the data of a person's name and age. The name and age variables are declared as private, ensuring they are not directly accessible from outside the class.
+
+To access and modify the data, the class provides public getter (getName, getAge) and setter (setName, setAge) methods. These methods allow controlled access to the private data, enforcing encapsulation and data hiding. The setter for age includes validation logic to ensure the age is non-negative.
+
+```java
+public class Main {
+public static void main(String[] args) {
+Person person = new Person();
+person.setName("John");
+person.setAge(25);
+
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+
+        person.setAge(-5); // Trying to set an invalid age
+    }
+}
+```
+
+In the Main class, an instance of Person is created. The public setter and getter methods are used to set and retrieve the person's name and age. The encapsulated data is accessed and modified through these methods, ensuring controlled access and maintaining the integrity of the data.
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 
 ## What Is an Interface?
 An interface is a contract between a class and the outside world. When a class implements an interface, it promises to provide the behavior published by that interface.

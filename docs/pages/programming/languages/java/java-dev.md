@@ -42,7 +42,7 @@
   - [Classes](java-oop.md#what-is-a-class)
   - [Inheritance](java-oop.md#what-is-inheritance)
   - [Polymorphism](java-oop.md#)
-  - Encapsulation and data hiding
+  - [Encapsulation and data hiding](java-oop.md#encapsulation-and-data-hiding)
   - [Abstraction and interfaces](java-oop.md#what-is-an-interface)
   - [Packages and modules](java-oop.md#what-is-a-package)
 
