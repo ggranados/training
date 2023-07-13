@@ -17,18 +17,6 @@
 
 ___
 
-## What Is an Object?
-An object is a software bundle of related state and behavior. Software objects are often used to model the real-world objects that you find in everyday life.
-
-Software objects are conceptually similar to real-world objects: they too consist of state and related behavior. An object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (functions in some programming languages)
-
-Methods operate on an object's internal state and serve as the primary mechanism for object-to-object communication. Hiding internal state and requiring all interaction to be performed through an object's methods is known as data encapsulation
-
-![concepts-object.gif](../../../../img/concepts-object.gif)
-[^2]
-
-<sub>[Back to top](#table-of-contents)</sub>
-
 ## What Is a Class?
 A class is a blueprint or prototype from which objects are created.
 
@@ -67,6 +55,28 @@ class Bicycle {
 
 The fields cadence, speed, and gear represent the object's state, and the methods (changeCadence, changeGear, speedUp etc.) define its interaction with the outside world.
 [^3]
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## What Is an Object?
+An object is a software bundle of related state and behavior. Software objects are often used to model the real-world objects that you find in everyday life.
+
+Software objects are conceptually similar to real-world objects: they too consist of state and related behavior. An object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (functions in some programming languages)
+
+Methods operate on an object's internal state and serve as the primary mechanism for object-to-object communication. Hiding internal state and requiring all interaction to be performed through an object's methods is known as data encapsulation
+
+![concepts-object.gif](../../../../img/concepts-object.gif)
+
+To instance an object of the class Bicycle above, the syntax is:
+
+```java
+  Bicycle bike = new Bicycle();
+```
+
+First `Bicycle` establish the object type, the `=` operator assigns the object reference to be created to the variable `bike`, then `Bicycle()` stands for the calling of Bicycle constructor.
+
+
+[^2]
 
 <sub>[Back to top](#table-of-contents)</sub>
 

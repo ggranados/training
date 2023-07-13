@@ -14,7 +14,7 @@
   * [What's WORA?](#whats-wora)
   * [How is java Multi-plataform?](#how-is-java-multi-plataform)
   * [What is Java Virtual Machine?](#what-is-java-virtual-machine)
-  * [How to program in Java?](#how-to-program-in-java)
+  * [How to develop with Java?](#how-to-develop-with-java)
       * [Visit: Oracle Java SE Documentation](#visit-oracle-java-se-documentation)
   * [How is Java versioned?](#how-is-java-versioned)
       * [Visit: Main Java Version Changes](#visit-main-java-version-changes)
@@ -50,7 +50,7 @@ Java is also free for development. [^2]
 [Object-Oriented Programming (OOP)](../../paradigms/oop.md) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
 
 #### Visit: [Object Oriented Programming](../../paradigms/oop.md)
-#### Visit: [OOP in Java](oop-java.md)
+#### Visit: [OOP in Java](java-oop.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -75,7 +75,7 @@ JVM is basically responsible for converting .class or bytecode into platform spe
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## How to program in Java?
+## How to develop with Java?
 To begin programming in Java, you need to install a Java Edition on your system. There are four main Java editions:
 
  - Java Standard Edition (Java SE)
@@ -84,6 +84,8 @@ To begin programming in Java, you need to install a Java Edition on your system.
  [^3]
 
 #### Visit: [Oracle Java SE Documentation](https://docs.oracle.com/en/java/javase/index.html)
+
+#### Visit: [Java Development](java-dev.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
