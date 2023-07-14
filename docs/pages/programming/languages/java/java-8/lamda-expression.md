@@ -35,7 +35,7 @@ With lambdas, the same code looks like this:
 Runnable runnable = () -> System.out.println("Hello world two!");
 ```
 
-![Anatomy of Lambda Expression](../../../../../../img/lambda-expression.jpg) 
+![Anatomy of Lambda Expression](../../../../../img/lambda-expression.jpg) 
 [^1]
 
 ---
@@ -264,7 +264,7 @@ ___
 
 ___
 
-[Get Started](../../../../../common/get-started.md) |
-[Java 8](../../versions.md#java-8-lts)
+[Get Started](../../../../common/get-started.md) |
+[Java 8](../versions.md#java-8-lts)
 
 ___

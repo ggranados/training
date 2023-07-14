@@ -151,15 +151,15 @@ ___
 ## Java 8 LTS
 (released in March 2014):
 
- - [Lambda expression support in APIs](java-8/features/lamda-expression.md)
- - [Method References](java-8/features/method-references.md)
+ - [Lambda expression support in APIs](java-8/lamda-expression.md)
+ - [Method References](java-8/method-references.md)
  - Stream API
  - Functional interface and default methods
  - Optionals
  - Nashorn — JavaScript runtime which allows developers to embed JavaScript code within applications
  - Annotation on Java Types
  - Unsigned Integer Arithmetic
- - [Repeating annotations](java-8/features/repeating-annotations.md)
+ - [Repeating annotations](java-8/repeating-annotations.md)
  - New Date and Time API
  - Statically-linked JNI libraries
  - Launch JavaFX applications from jar files

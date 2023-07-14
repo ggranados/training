@@ -1,5 +1,5 @@
 # Java
-
+![java.png](..%2F..%2F..%2F..%2Fimg%2Fjava.png)
 ---
 
 ## Table of Contents
@@ -50,7 +50,7 @@ Java is also free for development. [^2]
 [Object-Oriented Programming (OOP)](../../paradigms/oop.md) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
 
 #### Visit: [Object Oriented Programming](../../paradigms/oop.md)
-#### Visit: [OOP in Java](java-oop.md)
+#### Visit: [OOP in Java](oop.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -85,7 +85,7 @@ To begin programming in Java, you need to install a Java Edition on your system.
 
 #### Visit: [Oracle Java SE Documentation](https://docs.oracle.com/en/java/javase/index.html)
 
-#### Visit: [Java Development](java-dev.md)
+#### Visit: [Java Development](develop.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 

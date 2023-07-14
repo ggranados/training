@@ -30,31 +30,31 @@
 
 ## Learning Subjects
 
- ### Java Basics
+### Java Basics
 
   - Syntax and data types
   - Variables and operators
   - Control flow statements (if-else, loops)
   - Arrays and collections
 
- ### Object-Oriented Programming (OOP)
+### Object-Oriented Programming (OOP)
 
-  - [Objects](java-oop.md#what-is-an-object)
-  - [Classes](java-oop.md#what-is-a-class)
-  - [Inheritance](java-oop.md#what-is-inheritance)
-  - [Polymorphism](java-oop.md#polymorphism)
-  - [Encapsulation and data hiding](java-oop.md#encapsulation-and-data-hiding)
-  - [Abstraction and interfaces](java-oop.md#what-is-an-interface)
-  - [Packages and modules](java-oop.md#what-is-a-package)
+  - [Objects](oop.md#what-is-an-object)
+  - [Classes](oop.md#what-is-a-class)
+  - [Inheritance](oop.md#what-is-inheritance)
+  - [Polymorphism](oop.md#polymorphism)
+  - [Encapsulation and data hiding](oop.md#encapsulation-and-data-hiding)
+  - [Abstraction and interfaces](oop.md#what-is-an-interface)
+  - [Packages and modules](oop.md#what-is-a-package)
 
- ### Exception Handling
+### Exception Handling
 
   - Handling and throwing exceptions
   - Using try-catch blocks
   - Checked and unchecked exceptions
   - Custom exceptions
 
- ### Java Standard Library
+### Java Standard Library
 
   - String manipulation
   - Input/output operations (I/O)
@@ -62,7 +62,7 @@
   - Regular expressions
   - Date and time
 
- ### Generics and Collections
+### Generics and Collections
 
   - Using generics in classes and methods
   - ArrayList, LinkedList, and other collection classes
@@ -72,12 +72,12 @@
   - Streams
 
 ### Lambdas and Functional Interfaces
-  - Lambda Expression
+  - [Lambda Expression](java-8/lamda-expression.md)
   - Functional Interfaces
-  - Method References
+  - [Method References](java-8/method-references.md)
   - Built in Functional Interfaces
   
- ### Multithreading and Concurrency
+### Multithreading and Concurrency
 
   - Creating and managing threads
   - Thread synchronization
@@ -85,7 +85,7 @@
   - Parallel streams
   - Executors and thread pools
 
- ### Input/Output (I/O)
+### Input/Output (I/O)
 
   - Reading from and writing to files
   - Byte streams vs. character streams
@@ -94,14 +94,14 @@
   - NIO (non-blocking I/O)
   - Java Database Connectivity (JDBC)
 
- ### Connecting to databases
+### Connecting to databases
 
   - Executing SQL queries
   - Prepared statements
   - Handling result sets
   - Transactions
 
- ### New Features
+### New Features
 
   - Modules
   - Sealed classes and interfaces
@@ -110,7 +110,7 @@
   - Switch expressions and yield
   - Text blocks (multi-line strings)
 
- ### Java Tools and Development
+### Java Tools and Development
 
   - Build tools
     - Ant
@@ -121,7 +121,7 @@
   - Profiling and optimizing code
   - Unit testing with JUnit
 
- ### Java Best Practices
+### Java Best Practices
 
   - Writing clean and maintainable code
   - Code organization and naming conventions
@@ -130,14 +130,15 @@
   - Security considerations
   - Advanced Java Topics
 
- ### Reflection and dynamic class loading
+### Reflection and dynamic class loading
 
   - Annotations and custom annotations
+  - [Repeating Annotations](java-8/repeating-annotations.md)
   - Java Native Interface (JNI)
   - JavaFX for desktop applications
   - Java Servlets and JavaServer Pages (JSP)
 
- ### Java Frameworks and Libraries
+### Java Frameworks and Libraries
 
   - Spring Framework
   - Hibernate ORM
@@ -145,7 +146,7 @@
   - Apache Kafka
   - JUnit and Mockito
 
- ### Java for Web Development
+### Java for Web Development
 
   - Servlets and JavaServer Pages (JSP)
   - JavaServer Faces (JSF)
@@ -157,7 +158,7 @@
   - 	Struts
   - 	Struts2
 
- ### Java for Android Development
+### Java for Android Development
 
   - Android application structure
   - Activities, Fragments, and Intents
@@ -165,7 +166,7 @@
   - Android SDK and API usage
   - Database integration with SQLite
 
- ### Java Security
+### Java Security
 
   - Cryptography and encryption
   - Secure coding practices

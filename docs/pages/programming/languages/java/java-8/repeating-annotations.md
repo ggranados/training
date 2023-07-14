@@ -103,7 +103,7 @@ Starting from Spring Framework 4.0, Spring introduced support for repeating anno
 
 ___
 
-[Get Started](../../../../../common/get-started.md) |
-[Java 8](../../versions.md#java-8-lts)
+[Get Started](../../../../common/get-started.md) |
+[Java 8](../versions.md#java-8-lts)
 
 ---
