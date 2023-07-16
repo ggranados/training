@@ -54,7 +54,7 @@
   - [Procedural Programming](pages/programming/paradigms/pp.md)
   - [Structured programming](pages/programming/paradigms/sp.md)
   - [Object Oriented Programming (OOP)](pages/programming/paradigms/oop.md)
-  - Functional Programming
+  - [Functional Programming](pages/programming/paradigms/fp.md)
   - Declarative Programming
   - Logic Programming
   - Event-Driven Programming
