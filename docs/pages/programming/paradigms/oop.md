@@ -6,6 +6,7 @@
 <!-- TOC -->
 * [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
   * [Table of Contents](#table-of-contents)
+  * [What's OOP](#whats-oop)
   * [OOP Concepts](#oop-concepts)
     * [Encapsulation](#encapsulation-)
     * [Inheritance](#inheritance-)
@@ -21,6 +22,8 @@
 <!-- TOC -->
 
 ___
+
+## What's OOP
 
 Object-Oriented Programming (OOP) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects. There are many object-oriented programming languages, including JavaScript, C++, [Java](../languages/java/java.md#whats-oop), and Python.[^1]
 
@@ -88,7 +91,8 @@ In OOP, communication between objects occurs through message passing. Objects se
 
 ## OOP Languages
 
-- [Java](../languages/java/oop.md)
+- Java
+  - Visit: [OOP in Java](../languages/java/oop.md)
 - C++
 - C#
 - Python
@@ -111,6 +115,33 @@ In OOP, communication between objects occurs through message passing. Objects se
 
 <sub>[Back to top](#table-of-contents)</sub>
 
+## Examples
+
+The example defines a Rectangle class in Java, which has data (width and height) and behavior (calculateArea method) to calculate the area of a rectangle.
+
+```java
+class Rectangle {
+private int width;
+private int height;
+
+public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+    
+    public int calculateArea() {
+        return width * height;
+    }
+}
+
+Rectangle rectangle = new Rectangle(5, 7);
+int area = rectangle.calculateArea();
+System.out.println("Area: " + area);
+```
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 ___
 
 ## Ref.
@@ -122,7 +153,7 @@ ___
 
 ___
 
-[Get Started](../../common/get-started.md#paradigms) |
+[Get Started](../../../get-started.md#paradigms) |
 [Java](../languages/java/java.md#whats-oop)
 
 ---

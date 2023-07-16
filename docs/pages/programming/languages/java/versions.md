@@ -333,7 +333,7 @@ ___
 
 ___
 
-[Get Started](../../../common/get-started.md) |
+[Get Started](../../../../get-started.md) |
 [Java](java.md#how-is-java-versioned) |
 [Back to top](#table-of-contents)
 

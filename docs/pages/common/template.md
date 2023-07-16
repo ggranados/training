@@ -26,6 +26,6 @@
 
 ---
 
-[Get Started](../common/get-started.md) |
+[Get Started](../../get-started.md) |
 
 ---

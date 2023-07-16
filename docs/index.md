@@ -25,7 +25,7 @@ To make the most of this study guide, navigate through the repository to find th
 
 You can also contribute to this study guide by submitting pull requests with additional content, corrections, or improvements. Together, we can build a valuable resource for IT enthusiasts and learners worldwide.
 
-## [Get Started](pages/common/get-started.md)
+## [Get Started](get-started.md)
 
 To start exploring the study guide, simply browse the repository's directory structure and click on the markdown files of your choice. You can also clone the repository locally to have a local copy of the study guide for offline access.
 

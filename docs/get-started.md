@@ -32,7 +32,10 @@
 ### Languages
   - JavaScript (Node.js)
   - Python
-  - [Java](../programming/languages/java/java.md)
+  - [Java](pages/programming/languages/java/java.md)
+    - [OOP in Java](pages/programming/languages/java/oop.md)
+    - [Main Java Version Changes](pages/programming/languages/java/versions.md)
+    - [Java Development](pages/programming/languages/java/develop.md)
   - PHP
   - Ruby
   - C#
@@ -47,10 +50,10 @@
   - TypeScript
 
 ### Paradigms
-  - [Imperative Programming](../programming/paradigms/ip.md)
-  - [Procedural Programming](../programming/paradigms/pp.md)
-  - [Structured programming](../programming/paradigms/sp.md)
-  - [Object Oriented Programming (OOP)](../programming/paradigms/oop.md)
+  - [Imperative Programming](pages/programming/paradigms/ip.md)
+  - [Procedural Programming](pages/programming/paradigms/pp.md)
+  - [Structured programming](pages/programming/paradigms/sp.md)
+  - [Object Oriented Programming (OOP)](pages/programming/paradigms/oop.md)
   - Functional Programming
   - Declarative Programming
   - Logic Programming
@@ -287,7 +290,7 @@
 
 ---
 
-[Read Me](../../index.md) |
+[Read Me](index.md) |
 [Back to top](#table-of-contents)
 
 ---

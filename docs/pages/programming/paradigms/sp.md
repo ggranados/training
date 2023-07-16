@@ -100,6 +100,6 @@ By structuring the code in this way, it becomes more organized, easier to follow
 
 ---
 
-[Get Started](../../common/get-started.md#paradigms)
+[Get Started](../../../get-started.md#paradigms)
 
 ---

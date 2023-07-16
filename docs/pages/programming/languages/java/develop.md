@@ -181,7 +181,7 @@ _____
 
 ___
 
-[Get Started](../../../common/get-started.md) |
+[Get Started](../../../../get-started.md) |
 [Java](java.md#java) |
 
 ___
