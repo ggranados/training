@@ -1,7 +1,10 @@
 # Method references
 
+## Table of Contents
+
 <!-- TOC -->
 * [Method references](#method-references)
+  * [Table of Contents](#table-of-contents)
   * [Examples](#examples)
   * [Ref.](#ref)
 <!-- TOC -->
@@ -44,6 +47,8 @@ Reference to a constructor:
 ClassName::new
 ```
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ___
 
 ## Examples
@@ -63,6 +68,8 @@ Or, we can use a method reference to simply refer to the capitalize static metho
    messages.forEach(StringUtils::capitalize);
    ````
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ___
 
 ## Ref.
@@ -70,6 +77,8 @@ ___
 ___
 
 [Get Started](../../../../../get-started.md) |
+[PF in Java](../versions.md#java-8-lts) |
 [Java 8](../versions.md#java-8-lts)
+
 
 ___

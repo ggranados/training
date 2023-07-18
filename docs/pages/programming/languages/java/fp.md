@@ -9,6 +9,7 @@
   * [Lambda Expressions](#lambda-expressions)
       * [- Visit: Lambda Expression](#--visit-lambda-expression)
   * [Functional Interfaces](#functional-interfaces)
+      * [- Visit: Functional Interfaces](#--visit-functional-interfaces)
       * [- Visit: Method References](#--visit-method-references)
   * [Built-in Functional Interfaces](#built-in-functional-interfaces)
   * [Streams API](#streams-api)
@@ -67,6 +68,7 @@ interface MyFunction {
 }
 ```
 
+#### - Visit: [Functional Interfaces](java-8/functional-interfaces.md)
 #### - Visit: [Method References](java-8/method-references.md)
 
 <sub>[Back to top](#table-of-contents)</sub>

@@ -264,7 +264,9 @@ ___
 
 ___
 
+
 [Get Started](../../../../../get-started.md) |
+[PF in Java](../versions.md#java-8-lts) |
 [Java 8](../versions.md#java-8-lts)
 
 ___

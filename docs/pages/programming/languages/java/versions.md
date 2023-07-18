@@ -154,7 +154,7 @@ ___
  - [Lambda expression support in APIs](java-8/lamda-expression.md)
  - [Method References](java-8/method-references.md)
  - Stream API
- - Functional interface and default methods
+ - [Functional interface and default methods](java-8/functional-interfaces.md)
  - Optionals
  - Nashorn — JavaScript runtime which allows developers to embed JavaScript code within applications
  - Annotation on Java Types
