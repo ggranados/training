@@ -1,5 +1,7 @@
 # Method references
 
+---
+
 ## Table of Contents
 
 <!-- TOC -->

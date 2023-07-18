@@ -155,6 +155,7 @@ ___
  - [Method References](java-8/method-references.md)
  - Stream API
  - [Functional interface and default methods](java-8/functional-interfaces.md)
+ - [Built-in Functional Interfaces](java-8/built-in-functional-interfaces.md)
  - Optionals
  - Nashorn — JavaScript runtime which allows developers to embed JavaScript code within applications
  - Annotation on Java Types

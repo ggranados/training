@@ -1,5 +1,7 @@
 # Repeating Annotations
 
+---
+
 <!-- TOC -->
 * [Repeating Annotations](#repeating-annotations)
   * [Examples](#examples)

@@ -1,4 +1,7 @@
 # FP in Java
+
+---
+
 ## Table of Contents
 
 <!-- TOC -->
@@ -12,6 +15,7 @@
       * [- Visit: Functional Interfaces](#--visit-functional-interfaces)
       * [- Visit: Method References](#--visit-method-references)
   * [Built-in Functional Interfaces](#built-in-functional-interfaces)
+      * [- Visit: Built-in Functional Interfaces](#--visit-built-in-functional-interfaces)
   * [Streams API](#streams-api)
   * [Ref.](#ref)
 <!-- TOC -->
@@ -90,6 +94,8 @@ public class FunctionalProgrammingExample {
   }
 }
 ```
+
+#### - Visit: [Built-in Functional Interfaces](java-8/built-in-functional-interfaces.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 

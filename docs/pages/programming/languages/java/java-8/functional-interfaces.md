@@ -7,6 +7,7 @@
 * [Functional Interfaces](#functional-interfaces)
   * [Table of Contents](#table-of-contents)
   * [What's a Functional Interface?](#whats-a-functional-interface)
+      * [- Visit: Built-in Functional Interfaces](#--visit-built-in-functional-interfaces)
     * [Default Methods](#default-methods)
   * [Ref.](#ref)
 <!-- TOC -->
@@ -39,6 +40,13 @@ myFunction.doSomething(); // Output: "Doing something!"
 ```
 
 <sub>[Back to top](#table-of-contents)</sub>
+
+
+Java 8 introduced a set of built-in functional interfaces in the `java.util.function` package.
+
+#### - Visit: [Built-in Functional Interfaces](built-in-functional-interfaces.md)
+
+---
 
 ### Default Methods
 
@@ -109,8 +117,10 @@ As seen in the output, the overridden method doSomething() provides a custom imp
 
 ---
 
+
 ## Ref.
 
+https://www.baeldung.com/java-8-lambda-expressions-tips
 https://www.baeldung.com/java-8-functional-interfaces
 
 [^1]: https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/FunctionalInterface.html
