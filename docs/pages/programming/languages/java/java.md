@@ -21,6 +21,9 @@
       * [- Visit: Java Development](#--visit-java-development)
   * [How is Java Versioned?](#how-is-java-versioned)
       * [- Visit: Main Java Version Changes](#--visit-main-java-version-changes)
+  * [Functional Programing in Java](#functional-programing-in-java)
+      * [- Visit: Functional Programming](#--visit-functional-programming)
+      * [- Visit: FP in Java](#--visit-fp-in-java)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -99,6 +102,18 @@ Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and vers
 Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and versions 17, 11 and 8 are the currently supported long-term support (LTS) versions. [^8]
 
 #### - Visit: [Main Java Version Changes](versions.md#main-java-version-changes)
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+## Functional Programing in Java
+
+Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data.
+
+Java introduced functional programming features with the release of [Java 8](versions.md#java-8-lts) in March 2014.
+
+#### - Visit: [Functional Programming](../../paradigms/fp.md)
+#### - Visit: [FP in Java](fp.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 

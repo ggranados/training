@@ -129,6 +129,7 @@ https://www.baeldung.com/java-8-functional-interfaces
 
 [Get Started](../../../../../get-started.md) |
 [PF in Java](../versions.md#java-8-lts) |
-[Java 8](../versions.md#java-8-lts)
+[Java 8](../versions.md#java-8-lts) |
+[Java Development](../develop.md#lambdas-and-functional-interfaces)
 
 ---

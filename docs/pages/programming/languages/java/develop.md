@@ -73,9 +73,9 @@
 
 ### Lambdas and Functional Interfaces
   - [Lambda Expression](java-8/lamda-expression.md)
-  - Functional Interfaces
+  - [Functional Interfaces](java-8/functional-interfaces.md)
   - [Method References](java-8/method-references.md)
-  - Built in Functional Interfaces
+  - [Built in Functional Interfaces](java-8/built-in-functional-interfaces.md)
   
 ### Multithreading and Concurrency
 

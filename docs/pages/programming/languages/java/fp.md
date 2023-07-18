@@ -133,10 +133,15 @@ These functional programming features added in Java 8 and subsequent versions ma
 
 ## Ref.
 
----
+https://www.baeldung.com/java-8-lambda-expressions-tips
+https://www.baeldung.com/java-8-functional-interfaces
 
----
+___
 
+[Get Started](../../../../get-started.md) |
+[Back to top](#table-of-contents)
+
+___
 
 
 
