@@ -11,16 +11,16 @@
   * [What's Java?](#whats-java)
   * [What is Java programming language used for?](#what-is-java-programming-language-used-for)
   * [What's OOP?](#whats-oop)
-      * [Visit: Object Oriented Programming](#visit-object-oriented-programming)
-      * [Visit: OOP in Java](#visit-oop-in-java)
+      * [- Visit: Object Oriented Programming](#--visit-object-oriented-programming)
+      * [- Visit: OOP in Java](#--visit-oop-in-java)
   * [What's WORA?](#whats-wora)
   * [How is java Multi-platform?](#how-is-java-multi-platform)
   * [What is Java Virtual Machine?](#what-is-java-virtual-machine)
   * [How to Develop With Java?](#how-to-develop-with-java)
-      * [Visit: Oracle Java SE Documentation](#visit-oracle-java-se-documentation)
-      * [Visit: Java Development](#visit-java-development)
+      * [- Visit: Oracle Java SE Documentation](#--visit-oracle-java-se-documentation)
+      * [- Visit: Java Development](#--visit-java-development)
   * [How is Java Versioned?](#how-is-java-versioned)
-      * [Visit: Main Java Version Changes](#visit-main-java-version-changes)
+      * [- Visit: Main Java Version Changes](#--visit-main-java-version-changes)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -52,9 +52,9 @@ Java is also free for development. [^2]
 ## What's OOP?
 [Object-Oriented Programming (OOP)](../../paradigms/oop.md) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
 
-#### Visit: [Object Oriented Programming](../../paradigms/oop.md)
+#### - Visit: [Object Oriented Programming](../../paradigms/oop.md)
 
-#### Visit: [OOP in Java](oop.md)
+#### - Visit: [OOP in Java](oop.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -87,9 +87,9 @@ To begin programming in Java, you need to install a Java Edition on your system.
  - Java Micro Edition (Java ME)
  [^3]
 
-#### Visit: [Oracle Java SE Documentation](https://docs.oracle.com/en/java/javase/index.html)
+#### - Visit: [Oracle Java SE Documentation](https://docs.oracle.com/en/java/javase/index.html)
 
-#### Visit: [Java Development](develop.md)
+#### - Visit: [Java Development](develop.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -98,7 +98,7 @@ The Java language has undergone [several changes since JDK 1.0](versions.md#tabl
 Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and versions 17, 11 and 8 are the currently supported long-term support (LTS) versions
 Regarding Oracle Java SE Support Roadmap, version 20 is the latest one, and versions 17, 11 and 8 are the currently supported long-term support (LTS) versions. [^8]
 
-#### Visit: [Main Java Version Changes](versions.md#main-java-version-changes)
+#### - Visit: [Main Java Version Changes](versions.md#main-java-version-changes)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
