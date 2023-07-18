@@ -91,6 +91,9 @@ const square = num => num * num;
 const addAndSquare = (a, b) => square(add(a, b));
 ```
 
+<sub>[Back to top](#table-of-contents)</sub>
+
+
 ### Recursion
 Recursion is a fundamental concept in functional programming where a **function calls itself** to solve a problem.
 
@@ -151,12 +154,15 @@ const factorial = n => {
 
 // Output the results
 console.log("Addition:", add(2, 3)); // Output: 5
-console.log("Doubled Numbers:", doubledNumbers); // Output: [2, 4, 6]
+console.log("Doubled Numbers:", doubledNumbers); // Output: [2, 4, 6, 8]
 console.log("Even Numbers:", evenNumbers); // Output: [2]
 console.log("Total Sum of Even Numbers:", totalSumOfEvenNumbers); // Output: 2
 console.log("Factorial of 5:", factorial(5)); // Output: 120
 
 ```
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 
 ## Languages
 ### Pure Functional Programming Languages
