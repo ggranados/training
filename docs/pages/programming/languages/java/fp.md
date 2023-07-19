@@ -131,6 +131,73 @@ These functional programming features added in Java 8 and subsequent versions ma
 
 ---
 
+## FP Principles in Java
+
+## Closures
+
+In simple terms, a closure is a function bundled together with its lexical environment (the set of variables and their values) from the outer scope where it was created.
+
+#### - Visit: [Closures](../../paradigms/fp.md#closures)
+
+In Java, we can create an equivalent closure using anonymous inner classes or lambda expressions. Prior to Java 8, anonymous inner classes were commonly used to achieve closure-like behavior. However, with the introduction of lambda expressions, creating closures in Java became more concise and expressive.
+
+Using Anonymous class
+
+```java
+public class ClosureExample {
+    public static void main(String[] args) {
+        Counter counter = createCounter();
+        counter.increment(); // Output: Count: 1
+        counter.increment(); // Output: Count: 2
+        counter.increment(); // Output: Count: 3
+    }
+
+    public static Counter createCounter() {
+        // Using an anonymous inner class to create a closure
+        return new Counter() {
+            private int count = 0;
+
+            @Override
+            public void increment() {
+                count++;
+                System.out.println("Count: " + count);
+            }
+        };
+    }
+
+    interface Counter {
+        void increment();
+    }
+}
+```
+
+Using Lambda since Java 8
+
+```java
+public class ClosureExample {
+    public static void main(String[] args) {
+        Counter counter = createCounter();
+        counter.increment(); // Output: Count: 1
+        counter.increment(); // Output: Count: 2
+        counter.increment(); // Output: Count: 3
+    }
+
+    public static Counter createCounter() {
+        // Using a lambda expression to create a closure
+        int[] count = { 0 }; // Effectively final variable (for Java 8 and above)
+        return () -> {
+            count[0]++;
+            System.out.println("Count: " + count[0]);
+        };
+    }
+
+    interface Counter {
+        void increment();
+    }
+}
+```
+
+
 ## Ref.
 
 https://www.baeldung.com/java-8-lambda-expressions-tips

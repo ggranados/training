@@ -49,7 +49,7 @@ function add(a, b) {
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-### Immutable Data
+### Immutability
 Functional programming encourages the use of immutable data structures, where **data cannot be changed after creation**.
 
 Instead of modifying data, new data is created with each operation, ensuring data integrity.
@@ -125,6 +125,38 @@ console.log(greet("Alice")); // Output: "Hello, Alice!"
 ```
 
 <sub>[Back to top](#table-of-contents)</sub>
+
+### Closures
+
+A closure is a function that captures and retains the environment (i.e., the variables) in which it was created. This allows the function to access and manipulate the variables from its enclosing scope, even after that scope has finished executing.
+
+Closures are powerful because they enable functions to "remember" their context, making them particularly useful for creating higher-order functions and maintaining state in functional programming.
+
+```javascript
+function createCounter() {
+  let count = 0;
+
+  function increment() {
+    count++;
+    console.log("Count:", count);
+  }
+
+  return increment; // Returning the inner function (closure)
+}
+
+const counter = createCounter(); // `counter` now holds the closure
+
+counter(); // Output: Count: 1
+counter(); // Output: Count: 2
+counter(); // Output: Count: 3
+```
+
+In the above example, the function `createCounter` creates a closure by defining the inner function increment, which has access to the `count` variable from its outer scope.
+
+When you invoke `createCounter()`, it returns the inner function `increment`, preserving the context (the value of count). The variable `count` is part of the closure, and it gets incremented and printed each time you call `counter()`, even though `createCounter()` has already finished executing.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 
 ## Examples
 
