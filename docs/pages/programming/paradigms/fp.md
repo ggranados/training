@@ -9,11 +9,12 @@
   * [What's FP](#whats-fp)
   * [FP Principles](#fp-principles)
     * [Pure Functions](#pure-functions)
-    * [Immutable Data](#immutable-data)
+    * [Immutability](#immutability)
     * [Higher-Order Functions](#higher-order-functions)
     * [Function Composition](#function-composition)
     * [Recursion](#recursion)
     * [First-Class Functions](#first-class-functions)
+    * [Closures](#closures)
   * [Examples](#examples)
   * [Languages](#languages)
     * [Pure Functional Programming Languages](#pure-functional-programming-languages)
@@ -238,6 +239,6 @@ https://www.baeldung.com/java-functional-programming#:~:text=Basically%2C%20func
 
 ---
 
-[Get Started](../../../get-started.md) 
+[Get Started](../../../get-started.md#paradigms) 
 
 ---

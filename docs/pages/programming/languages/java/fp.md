@@ -17,6 +17,11 @@
   * [Built-in Functional Interfaces](#built-in-functional-interfaces)
       * [- Visit: Built-in Functional Interfaces](#--visit-built-in-functional-interfaces)
   * [Streams API](#streams-api)
+  * [FP Principles in Java](#fp-principles-in-java)
+  * [Pure Functions](#pure-functions)
+      * [- Visit: Pure Function](#--visit-pure-function)
+  * [Closures](#closures)
+      * [- Visit: Closures](#--visit-closures)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -132,6 +137,73 @@ These functional programming features added in Java 8 and subsequent versions ma
 ---
 
 ## FP Principles in Java
+
+## Pure Functions
+
+In Java, a pure function is a function that always produces the same output for the same input and has no side effects, meaning it doesn't modify any state outside of its scope. 
+
+#### - Visit: [Pure Function](../../paradigms/fp.md#pure-functions)
+
+```java
+ // Pure function: No side effects, always returns the same output for the same input.
+    public static int add(int x, int y) {
+        return x + y;
+    }
+```
+Calling add(5, 10) will always return 15, regardless of when or where the method is called.
+
+In Java, a function can still be considered pure even if it takes object references as parameters. The key is that the function should not modify the state of the objects it receives as arguments. It should only use the object's properties or methods to perform computations and return a result based on that, without introducing side effects.
+
+Considering class Point:
+
+```java
+class Point {
+  private int x;
+  private int y;
+
+  public Point(int x, int y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  public int getX() {
+    return x;
+  }
+
+  public int getY() {
+    return y;
+  }
+}
+```
+
+The `calculateDistance` method takes two Point objects as parameters and calculates the distance between them using their x and y coordinates. The function doesn't modify the Point objects, nor does it have any side effects.
+
+```java
+  // Pure function: No side effects, only uses object properties for computation.
+  public static double calculateDistance(Point p1, Point p2) {
+      int xDiff = p2.getX() - p1.getX();
+      int yDiff = p2.getY() - p1.getY();
+      return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+  }
+```
+
+The function will always return the same result for the same input Point objects, adhering to the principles of purity.
+
+```java
+    public static void main(String[] args) {
+        Point p1 = new Point(2, 3);
+        Point p2 = new Point(5, 7);
+
+        // Pure function call
+        double distance = calculateDistance(p1, p2);
+
+        System.out.println("Distance: " + distance); // Output: Distance: 5.0
+    }
+```
+
+Pure functions are predictable, easy to test, and have several advantages in terms of reasoning about code and achieving concurrency.
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Closures
 
