@@ -20,6 +20,8 @@
   * [FP Principles in Java](#fp-principles-in-java)
   * [Pure Functions](#pure-functions)
       * [- Visit: Pure Function](#--visit-pure-function)
+  * [Immutability](#immutability)
+      * [- Visit: Immutability](#--visit-immutability)
   * [Closures](#closures)
       * [- Visit: Closures](#--visit-closures)
   * [Ref.](#ref)
@@ -202,6 +204,76 @@ The function will always return the same result for the same input Point objects
 ```
 
 Pure functions are predictable, easy to test, and have several advantages in terms of reasoning about code and achieving concurrency.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Immutability
+
+Immutable data structures refers to data that cannot be changed after creation.
+
+#### - Visit: [Immutability](../../paradigms/fp.md#immutability)
+
+In Java, To make a class fully immutable, you need to take this steps:
+
+**- Make the properties final:**
+  Declare the properties as final to ensure they are assigned only once during object creation and cannot be changed afterward.
+
+**- Remove setters:** 
+Remove any methods that allow modifying the properties after the object is created, such as setter methods.
+
+**- Return copies of mutable objects:** 
+If the class contains mutable objects, like arrays or other objects, when returning them from getter methods, return a copy instead of the original reference. This ensures that the internal state of the object cannot be altered from outside the class.
+
+Here's the Person class achieving full immutability:
+
+```java
+final class Person {
+  private final String name;
+  private final int age;
+  private final List<String> hobbies;
+
+  public Person(String name, int age, List<String> hobbies) {
+    this.name = name;
+    this.age = age;
+    this.hobbies = new ArrayList<>(hobbies); // Creating a new copy to ensure immutability
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public List<String> getHobbies() {
+    return Collections.unmodifiableList(hobbies); // Returning an unmodifiable view of the hobbies list
+  }
+}
+```
+
+By following these practices, the Person class becomes immutable, ensuring that once a Person object is created, its state cannot be changed. This property makes the class thread-safe and facilitates reasoning about the code in concurrent environments.
+
+```java
+public class ImmutablePointExample {
+    public static void main(String[] args) {
+        Point p1 = new Point(2, 3);
+        Point p2 = new Point(5, 7);
+
+        // Pure function call
+        double distance = calculateDistance(p1, p2);
+
+        System.out.println("Distance: " + distance); // Output: Distance: 5.0
+    }
+
+    // Pure function: No side effects, only uses object properties for computation.
+    public static double calculateDistance(Point p1, Point p2) {
+        int xDiff = p2.getX() - p1.getX();
+        int yDiff = p2.getY() - p1.getY();
+        return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+    }
+}
+```
 
 <sub>[Back to top](#table-of-contents)</sub>
 
