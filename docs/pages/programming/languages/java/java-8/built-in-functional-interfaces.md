@@ -21,7 +21,6 @@
     * [Function](#function-1)
     * [Supplier](#supplier-1)
     * [UnaryOperator](#unaryoperator-1)
-      * [- Visit: java.util.function Documentation](#--visit-javautilfunction-documentation)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -309,7 +308,7 @@ Summary of the primitive version of functional interfaces:
 
 ---
 
-#### - Visit: [java.util.function Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
+- See also: [java.util.function Documentation](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html)
 
 ---
 

@@ -7,7 +7,6 @@
 * [Functional Interfaces](#functional-interfaces)
   * [Table of Contents](#table-of-contents)
   * [What's a Functional Interface?](#whats-a-functional-interface)
-      * [- Visit: Built-in Functional Interfaces](#--visit-built-in-functional-interfaces)
     * [Default Methods](#default-methods)
   * [Ref.](#ref)
 <!-- TOC -->
@@ -44,7 +43,7 @@ myFunction.doSomething(); // Output: "Doing something!"
 
 Java 8 introduced a set of built-in functional interfaces in the `java.util.function` package.
 
-#### - Visit: [Built-in Functional Interfaces](built-in-functional-interfaces.md)
+- See also: [Built-in Functional Interfaces](built-in-functional-interfaces.md)
 
 ---
 

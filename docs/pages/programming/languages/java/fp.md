@@ -8,27 +8,15 @@
 * [FP in Java](#fp-in-java)
   * [Table of Contents](#table-of-contents)
   * [How is FP implemented in Java?](#how-is-fp-implemented-in-java)
-      * [- Visit: Java 8](#--visit-java-8)
   * [Lambda Expressions](#lambda-expressions)
-      * [- Visit: Lambda Expression](#--visit-lambda-expression)
   * [Functional Interfaces](#functional-interfaces)
-      * [- Visit: Functional Interfaces](#--visit-functional-interfaces)
-      * [- Visit: Method References](#--visit-method-references)
   * [Built-in Functional Interfaces](#built-in-functional-interfaces)
-      * [- Visit: Built-in Functional Interfaces](#--visit-built-in-functional-interfaces)
   * [Streams API](#streams-api)
   * [FP Principles in Java](#fp-principles-in-java)
   * [Pure Functions](#pure-functions)
-      * [- Visit: Pure Function](#--visit-pure-function)
   * [Immutability](#immutability)
-      * [- Visit: Immutability](#--visit-immutability)
-    * [Higher-order Functions](#higher-order-functions)
-      * [- Visit: Higher-order Functions](#--visit-higher-order-functions)
-      * [- Visit: Lambda Expression](#--visit-lambda-expression-1)
-      * [- Visit: Method References](#--visit-method-references-1)
-      * [- Visit: Built-in Functional](#--visit-built-in-functional)
+  * [Higher-order Functions](#higher-order-functions)
   * [Closures](#closures)
-      * [- Visit: Closures](#--visit-closures)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -36,7 +24,7 @@
 
 Java introduced functional programming features with the release of [Java 8](versions.md#java-8-lts) in March 2014.
 
-#### - Visit: [Java 8](versions.md#java-8-lts)
+- See also: [Java 8](versions.md#java-8-lts)
 
 Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data. 
 
@@ -62,7 +50,7 @@ For example, a simple lambda expression that adds two numbers would look like th
 (int a, int b) -> a + b
 ```
 
-#### - Visit: [Lambda Expression](java-8/lamda-expression.md)
+- See also: [Lambda Expression](java-8/lamda-expression.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -77,15 +65,14 @@ Java 8 introduced the `@FunctionalInterface` annotation, which can be used to ex
 For example:
 
 ```java
-
 @FunctionalInterface
 interface MyFunction {
     int apply(int x, int y);
 }
 ```
 
-#### - Visit: [Functional Interfaces](java-8/functional-interfaces.md)
-#### - Visit: [Method References](java-8/method-references.md)
+- See also: [Functional Interfaces](java-8/functional-interfaces.md)
+- See also: [Method References](java-8/method-references.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -107,7 +94,7 @@ public class FunctionalProgrammingExample {
 }
 ```
 
-#### - Visit: [Built-in Functional Interfaces](java-8/built-in-functional-interfaces.md)
+- See also: [Built-in Functional Interfaces](java-8/built-in-functional-interfaces.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -149,7 +136,7 @@ These functional programming features added in Java 8 and subsequent versions ma
 
 In Java, a pure function is a function that always produces the same output for the same input and has no side effects, meaning it doesn't modify any state outside of its scope. 
 
-#### - Visit: [Pure Function](../../paradigms/fp.md#pure-functions)
+- See also: [Pure Function](../../paradigms/fp.md#pure-functions)
 
 ```java
  // Pure function: No side effects, always returns the same output for the same input.
@@ -216,7 +203,7 @@ Pure functions are predictable, easy to test, and have several advantages in ter
 
 Immutable data structures refers to data that cannot be changed after creation.
 
-#### - Visit: [Immutability](../../paradigms/fp.md#immutability)
+- See also: [Immutability](../../paradigms/fp.md#immutability)
 
 In Java, To make a class fully immutable, you need to take this steps:
 
@@ -282,11 +269,11 @@ public class ImmutablePointExample {
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-### Higher-order Functions
+## Higher-order Functions
 
 A higher-order function is a function that either takes another function as an argument or returns a function as its result.
 
-#### - Visit: [Higher-order Functions](../../paradigms/fp.md#higher-order-functions)
+- See also: [Higher-order Functions](../../paradigms/fp.md#higher-order-functions)
 
 In modern Java, you can demonstrate the higher-order functions principle using lambda expressions or method references.
 
@@ -317,9 +304,9 @@ public class HigherOrderFunctionExample {
 }
 ```
 
-#### - Visit: [Lambda Expression](java-8/lamda-expression.md)
-#### - Visit: [Method References](java-8/method-references.md)
-#### - Visit: [Built-in Functional](java-8/built-in-functional-interfaces.md)
+- See also: [Lambda Expression](java-8/lamda-expression.md)
+- See also: [Method References](java-8/method-references.md)
+- See also: [Built-in Functional](java-8/built-in-functional-interfaces.md)
 <!-- ### - Visit: [Stream API](java-8/stream-api.md) -->
 
 <sub>[Back to top](#table-of-contents)</sub>
@@ -328,7 +315,7 @@ public class HigherOrderFunctionExample {
 
 In simple terms, a closure is a function bundled together with its lexical environment (the set of variables and their values) from the outer scope where it was created.
 
-#### - Visit: [Closures](../../paradigms/fp.md#closures)
+- See also: [Closures](../../paradigms/fp.md#closures)
 
 In Java, we can create an equivalent closure using anonymous inner classes or lambda expressions. Prior to Java 8, anonymous inner classes were commonly used to achieve closure-like behavior. However, with the introduction of lambda expressions, creating closures in Java became more concise and expressive.
 
