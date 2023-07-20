@@ -243,8 +243,7 @@ https://www.baeldung.com/java-functional-programming#:~:text=Basically%2C%20func
 
 ---
 
-<!-- TODO:
-add: 
+<!-- TODO:add: 
   Principles:
   
     Lazy evaluation

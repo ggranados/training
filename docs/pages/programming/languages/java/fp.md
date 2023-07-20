@@ -307,7 +307,51 @@ public class HigherOrderFunctionExample {
 - See also: [Lambda Expression](java-8/lamda-expression.md)
 - See also: [Method References](java-8/method-references.md)
 - See also: [Built-in Functional](java-8/built-in-functional-interfaces.md)
-<!-- ### - Visit: [Stream API](java-8/stream-api.md) -->
+<!-- TODO:- See also: [Stream API](java-8/stream-api.md) -->
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Function Composition
+
+Functions can be composed by chaining them together, creating more complex behaviors from simpler functions.
+
+- See also:
+[Function Composition](../../paradigms/fp.md#function-composition)
+
+Function composition in modern Java can be demonstrated using the andThen and compose methods from the java.util.function.Function interface. These methods allow you to combine multiple functions together to create new functions that represent the composition of the original functions.
+
+```java
+import java.util.function.Function;
+
+public class FunctionCompositionExample {
+  public static void main(String[] args) {
+    // Function to double the input
+    Function<Integer, Integer> doubleFunction = num -> num * 2;
+
+    // Function to add 10 to the input
+    Function<Integer, Integer> addTenFunction = num -> num + 10;
+
+    // Function composition using andThen: double -> add 10
+    Function<Integer, Integer> composedFunction1 = doubleFunction.andThen(addTenFunction);
+
+    // Function composition using compose: add 10 -> double
+    Function<Integer, Integer> composedFunction2 = doubleFunction.compose(addTenFunction);
+
+    int inputNumber = 5;
+
+    // Using the composed functions
+    int result1 = composedFunction1.apply(inputNumber);
+    int result2 = composedFunction2.apply(inputNumber);
+
+    System.out.println("Result using andThen: " + result1); // Output: Result using andThen: 20
+    System.out.println("Result using compose: " + result2); // Output: Result using compose: 30
+  }
+}
+```
+
+This example illustrates how the andThen and compose methods affect the function composition differently.
+
+<!-- TODO:- See also: [Function Composition](java-8/function-composition.md) -->
 
 <sub>[Back to top](#table-of-contents)</sub>
 
