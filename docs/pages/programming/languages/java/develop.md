@@ -64,12 +64,16 @@
 
 ### Generics and Collections
 
-  - Using generics in classes and methods
-  - ArrayList, LinkedList, and other collection classes
-  - Maps and Sets
-  - Iterating over collections
-  - Sorting and searching
-  - Streams
+  - [Working with Generics](java-5/generics.md)
+  - Using Common Collection APIs
+  - List Interface
+  - Set Interface
+  - Queue and Deque Interfaces
+  - Map interface
+  - Comparing
+  - Sorting
+  - Searching
+  - [Streams](java-8/stream-api.md)
 
 ### Lambdas and Functional Interfaces
   - [Lambda Expression](java-8/lamda-expression.md)
