@@ -8,15 +8,16 @@
 * [FP in Java](#fp-in-java)
   * [Table of Contents](#table-of-contents)
   * [How is FP implemented in Java?](#how-is-fp-implemented-in-java)
-  * [Lambda Expressions](#lambda-expressions)
-  * [Functional Interfaces](#functional-interfaces)
-  * [Built-in Functional Interfaces](#built-in-functional-interfaces)
-  * [Streams API](#streams-api)
+    * [Lambda Expressions](#lambda-expressions)
+    * [Functional Interfaces](#functional-interfaces)
+    * [Built-in Functional Interfaces](#built-in-functional-interfaces)
+    * [Streams API](#streams-api)
   * [FP Principles in Java](#fp-principles-in-java)
-  * [Pure Functions](#pure-functions)
-  * [Immutability](#immutability)
-  * [Higher-order Functions](#higher-order-functions)
-  * [Closures](#closures)
+    * [Pure Functions](#pure-functions)
+    * [Immutability](#immutability)
+    * [Higher-order Functions](#higher-order-functions)
+    * [Function Composition](#function-composition)
+    * [Closures](#closures)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -33,7 +34,7 @@ Java implemented functional programming features primarily through the addition 
 <sub>[Back to top](#table-of-contents)</sub>
 
 
-## Lambda Expressions
+### Lambda Expressions
 Lambda expressions are anonymous functions that allow you to treat functionality as a method argument, or even as a return value. 
 
 They provide a concise way to express behavior that can be passed around, making it easier to write code in a functional style. 
@@ -54,7 +55,7 @@ For example, a simple lambda expression that adds two numbers would look like th
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Functional Interfaces
+### Functional Interfaces
 
 Functional interfaces are interfaces that have **exactly one abstract** method. 
 
@@ -76,7 +77,7 @@ interface MyFunction {
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Built-in Functional Interfaces
+### Built-in Functional Interfaces
 Java 8 introduced a set of built-in functional interfaces in the `java.util.function` package. 
 
 These interfaces cover common functional use cases, such as `Function`, `Predicate`, `Consumer`, and `Supplier`, among others. They provide a standard way of writing functional-style code without the need to create custom functional interfaces for every use case.
@@ -98,7 +99,7 @@ public class FunctionalProgrammingExample {
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Streams API
+### Streams API
 
 Java 8 also introduced the Stream API, which allows you to perform aggregate operations on collections in a functional style. 
 
@@ -132,7 +133,7 @@ These functional programming features added in Java 8 and subsequent versions ma
 
 ## FP Principles in Java
 
-## Pure Functions
+### Pure Functions
 
 In Java, a pure function is a function that always produces the same output for the same input and has no side effects, meaning it doesn't modify any state outside of its scope. 
 
@@ -199,7 +200,7 @@ Pure functions are predictable, easy to test, and have several advantages in ter
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Immutability
+### Immutability
 
 Immutable data structures refers to data that cannot be changed after creation.
 
@@ -269,7 +270,7 @@ public class ImmutablePointExample {
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Higher-order Functions
+### Higher-order Functions
 
 A higher-order function is a function that either takes another function as an argument or returns a function as its result.
 
@@ -311,7 +312,7 @@ public class HigherOrderFunctionExample {
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Function Composition
+### Function Composition
 
 Functions can be composed by chaining them together, creating more complex behaviors from simpler functions.
 
@@ -355,7 +356,7 @@ This example illustrates how the andThen and compose methods affect the function
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-## Closures
+### Closures
 
 In simple terms, a closure is a function bundled together with its lexical environment (the set of variables and their values) from the outer scope where it was created.
 
