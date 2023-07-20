@@ -242,3 +242,25 @@ https://www.baeldung.com/java-functional-programming#:~:text=Basically%2C%20func
 [Get Started](../../../get-started.md#paradigms) 
 
 ---
+
+<!-- TODO:
+add: 
+  Principles:
+  
+    Lazy evaluation
+    Memoization
+    Partial application
+    Tail-call optimization
+    Higher-order data structures
+    Stream processing
+    Pattern matching
+  
+  Techniques:
+  
+    Lambda expressions
+    Currying
+    Map, Filter, Reduce
+    Monads
+    Function chaining
+    Parallelism and concurrency in functional programming.
+-->

@@ -22,6 +22,11 @@
       * [- Visit: Pure Function](#--visit-pure-function)
   * [Immutability](#immutability)
       * [- Visit: Immutability](#--visit-immutability)
+    * [Higher-order Functions](#higher-order-functions)
+      * [- Visit: Higher-order Functions](#--visit-higher-order-functions)
+      * [- Visit: Lambda Expression](#--visit-lambda-expression-1)
+      * [- Visit: Method References](#--visit-method-references-1)
+      * [- Visit: Built-in Functional](#--visit-built-in-functional)
   * [Closures](#closures)
       * [- Visit: Closures](#--visit-closures)
   * [Ref.](#ref)
@@ -274,6 +279,48 @@ public class ImmutablePointExample {
     }
 }
 ```
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+### Higher-order Functions
+
+A higher-order function is a function that either takes another function as an argument or returns a function as its result.
+
+#### - Visit: [Higher-order Functions](../../paradigms/fp.md#higher-order-functions)
+
+In modern Java, you can demonstrate the higher-order functions principle using lambda expressions or method references.
+
+In this example, we have a higher-order function map, which takes a List of input elements and a Function to transform each element of the list. The map function is generic, allowing it to work with different types of input and output. It uses the Stream API to process the elements in the list, applying the transformation defined by the provided mapper function.
+
+```java
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+
+public class HigherOrderFunctionExample {
+  public static void main(String[] args) {
+            List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+            // Higher-order function: map()
+            List<String> numberStrings = map(numbers, n -> "Number: " + n);
+
+            // Print the result
+            numberStrings.forEach(System.out::println);
+  }
+
+  // Higher-order function: Takes a List of input and a Function to transform elements.
+  public static <T, R> List<R> map(List<T> list, Function<T, R> mapper) {
+    return list.stream()
+                .map(mapper)
+                .toList();
+  }
+}
+```
+
+#### - Visit: [Lambda Expression](java-8/lamda-expression.md)
+#### - Visit: [Method References](java-8/method-references.md)
+#### - Visit: [Built-in Functional](java-8/built-in-functional-interfaces.md)
+<!-- ### - Visit: [Stream API](java-8/stream-api.md) -->
 
 <sub>[Back to top](#table-of-contents)</sub>
 
