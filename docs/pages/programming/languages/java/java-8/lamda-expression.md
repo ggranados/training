@@ -38,6 +38,8 @@ Runnable runnable = () -> System.out.println("Hello world two!");
 ![Anatomy of Lambda Expression](../../../../../img/lambda-expression.jpg) 
 [^1]
 
+- See also [FP in Java](../fp.md)
+
 ---
 
 ## Examples
@@ -101,6 +103,7 @@ Lastly, the code showcases a lambda expression with a single parameter using the
 
 <sub>[View on Github](https://github.com/ggranados/java/blob/master/FunctionalProgramming/src/org/linkedinlearning/functionalprogramming/lambda/LambdaExpressionSyntax.java)</sub> |
 <sub>[Back to top](#table-of-contents)</sub>
+
 
 
 

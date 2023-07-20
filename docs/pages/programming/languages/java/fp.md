@@ -17,6 +17,8 @@
     * [Immutability](#immutability)
     * [Higher-order Functions](#higher-order-functions)
     * [Function Composition](#function-composition)
+    * [Recursion](#recursion)
+    * [First-Class Functions](#first-class-functions)
     * [Closures](#closures)
   * [Ref.](#ref)
 <!-- TOC -->
@@ -353,6 +355,90 @@ public class FunctionCompositionExample {
 This example illustrates how the andThen and compose methods affect the function composition differently.
 
 <!-- TODO:- See also: [Function Composition](java-8/function-composition.md) -->
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+### Recursion
+
+Recursion is a programming technique where a function calls itself in order to solve a problem. 
+
+- See also: [Recursion](../../paradigms/fp.md#recursion)
+
+The process continues until a base case is reached, at which point the function stops calling itself and starts returning results, which are then combined to solve the original problem.
+
+```java
+public class RecursionExample {
+    public static void main(String[] args) {
+        int number = 5;
+        int factorial = calculateFactorial(number);
+        System.out.println("Factorial of " + number + " is: " + factorial);
+    }
+
+    public static int calculateFactorial(int n) {
+        if (n == 0) {
+            return 1; // Base case: Factorial of 0 is 1
+        } else {
+            return n * calculateFactorial(n - 1); // Recursive call
+        }
+    }
+}
+```
+
+The method uses recursion to break down the problem into smaller subproblems:
+
+- Base case: If the input n is 0, the method returns 1, as the factorial of 0 is 1.
+
+
+- Recursive case: If the input n is greater than 0, the method calls itself with the argument n - 1, effectively reducing the problem to calculating the factorial of n - 1.
+
+The recursive calls continue until the base case is reached (when n becomes 0), and the results are then combined to get the final result, which is the factorial of the original input number.
+
+When we run the code, the output will be:
+
+```java
+Factorial of 5 is: 120
+```
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+### First-Class Functions
+In languages with first-class functions, functions are treated just like any other data type, enabling powerful functional programming paradigms.This means that functions can be assigned to variables, passed as arguments to other functions, returned as values from functions, and stored in data structures like arrays or lists.
+
+- See also: [First-Class Funtions](../../paradigms/fp.md#first-class-functions)
+
+```java
+import java.util.function.Function;
+
+public class FirstClassFunctionExample {
+  public static void main(String[] args) {
+    // Assigning a function to a variable
+    Function<Integer, Integer> doubleFunction = num -> num * 2;
+
+    // Passing a function as an argument to another function
+    int result1 = applyFunction(5, doubleFunction); // Output: 10
+    int result2 = applyFunction(8, num -> num + 3); // Output: 11
+
+    // Returning a function from another function
+    Function<Integer, Integer> addFiveFunction = getAddFiveFunction();
+    int result3 = addFiveFunction.apply(7); // Output: 12
+  }
+
+  // Function that takes a function as an argument
+  public static int applyFunction(int value, Function<Integer, Integer> func) {
+    return func.apply(value);
+  }
+
+  // Function that returns a function
+  public static Function<Integer, Integer> getAddFiveFunction() {
+    return num -> num + 5;
+  }
+}
+
+```
+
+In this example, we demonstrate the features of first-class functions in modern Java using lambda expressions. 
+
+- See also: [Lambda Expression](java-8/lamda-expression.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
