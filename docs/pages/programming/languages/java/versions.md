@@ -1,35 +1,48 @@
-# Main Java Version Changes 
+# Main Java Version Changes
 
 All language features from Java 8 serve as very good Java base knowledge and everything else (Java 9-20) is pretty much additional features on top of that baseline
 
+Visit: [Oracle Java Language Updates](https://docs.oracle.com/en/java/javase/20/language/java-language-changes.html#GUID-6459681C-6881-45D8-B0DB-395D1BD6DB9B)
+
+---
+
 ## Table of Contents
-1. [Java 1](#Java-1)
-2. [Java 1.1](#Java-11)
-3. [Java 1.2](#Java-12)
-4. [Java 1.3](#Java-13)
-5. [Java 1.4](#Java-14)
-6. [Java 5](#Java-5)
-7. [Java 6](#Java-6)
-8. [Java 7](#Java-7)
-9. [Java 8](#Java-8)
-10. [Java 9](#Java-9)
-11. [Java 10](#Java-10)
-12. [Java 11](#Java-5)
-13. [Java 12](#Java-5)
-14. [Java 13](#Java-5)
-15. [Java 14](#Java-5)
-16. [Java 15](#Java-5)
-17. [Java 16](#Java-5)
-18. [Java 17](#Java-5)
-19. [Java 18](#Java-5)
-20. [Java 19](#Java-5)
-21. [Java 20](#Java-20)
-22. [Java 21](#Java-21)
+<!-- TOC -->
+* [Main Java Version Changes](#main-java-version-changes)
+  * [Table of Contents](#table-of-contents)
+  * [Java 1](#java-1)
+  * [Java 1.1](#java-11)
+  * [Java 1.2](#java-12)
+  * [Java 1.3](#java-13)
+  * [Java 1.4](#java-14)
+  * [Java 5](#java-5)
+  * [Java 6 LTS](#java-6-lts)
+  * [Java 7](#java-7)
+  * [Java 8 LTS](#java-8-lts)
+  * [Java 9](#java-9)
+  * [Java 10](#java-10)
+  * [Java 11 LTS](#java-11-lts)
+  * [Java 12](#java-12-1)
+  * [Java 13](#java-13-1)
+  * [Java 14](#java-14-1)
+  * [Java 15](#java-15)
+  * [Java 16](#java-16)
+  * [Java 17 LTS](#java-17-lts)
+  * [Java 18](#java-18)
+  * [Java 19](#java-19)
+  * [Java 20](#java-20)
+  * [Java 21 LTS](#java-21-lts)
+  * [Ref.](#ref)
+<!-- TOC -->
+
+___
 
 ## Java 1
 (released in January 1996)
 
 - The first stable version
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 1.1
 (released in February 1997)
@@ -43,6 +56,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - JIT (Just In Time) compiler for Windows
 - Internationalization and Unicode support originating from Taligent
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 1.2
 (released in December 1998)
 
@@ -53,6 +68,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Collections framework
 - Reference Types
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 1.3
 (released in May 2000)
 
@@ -61,6 +78,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Java Platform Debugger Architecture (JPDA)
 - JavaSound
 - Synthetic proxy classes
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 1.4
 (released in February 2002)
@@ -77,6 +96,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Java Web Start
 - Preferences API (java.util.prefs)
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 5
 (released in September 2004)
 
@@ -90,7 +111,9 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - New concurrency utilities in java.util.concurrent
 - Scanner class for parsing data from various input streams and buffers.
 
-## Java 6
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Java 6 LTS
 (released in December 2006)
 
 - Scripting Language Support
@@ -101,6 +124,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - JAXB 2.0 and StAX parser
 - Pluggable annotations
 - New GC algorithms
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 7
 (released in July 2011)
@@ -121,22 +146,27 @@ All language features from Java 8 serve as very good Java base knowledge and eve
  - APIs for the graphics features
  - Support for new network protocols, including SCTP and Sockets Direct Protocol
 
-## Java 8
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Java 8 LTS
 (released in March 2014):
 
- - [Lambda expression support in APIs](java-8/features/lamda-expression.md)
- - [Method References](java-8/features/method-references.md)
+ - [Lambda expression support in APIs](java-8/lamda-expression.md)
+ - [Method References](java-8/method-references.md)
  - Stream API
- - Functional interface and default methods
+ - [Functional interface and default methods](java-8/functional-interfaces.md)
+ - [Built-in Functional Interfaces](java-8/built-in-functional-interfaces.md)
  - Optionals
  - Nashorn — JavaScript runtime which allows developers to embed JavaScript code within applications
  - Annotation on Java Types
  - Unsigned Integer Arithmetic
- - [Repeating annotations](java-8/features/repeating-annotations.md)
+ - [Repeating annotations](java-8/repeating-annotations.md)
  - New Date and Time API
  - Statically-linked JNI libraries
  - Launch JavaFX applications from jar files
  - Remove the permanent generation from GC
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 9
 (released in September 2017):
@@ -149,6 +179,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Private methods in interfaces
 - Improved version string scheme 
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 10
 (released in March 2018):
 
@@ -157,7 +189,9 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Garbage Collector Interface
 - Time-based release versioning
 
-## Java 11
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Java 11 LTS
 (released in September 2018):
 
 - Local variable syntax for lambda parameters
@@ -165,6 +199,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Flight Recorder (profiling and diagnostics)
 - Launch Single-File Source-Code Programs
 - Epsilon Garbage Collector
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 12
 (released in March 2019):
@@ -175,6 +211,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Shenandoah Garbage Collector (experimental)
 - Microbenchmark Suite
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 13
 (released in September 2019):
 
@@ -183,6 +221,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Dynamic CDS Archives
 - ZGC (experimental garbage collector)
 - Reimplement the Legacy Socket API
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 14
 (released in March 2020):
@@ -193,6 +233,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - ZGC: Concurrent Thread-Stack Processing
 - Non-Volatile Mapped Byte Buffers
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 15
 (released in September 2020):
 
@@ -201,6 +243,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Text blocks (standard feature)
 - ZGC: NUMA-Aware Memory Allocation
 - Unix-Domain Socket Channels
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 16
 (released in March 2021):
@@ -211,7 +255,9 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Foreign function and memory API (Incubator)
 - Alpine Linux Support
 
-## Java 17
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Java 17 LTS
 (released in September 2021):
 
 - Sealed classes (final form)
@@ -220,6 +266,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 - Foreign function and memory API (standard feature)
 - Sealed class JARs
 - macOS rendering pipeline for AWT and Swing
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 18
 (released in March 2022):
@@ -234,6 +282,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Pattern Matching for switch (Second Preview)
 -  Deprecate Finalization for Removal
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Java 19
 (released in September 2022):
 
@@ -244,6 +294,8 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Vector API (Fourth Incubator)
 -  Pattern Matching for switch (Third Preview)
 -  Structured Concurrency (Incubator)
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Java 20
 (released in March 2023):
@@ -256,7 +308,9 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Structured Concurrency (Second Incubator)
 -  Vector API (Fifth Incubator)
 
-## Java 21
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Java 21 LTS
 (to be released in September 2023):
 
 -  String Templates (Preview)
@@ -275,13 +329,23 @@ All language features from Java 8 serve as very good Java base knowledge and eve
 -  Key Encapsulation Mechanism API
 -  Structured Concurrency (Preview)
 
+<sub>[Back to top](#table-of-contents)</sub>
 
-[:arrow_up:Back to top](#table-of-contents)
 
----
-### Ref.
+___
 
+[Get Started](../../../../get-started.md) |
+[Java](java.md#how-is-java-versioned) |
+[Back to top](#table-of-contents)
+
+___
+
+## Ref.
+
+ - https://docs.oracle.com/en/java/javase/20/language/java-language-changes.html#GUID-6459681C-6881-45D8-B0DB-395D1BD6DB9B
  - https://medium.com/codex/java-history-from-1-0-to-java-18-d62f69b2a48a
  - https://www.marcobehler.com/guides/a-guide-to-java-versions-and
  - https://ondro.inginea.eu/index.php/new-in-java-versions-since-java-8/
  - https://en.wikipedia.org/wiki/Java_version_history
+
+---
