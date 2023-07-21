@@ -125,5 +125,6 @@ https://www.geeksforgeeks.org/how-to-learn-java-collections-a-complete-guide/
 ---
 
 [Get Started](../../../../../get-started.md) |
-[Java 1.2](../versions.md#java-12)
+[Java 1.2](../versions.md#java-12) |
+[Java Development](../develop.md#reflection-and-dynamic-class-loading)
 ---

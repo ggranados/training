@@ -49,7 +49,8 @@ https://www.baeldung.com/java-diamond-operator
 
 ---
 
-[Get Started](../../get-started.md) |
-[Java 7](../versions.md#java-7)
+[Get Started](../../../../../get-started.md) |
+[Java 7](../versions.md#java-7) |
+[Java Development](../develop.md#reflection-and-dynamic-class-loading)
 
 ---
