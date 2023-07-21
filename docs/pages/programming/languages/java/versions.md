@@ -65,7 +65,7 @@ ___
 - Swing graphical API
 - Sun’s JVM was equipped with a JIT compiler for the first time
 - Java plug-in
-- Collections framework
+- [Collections API](java-1_2/collections-api.md)
 - Reference Types
 
 <sub>[Back to top](#table-of-contents)</sub>
@@ -101,7 +101,7 @@ ___
 ## Java 5
 (released in September 2004)
 
-- Generics
+- [Generics](java-5/generics.md)
 - Annotations
 - Autoboxing/unboxing
 - Enumerations
@@ -134,7 +134,8 @@ ___
  - Compressed 64-bit pointers
  - Strings in switch
  - Automatic resource management in try-statement
- - The diamond operator
+ - [The Diamond Operator](java-7/diamond-operator.md)
+ - [Updated Collections API](java-7/updated-collections.md)
  - Simplified varargs method declaration
  - Binary integer literals
  - Underscores in numeric literals

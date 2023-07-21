@@ -13,6 +13,7 @@
     * [Java Standard Library](#java-standard-library)
     * [Generics and Collections](#generics-and-collections)
     * [Lambdas and Functional Interfaces](#lambdas-and-functional-interfaces)
+    * [Functional Programming (FP)](#functional-programming-fp)
     * [Multithreading and Concurrency](#multithreading-and-concurrency)
     * [Input/Output (I/O)](#inputoutput-io)
     * [Connecting to databases](#connecting-to-databases)
@@ -64,18 +65,32 @@
 
 ### Generics and Collections
 
-  - Using generics in classes and methods
-  - ArrayList, LinkedList, and other collection classes
-  - Maps and Sets
-  - Iterating over collections
-  - Sorting and searching
-  - Streams
+  - [Working with Generics](java-5/generics.md)
+  - [Diamond Operator](java-7/diamond-operator.md)
+  - [Using Common Collection APIs](java-7/updated-collections.md#using-common-collection-apis)
+  - List Interface
+  - Set Interface
+  - Queue and Deque Interfaces
+  - Map interface
+  - Comparing
+  - Sorting
+  - Searching
+  - [Streams](java-8/stream-api.md)
 
 ### Lambdas and Functional Interfaces
   - [Lambda Expression](java-8/lamda-expression.md)
   - [Functional Interfaces](java-8/functional-interfaces.md)
   - [Method References](java-8/method-references.md)
   - [Built in Functional Interfaces](java-8/built-in-functional-interfaces.md)
+
+### Functional Programming (FP)
+  - [Pure Functions](fp.md#pure-functions)
+  - [Immutability](fp.md#immutability)
+  - [Higher-order Functions](fp.md#higher-order-functions)
+  - [Function Composition](fp.md#function-composition)
+  - [Recursion](fp.md#recursion)
+  - [First-Class Functions](fp.md#first-class-functions)
+  - [Closures](fp.md#closures)
   
 ### Multithreading and Concurrency
 

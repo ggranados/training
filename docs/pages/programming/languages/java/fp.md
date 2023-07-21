@@ -354,9 +354,8 @@ public class FunctionCompositionExample {
 
 This example illustrates how the andThen and compose methods affect the function composition differently.
 
-<!-- TODO:- See also: [Function Composition](java-8/function-composition.md) -->
-
 <sub>[Back to top](#table-of-contents)</sub>
+
 
 ### Recursion
 

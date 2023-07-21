@@ -6,7 +6,7 @@
 <!-- TOC -->
 * [Lambda Expression](#lambda-expression)
   * [Table of Contents](#table-of-contents)
-  * [Introduction](#introduction)
+  * [Overview](#overview)
   * [Examples](#examples)
     * [Lambda Expression Syntax](#lambda-expression-syntax)
     * [Lambda Listener](#lambda-listener)
@@ -17,7 +17,7 @@
 
 ___
 
-## Introduction
+## Overview
 
 Before Java 8, whenever you wanted to instantiate, for example, a new Runnable, you had to write an anonymous inner class like so:
 
@@ -38,7 +38,7 @@ Runnable runnable = () -> System.out.println("Hello world two!");
 ![Anatomy of Lambda Expression](../../../../../img/lambda-expression.jpg) 
 [^1]
 
-- See also [FP in Java](../fp.md)
+- See also: [FP in Java](../fp.md)
 
 ---
 
