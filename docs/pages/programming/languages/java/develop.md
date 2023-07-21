@@ -13,6 +13,7 @@
     * [Java Standard Library](#java-standard-library)
     * [Generics and Collections](#generics-and-collections)
     * [Lambdas and Functional Interfaces](#lambdas-and-functional-interfaces)
+    * [Functional Programming (FP)](#functional-programming-fp)
     * [Multithreading and Concurrency](#multithreading-and-concurrency)
     * [Input/Output (I/O)](#inputoutput-io)
     * [Connecting to databases](#connecting-to-databases)
@@ -81,6 +82,15 @@
   - [Functional Interfaces](java-8/functional-interfaces.md)
   - [Method References](java-8/method-references.md)
   - [Built in Functional Interfaces](java-8/built-in-functional-interfaces.md)
+
+### Functional Programming (FP)
+  - [Pure Functions](fp.md#pure-functions)
+  - [Immutability](fp.md#immutability)
+  - [Higher-order Functions](fp.md#higher-order-functions)
+  - [Function Composition](fp.md#function-composition)
+  - [Recursion](fp.md#recursion)
+  - [First-Class Functions](fp.md#first-class-functions)
+  - [Closures](fp.md#closures)
   
 ### Multithreading and Concurrency
 
