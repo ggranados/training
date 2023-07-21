@@ -6,7 +6,7 @@
 <!-- TOC -->
 * [Built-in Functional Interfaces](#built-in-functional-interfaces)
   * [Table of Contents](#table-of-contents)
-  * [Java 8 Built-in Functional Interfaces](#java-8-built-in-functional-interfaces)
+  * [Overview](#overview)
     * [Consumer](#consumer)
     * [Supplier](#supplier)
     * [Function](#function)
@@ -25,7 +25,7 @@
 <!-- TOC -->
 
 
-## Java 8 Built-in Functional Interfaces
+## Overview
 
 Functional interfaces, which are gathered in the `java.util.function` [^1] package, satisfy most developers' needs in providing target types for lambda expressions and method references. Each of these interfaces is general and abstract, making them easy to adapt to almost any lambda expression. Developers should explore this package before creating new functional interfaces.
 

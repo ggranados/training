@@ -135,6 +135,7 @@ ___
  - Strings in switch
  - Automatic resource management in try-statement
  - [The Diamond Operator](java-7/diamond-operator.md)
+ - [Updated Collections API](java-7/updated-collections.md)
  - Simplified varargs method declaration
  - Binary integer literals
  - Underscores in numeric literals

@@ -6,6 +6,7 @@
 <!-- TOC -->
 * [Collections API](#collections-api)
   * [Table of Contents](#table-of-contents)
+  * [Overview](#overview)
   * [Iterable](#iterable)
   * [What's a Collection](#whats-a-collection)
   * [How It Was Originally Collections API?](#how-it-was-originally-collections-api)
@@ -17,6 +18,13 @@
 <!-- TOC -->
 
 ---
+
+## Overview
+
+Java Collections Framework (commonly referred to as the Collections API) is a set of classes and interfaces in Java that provides various data structures and algorithms to store, manipulate, and process groups of objects.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 
 ## Iterable
 
@@ -104,9 +112,10 @@ The Java Collections API was updated with the introduction of generics in Java 5
 
 The addition of generics in Java 5 brought significant enhancements to the Collections Framework.
 
-- See also [Generics](../java-5/generics.md)
-- See also [Diamond Operator](../java-7/diamond-operator.md)
-- See also [Stream API](../java-8/stream-api.md)
+- See also: [Updated Collections API](../java-7/updated-collections.md)
+- See also: [Generics](../java-5/generics.md)
+- See also: [Diamond Operator](../java-7/diamond-operator.md)
+- See also: [Stream API](../java-8/stream-api.md)
 
 
 ## Ref.
