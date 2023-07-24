@@ -72,10 +72,12 @@
   - Set Interface
   - Queue and Deque Interfaces
   - Map interface
+  - [Streams](java-8/stream-api.md)
   - Comparing
   - Sorting
   - Searching
-  - [Streams](java-8/stream-api.md)
+  - [Optionals](java-8/stream-api.md#optional)
+  
 
 ### Lambdas and Functional Interfaces
   - [Lambda Expression](java-8/lamda-expression.md)
