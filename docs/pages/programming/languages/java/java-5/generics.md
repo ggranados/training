@@ -366,6 +366,8 @@ https://www.baeldung.com/java-generics
 ---
 
 [Get Started](../../../../../get-started.md) |
+[Languages](../../../../../get-started.md#languages) |
+[Java Development](../develop.md#generics-and-collections) |
 [Java 5](../versions.md#java-5) |
-[Java Development](../develop.md#reflection-and-dynamic-class-loading)
+
 ---

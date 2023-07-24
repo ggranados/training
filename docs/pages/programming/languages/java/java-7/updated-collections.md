@@ -147,7 +147,8 @@ https://www.geeksforgeeks.org/how-to-learn-java-collections-a-complete-guide/
 ---
 
 [Get Started](../../../../../get-started.md) |
+[Languages](../../../../../get-started.md#languages) |
+[Java Development](../develop.md#reflection-and-dynamic-class-loading) |
 [Java 7](../versions.md#java-7) |
-[Java Development](../develop.md#reflection-and-dynamic-class-loading)
 
 ---

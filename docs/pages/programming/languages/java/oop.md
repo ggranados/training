@@ -335,7 +335,8 @@ _____
 ___
 
 [Get Started](../../../../get-started.md) |
-[Java](java.md#whats-oop) |
-[OOP](../../paradigms/oop.md)
+[Paradigms](../../../../get-started.md#paradigms) |
+[OOP](../../paradigms/oop.md) |
+[Java](java.md#whats-oop)
 
 ___

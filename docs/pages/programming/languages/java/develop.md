@@ -199,6 +199,7 @@ _____
 ___
 
 [Get Started](../../../../get-started.md) |
-[Java](java.md#java) |
+[Languages](../../../../get-started.md#languages) |
+[Java](java.md#how-to-develop-with-java)
 
 ___

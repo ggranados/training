@@ -500,6 +500,8 @@ A few important characteristics of terminal operations are:
 
 Examples of terminal operations include forEach, toArray, reduce, collect, count, min, max, anyMatch, allMatch, noneMatch, etc.
 
+![img.png](../../../../../img/terminal-operations.png)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 
@@ -1025,5 +1027,9 @@ https://www.arquitecturajava.com/java-8-flatmap/
 ---
 
 [Get Started](../../../../../get-started.md) |
-[Java 8](../versions.md#java-8-lts)
+[Languages](../../../../../get-started.md#languages) |
+[Java Development](../develop.md#lambdas-and-functional-interfaces) |
+[Java 8](../versions.md#java-8-lts) |
+[PF in Java](../versions.md#java-8-lts)
+
 ---

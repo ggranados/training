@@ -79,9 +79,10 @@ ___
 ___
 
 [Get Started](../../../../../get-started.md) |
-[PF in Java](../versions.md#java-8-lts) |
+[Languages](../../../../../get-started.md#languages) |
+[Java Development](../develop.md#lambdas-and-functional-interfaces) |
 [Java 8](../versions.md#java-8-lts) |
-[Java Development](../develop.md#lambdas-and-functional-interfaces)
+[PF in Java](../versions.md#java-8-lts)
 
 
 ___

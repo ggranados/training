@@ -350,3 +350,9 @@ ___
  - https://en.wikipedia.org/wiki/Java_version_history
 
 ---
+
+[Get Started](../../../../get-started.md) |
+[Languajes](../../../../get-started.md#languages) |
+[Java](java.md#how-is-java-versioned)
+
+___
