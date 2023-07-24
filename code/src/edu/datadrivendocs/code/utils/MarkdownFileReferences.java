@@ -1,3 +1,5 @@
+package edu.datadrivendocs.code.utils;
+
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -6,7 +8,7 @@ public class MarkdownFileReferences {
 
     public static void main(String[] args) throws IOException {
         // Specify the path to the directory containing the markdown files
-        String path = "path/to/markdown/files";
+        String path = "C:\\src\\data-driven-docs\\docs\\pages";
 
         // Get all distinct file names from nested markdown files
         Set<String> allMarkdownFiles = getAllMarkdownFiles(path);
@@ -38,12 +40,13 @@ public class MarkdownFileReferences {
     // Get all distinct markdown file names from nested files in a directory
     private static Set<String> getAllMarkdownFiles(String path) throws IOException {
         Set<String> markdownFiles = new HashSet<>();
-        try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(path), "*.md")) {
+        try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(path))) {
             for (Path entry : stream) {
-                markdownFiles.add(entry.getFileName().toString());
                 if (Files.isDirectory(entry)) {
                     markdownFiles.addAll(getAllMarkdownFiles(entry.toString()));
                 }
+                if(entry.getFileName().toString().endsWith("md"))
+                    markdownFiles.add(entry.getFileName().toString());
             }
         }
         return markdownFiles;
