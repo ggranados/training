@@ -112,10 +112,6 @@ Java introduced functional programming features with the release of [Java 8](ver
 
 ___
 
-[Get Started](../../../../get-started.md) |
-[Back to top](#table-of-contents)
-
-___
 
 ## Ref.
 
@@ -130,4 +126,10 @@ ___
 [^7]: https://bytesofgigabytes.com/java/why-java-is-platform-independent/
 [^8]: https://en.wikipedia.org/wiki/Java_version_history
 
----
+___
+
+[Get Started](../../../../get-started.md) |
+[Languages](../../../../get-started.md#languages) 
+
+___
+

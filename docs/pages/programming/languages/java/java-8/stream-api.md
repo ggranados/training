@@ -379,6 +379,40 @@ Orange
 
 ```
 
+By giving custom lambda implementation of `Comparator` to order by string length:
+
+```java
+ // Using sorted to sort the elements
+            Stream<String> sortedStream = fruits.stream()
+                    .sorted((s1, s2) -> Integer.valueOf(s1.length()).compareTo(s2.length()));
+```
+
+Output:
+
+```
+Apple
+Orange
+Banana
+```
+
+By giving a predefined `Comparator` to sort reverse:  
+
+```java
+ // Using sorted to sort the elements
+            Stream<String> sortedStream = fruits.stream()
+                    .sorted(Comparator.reverseOrder());
+```
+
+Output:
+
+```
+Orange
+Banana
+Apple
+```
+
+- See also: [Comparing](../java-7/updated-collections.md#comparing)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 #### Limit
@@ -499,6 +533,8 @@ A few important characteristics of terminal operations are:
 - **One-time use**: Once a terminal operation is applied to a stream, the *stream is considered consumed and cannot be used again*. If you need to perform another operation on the same data source, you will need to create a new stream.
 
 Examples of terminal operations include forEach, toArray, reduce, collect, count, min, max, anyMatch, allMatch, noneMatch, etc.
+
+![img.png](../../../../../img/terminal-operations.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -1025,5 +1061,9 @@ https://www.arquitecturajava.com/java-8-flatmap/
 ---
 
 [Get Started](../../../../../get-started.md) |
-[Java 8](../versions.md#java-8-lts)
+[Languages](../../../../../get-started.md#languages) |
+[Java Development](../develop.md#lambdas-and-functional-interfaces) |
+[Java 8](../versions.md#java-8-lts) |
+[PF in Java](../versions.md#java-8-lts)
+
 ---

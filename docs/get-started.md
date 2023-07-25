@@ -33,10 +33,8 @@
   - JavaScript (Node.js)
   - Python
   - [Java](pages/programming/languages/java/java.md)
-    - [Object Oriented Programming in Java](pages/programming/languages/java/oop.md)
-    - [Funtional Programming in Java](pages/programming/languages/java/fp.md)
-    - [Main Java Version Changes](pages/programming/languages/java/versions.md)
     - [Java Development](pages/programming/languages/java/develop.md)
+    - [Main Java Version Changes](pages/programming/languages/java/versions.md)
   - PHP
   - Ruby
   - C#

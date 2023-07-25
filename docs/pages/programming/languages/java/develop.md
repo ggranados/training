@@ -73,9 +73,9 @@
   - Queue and Deque Interfaces
   - Map interface
   - [Streams](java-8/stream-api.md)
-  - Comparing
-  - Sorting
-  - Searching
+  - [Comparing](java-7/updated-collections.md#comparing)
+  - [Sorting](java-7/updated-collections.md#sorting)
+  - [Searching](java-7/updated-collections.md#searching-and-other-utilities)
   - [Optionals](java-8/stream-api.md#optional)
   
 
@@ -199,6 +199,7 @@ _____
 ___
 
 [Get Started](../../../../get-started.md) |
-[Java](java.md#java) |
+[Languages](../../../../get-started.md#languages) |
+[Java](java.md#how-to-develop-with-java)
 
 ___

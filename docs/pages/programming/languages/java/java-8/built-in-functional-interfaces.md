@@ -323,8 +323,9 @@ https://eherrera.net/ocpj8-notes/04-lambda-built-in-functional-interfaces#:~:tex
 ---
 
 [Get Started](../../../../../get-started.md) |
-[PF in Java](../versions.md#java-8-lts) |
-[Java 8](../versions.md#java-8-lts) | 
-[Java Development](../develop.md#lambdas-and-functional-interfaces)
+[Languages](../../../../../get-started.md#languages) |
+[Java Development](../develop.md#lambdas-and-functional-interfaces) |
+[Java 8](../versions.md#java-8-lts) |
+[PF in Java](../versions.md#java-8-lts)
 
 ---
