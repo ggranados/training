@@ -379,6 +379,40 @@ Orange
 
 ```
 
+By giving custom lambda implementation of `Comparator` to order by string length:
+
+```java
+ // Using sorted to sort the elements
+            Stream<String> sortedStream = fruits.stream()
+                    .sorted((s1, s2) -> Integer.valueOf(s1.length()).compareTo(s2.length()));
+```
+
+Output:
+
+```
+Apple
+Orange
+Banana
+```
+
+By giving a predefined `Comparator` to sort reverse:  
+
+```java
+ // Using sorted to sort the elements
+            Stream<String> sortedStream = fruits.stream()
+                    .sorted(Comparator.reverseOrder());
+```
+
+Output:
+
+```
+Orange
+Banana
+Apple
+```
+
+- See also: [Comparing](../java-7/updated-collections.md#comparing)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 #### Limit
