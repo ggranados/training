@@ -104,6 +104,15 @@ queue.offer("Second");
 System.out.println(queue.poll()); // Output: First
 ```
 
+| Type  | duplicate elements? | ordered?                         | keys and values? | add/remove in order? |
+|-------|---------------------|----------------------------------|------------------|----------------------|
+| List  | Yes                 | Yes (by index)                   | No               | No                   |
+| Map   | Yes (for values)    | No                               | Yes              | No                   |
+| Queue | Yes                 | Yes (retrieved in defined order) | No               | Yes                  |
+| Set   | No                  | No                               | No               | No                   |
+
+
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 
