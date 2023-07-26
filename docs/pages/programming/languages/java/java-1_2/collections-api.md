@@ -75,6 +75,8 @@ Integer secondElement = (Integer) list.get(1); // Explicit cast needed
 
 ```
 
+- Se also: [List Interface](../java-7/list-interface.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 

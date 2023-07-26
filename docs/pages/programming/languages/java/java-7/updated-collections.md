@@ -34,6 +34,8 @@
 
 ## Overview
 
+- See also [Original Collections API](../java-1_2/collections-api.md)
+
 The addition of **generics** in Java 5 brought significant enhancements to the Collections Framework.
 
 - See also: [Generics](../java-5/generics.md)
@@ -68,6 +70,8 @@ list.add("Python");
 list.add("C++");
 System.out.println(list); // Output: [Java, Python, C++]
 ```
+
+- See also: [List Interface](list-interface.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 

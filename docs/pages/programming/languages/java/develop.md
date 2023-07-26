@@ -68,7 +68,7 @@
   - [Working with Generics](java-5/generics.md)
   - [Diamond Operator](java-7/diamond-operator.md)
   - [Using Common Collection APIs](java-7/updated-collections.md#using-common-collection-apis)
-  - List Interface
+  - [List Interface](java-7/list-interface.md)
   - Set Interface
   - Queue and Deque Interfaces
   - Map interface
