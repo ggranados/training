@@ -54,6 +54,40 @@ Java provides several implementations of the List interface, each with its own s
 
 >It's generally preferred when frequent element access is required, but not so much for frequent insertions and deletions.
 
+Example:
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListDemo {
+    public static void main(String[] args) {
+        List<String> arrayList = new ArrayList<>();
+
+        // Adding elements to the ArrayList
+        arrayList.add("Apple");
+        arrayList.add("Banana");
+        arrayList.add("Orange");
+        arrayList.add("Grapes");
+
+        // Accessing elements using get()
+        System.out.println("Element at index 2: " + arrayList.get(2));
+
+        // Removing elements
+        arrayList.remove("Banana");
+        System.out.println("After removing 'Banana': " + arrayList);
+
+        // Size of the ArrayList
+        System.out.println("Size of the ArrayList: " + arrayList.size());
+
+        // Iteration using for-each loop
+        System.out.println("Iterating through the ArrayList:");
+        for (String fruit : arrayList) {
+            System.out.println(fruit);
+        }
+    }
+}
+```
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -63,9 +97,44 @@ Java provides several implementations of the List interface, each with its own s
 - It uses a doubly-linked list to store elements.
 - Insertion and deletion are faster (O(1)) as it involves changing pointers.
 - Slower access time (O(n)) since you need to traverse the list from the beginning to access an element.
-- Suitable when you require frequent insertion and deletion, but not ideal for random access.
-- Comparison Table of ArrayList and LinkedList
 
+>Suitable when you require frequent insertion and deletion, but not ideal for random access.
+
+Example:
+
+```java
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListDemo {
+    public static void main(String[] args) {
+        List<String> linkedList = new LinkedList<>();
+
+        // Adding elements to the LinkedList
+        linkedList.add("Apple");
+        linkedList.add("Banana");
+        linkedList.add("Orange");
+        linkedList.add("Grapes");
+
+        // Accessing elements using get()
+        System.out.println("Element at index 2: " + linkedList.get(2));
+
+        // Removing elements
+        linkedList.remove("Banana");
+        System.out.println("After removing 'Banana': " + linkedList);
+
+        // Size of the LinkedList
+        System.out.println("Size of the LinkedList: " + linkedList.size());
+
+        // Iteration using for-each loop
+        System.out.println("Iterating through the LinkedList:");
+        for (String fruit : linkedList) {
+            System.out.println(fruit);
+        }
+    }
+}
+
+```
 
 <sub>[Back to top](#table-of-contents)</sub>
 
