@@ -84,15 +84,17 @@ Always consider the trade-offs and performance characteristics to make an inform
 
 ### Comparison Table
 
-| Characteristics           | ArrayList                                      | LinkedList                  |
-|---------------------------|------------------------------------------------|-----------------------------|
-| Underlying Data Structure | Dynamic Array                                  | Doubly Linked List          |
-| Access Time               | Fast (O(1))                                    | Slow (O(n))                 |
-| Insertion/Deletion Time   | Slow (O(n))                                    | Fast (O(1))                 |
-| Random Access             | Efficient                                      | Inefficient                 |
-| Memory Overhead           | Lower                                          | Higher                      |
-| Iteration Performance     | Faster                                         | Slower                      |
+| Characteristics           | ArrayList                                   | LinkedList                  |
+|---------------------------|---------------------------------------------|-----------------------------|
+| Underlying Data Structure | Dynamic Array                               | Doubly Linked List          |
+| Access Time               | Fast (O(1))                                 | Slow (O(n))                 |
+| Insertion/Deletion Time   | Slow (O(n))                                 | Fast (O(1))                 |
+| Random Access             | Efficient                                  | Inefficient [^1]            |
+| Memory Overhead           | Lower                                       | Higher                      |
+| Iteration Performance     | Faster                                      | Slower [^1]                 |
 | Use Cases                 | Frequent access, infrequent insertion/deletion | Frequent insertion/deletion |
+
+[^1] Elements are not stored in contiguous memory locations. Instead, each element in a LinkedList is stored in a separate node, and these nodes are connected through pointers (references) to the previous and next nodes, forming a chain-like structure.
 
 
 <sub>[Back to top](#table-of-contents)</sub>
@@ -101,6 +103,7 @@ Always consider the trade-offs and performance characteristics to make an inform
 ---
 
 ## Ref.
+
 
 ---
 

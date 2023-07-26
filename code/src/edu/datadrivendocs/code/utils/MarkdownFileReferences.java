@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 public class MarkdownFileReferences {
 
-    private static Logger log = Logger.getLogger(MarkdownFileReferences.class.toString());
+    private static final Logger log = Logger.getLogger(MarkdownFileReferences.class.toString());
 
     public static void main(String[] args) throws IOException {
         // Specify the path to the directory containing the markdown files
