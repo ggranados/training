@@ -12,6 +12,7 @@
     * [Set Interface](#set-interface)
     * [Map Interface](#map-interface)
     * [Queue Interface](#queue-interface)
+    * [Comparison Table](#comparison-table)
   * [Comparing](#comparing)
     * [Comparable](#comparable)
       * [Consistent compareTo() and equals()](#consistent-compareto-and-equals-)
@@ -106,6 +107,7 @@ map.put("apple", 10);
 map.put("orange", 5);
 System.out.println(map.get("apple")); // Output: 10
 ```
+- Se also: [Map Interface](../java-7/map-interface.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -122,6 +124,11 @@ queue.offer("First");
 queue.offer("Second");
 System.out.println(queue.poll()); // Output: First
 ```
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+### Comparison Table
 
 | Type  | duplicate elements? | ordered?                         | keys and values? | add/remove in order? |
 |-------|---------------------|----------------------------------|------------------|----------------------|

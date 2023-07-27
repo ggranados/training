@@ -6,19 +6,21 @@
 <!-- TOC -->
 * [Set Interface](#set-interface)
   * [Table of Contents](#table-of-contents)
-  * [List Interface Characteristics](#list-interface-characteristics)
+  * [Set Interface Characteristics](#set-interface-characteristics)
   * [Most Used Set Implementations](#most-used-set-implementations)
     * [HashSet](#hashset)
+      * [Hash Collision](#hash-collision)
     * [TreeSet](#treeset)
     * [LinkedHashSet](#linkedhashset)
   * [Choose the appropriate implementation](#choose-the-appropriate-implementation)
-    * [Comparison Table](#comparisson-table)
+    * [Comparison Table](#comparison-table)
   * [Ref.](#ref)
 <!-- TOC -->
+
 ---
 
 ## Set Interface Characteristics
-In Java, the Set interface is a part of the Java Collections Framework and is used to store a collection of *unique elements*, meaning that duplicates are not allowed. 
+In Java, the `Set` interface is a part of the Java Collections Framework and is used to store a collection of *unique elements*, meaning that duplicates are not allowed. 
 
 The Set interface is particularly useful when you need to ensure the uniqueness of elements in a collection.
 
@@ -83,6 +85,14 @@ public class SetDemo {
     }
 }
 ```
+
+#### Hash Collision
+
+A hash collision occurs in a hash table or hash-based data structure when two different keys produce the same hash code or index in the underlying data storage.
+
+`HashSet` uses separate chaining. When two distinct objects have the same hash code, they will be placed in the same bucket in the internal hash table.
+
+- See also: [Hash Collision](map-interface.md#hash-collision)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -179,7 +189,7 @@ Always consider the trade-offs and performance characteristics to make an inform
 
 >If you need fast operations and don't care about the order, go with `HashSet`.
 
-> For sorted elements, `TreeSet` is a good choice.
+>For sorted elements, `TreeSet` is a good choice.
 
 >If you need to maintain insertion order, `LinkedHashSet` fits the bill.
 

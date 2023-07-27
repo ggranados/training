@@ -71,7 +71,7 @@
   - [List Interface](java-7/list-interface.md)
   - [Set Interface](java-7/set-interface.md)
   - Queue and Deque Interfaces
-  - Map interface
+  - [Map interface](java-7/map-interface.md)
   - [Streams](java-8/stream-api.md)
   - [Comparing](java-7/updated-collections.md#comparing)
   - [Sorting](java-7/updated-collections.md#sorting)
