@@ -89,6 +89,8 @@ set.add(1); // This will not be added as duplicates are not allowed
 System.out.println(set); // Output: [1, 2]
 ```
 
+- See also: [Set Interface](set-interface.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 

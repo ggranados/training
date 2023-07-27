@@ -89,6 +89,9 @@ set.add(42);
 String element = (String) set.iterator().next(); // Explicit cast needed
 ```
 
+- Se also: [Set Interface](../java-7/set-interface.md)
+
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 

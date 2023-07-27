@@ -69,7 +69,7 @@
   - [Diamond Operator](java-7/diamond-operator.md)
   - [Using Common Collection APIs](java-7/updated-collections.md#using-common-collection-apis)
   - [List Interface](java-7/list-interface.md)
-  - Set Interface
+  - [Set Interface](java-7/set-interface.md)
   - Queue and Deque Interfaces
   - Map interface
   - [Streams](java-8/stream-api.md)
