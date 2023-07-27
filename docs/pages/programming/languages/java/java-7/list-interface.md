@@ -1,5 +1,7 @@
 # List Interface
 
+---
+
 ## Table of Contents
 <!-- TOC -->
 * [List Interface](#list-interface)
@@ -13,8 +15,12 @@
   * [Ref.](#ref)
 <!-- TOC -->
 
+---
+
 ## List Interface Characteristics
-In Java, the List interface is a part of the Java Collections Framework and represents an *ordered* collection of elements, allowing *duplicates* and maintaining the insertion order. Some key characteristics of the List interface include:
+In Java, the List interface is a part of the Java Collections Framework and represents an *ordered* collection of elements, allowing *duplicates* and maintaining the insertion order. 
+
+Some key characteristics of the List interface include:
 
 
 - **Ordered Collection**: Elements in a List are stored in a specific order, which is typically the order in which they were inserted.
@@ -49,8 +55,8 @@ Java provides several implementations of the List interface, each with its own s
 ### ArrayList
 
 - It uses a dynamic array to store elements.
-- Offers fast access and search time (O(1)), making it suitable for random access.
-- Slower insertion and deletion (O(n)) as elements may need to be shifted.
+- Offers fast access and search time `O(1)`, making it suitable for random access.
+- Slower insertion and deletion `O(n)` as elements may need to be shifted.
 
 >It's generally preferred when frequent element access is required, but not so much for frequent insertions and deletions.
 
@@ -95,8 +101,8 @@ public class ArrayListDemo {
 ### LinkedList
 
 - It uses a doubly-linked list to store elements.
-- Insertion and deletion are faster (O(1)) as it involves changing pointers.
-- Slower access time (O(n)) since you need to traverse the list from the beginning to access an element.
+- Insertion and deletion are faster `O(1)` as it involves changing pointers.
+- Slower access time `O(n)` since you need to traverse the list from the beginning to access an element.
 
 >Suitable when you require frequent insertion and deletion, but not ideal for random access.
 
@@ -153,14 +159,14 @@ Always consider the trade-offs and performance characteristics to make an inform
 
 ### Comparison Table
 
-| Characteristics           | ArrayList                                   | LinkedList                  |
-|---------------------------|---------------------------------------------|-----------------------------|
-| Underlying Data Structure | Dynamic Array                               | Doubly Linked List          |
-| Access Time               | Fast (O(1))                                 | Slow (O(n))                 |
-| Insertion/Deletion Time   | Slow (O(n))                                 | Fast (O(1))                 |
-| Random Access             | Efficient                                  | Inefficient [^1]            |
-| Memory Overhead           | Lower                                       | Higher                      |
-| Iteration Performance     | Faster                                      | Slower [^1]                 |
+| Characteristics           | ArrayList                                      | LinkedList                  |
+|---------------------------|------------------------------------------------|-----------------------------|
+| Underlying Data Structure | Dynamic Array                                  | Doubly Linked List          |
+| Access Time               | Fast `O(1)`                                    | Slow `O(n)`                 |
+| Insertion/Deletion Time   | Slow `O(n)`                                    | Fast `O(1)`                 |
+| Random Access             | Efficient                                      | Inefficient [^1]            |
+| Memory Overhead           | Lower                                          | Higher                      |
+| Iteration Performance     | Faster                                         | Slower [^1]                 |
 | Use Cases                 | Frequent access, infrequent insertion/deletion | Frequent insertion/deletion |
 
 [^1] Elements are not stored in contiguous memory locations. Instead, each element in a LinkedList is stored in a separate node, and these nodes are connected through pointers (references) to the previous and next nodes, forming a chain-like structure.
@@ -173,6 +179,8 @@ Always consider the trade-offs and performance characteristics to make an inform
 
 ## Ref.
 
+https://www.geeksforgeeks.org/list-interface-java-examples/
+https://docs.oracle.com/javase/8/docs/api/java/util/List.html
 
 ---
 
