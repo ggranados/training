@@ -411,7 +411,7 @@ Banana
 Apple
 ```
 
-- See also: [Comparing](../java-7/updated-collections.md#comparing)
+- See also: [Comparing](../java-5/enhanced-collections.md#comparing)
 
 <sub>[Back to top](#table-of-contents)</sub>
 

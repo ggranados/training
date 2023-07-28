@@ -159,7 +159,7 @@ List<String> cars = new ArrayList<>();
 This enhancement significantly improved code readability and made the usage of generics more concise.
 
 - See also: [Collections API](../java-1_2/collections-api.md)
-- See also: [Updated Collection API](../java-7/updated-collections.md)
+- See also: [Updated Collection API](enhanced-collections.md)
 - See also: [Diamond Operator](../java-7/diamond-operator.md)
 
 <sub>[Back to top](#table-of-contents)</sub>

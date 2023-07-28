@@ -76,7 +76,7 @@ Integer secondElement = (Integer) list.get(1); // Explicit cast needed
 
 ```
 
-- Se also: [List Interface](../java-7/list-interface.md)
+- Se also: [List Interface](../java-5/list-interface.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -90,7 +90,7 @@ set.add(42);
 String element = (String) set.iterator().next(); // Explicit cast needed
 ```
 
-- Se also: [Set Interface](../java-7/set-interface.md)
+- Se also: [Set Interface](../java-5/set-interface.md)
 
 
 <sub>[Back to top](#table-of-contents)</sub>
@@ -105,7 +105,7 @@ map.put("number", 42);
 String value = (String) map.get("key"); // Explicit cast needed
 ```
 
-- Se also: [Map Interface](../java-7/map-interface.md)
+- Se also: [Map Interface](../java-5/map-interface.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -126,7 +126,7 @@ The Java Collections API was updated with the introduction of generics in Java 5
 
 The addition of generics in Java 5 brought significant enhancements to the Collections Framework.
 
-- See also: [Updated Collections API](../java-7/updated-collections.md)
+- See also: [Updated Collections API](../java-5/enhanced-collections.md)
 - See also: [Generics](../java-5/generics.md)
 - See also: [Diamond Operator](../java-7/diamond-operator.md)
 - See also: [Stream API](../java-8/stream-api.md)

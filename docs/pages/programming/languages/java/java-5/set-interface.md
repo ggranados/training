@@ -222,6 +222,6 @@ https://docs.oracle.com/javase/8/docs/api/java/util/Set.html
 [Languages](../../../../../get-started.md#languages) |
 [Java Development](../develop.md#generics-and-collections) |
 [Original Collections API](../java-1_2/collections-api.md) |
-[Updated Collections](updated-collections.md)
+[Updated Collections](enhanced-collections.md)
 
 ---
