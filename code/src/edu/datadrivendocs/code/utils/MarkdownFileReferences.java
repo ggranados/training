@@ -2,9 +2,13 @@ package edu.datadrivendocs.code.utils;
 
 import java.io.*;
 import java.nio.file.*;
+import java.text.MessageFormat;
 import java.util.*;
+import java.util.logging.Logger;
 
 public class MarkdownFileReferences {
+
+    private static final Logger log = Logger.getLogger(MarkdownFileReferences.class.toString());
 
     public static void main(String[] args) throws IOException {
         // Specify the path to the directory containing the markdown files
@@ -21,15 +25,14 @@ public class MarkdownFileReferences {
         unreferencedFiles.removeAll(referencedFiles);
 
         // Display the results
-        System.out.println("All distinct markdown files:" + allMarkdownFiles.size());
+        log.info(()-> MessageFormat.format("All distinct markdown files: {0}", allMarkdownFiles.size()));
 
+        log.info(()-> MessageFormat.format("Referenced markdown files: {0}", referencedFiles.size()));
 
-        System.out.println("\nReferenced markdown files:" + referencedFiles.size());
+        log.info(()-> MessageFormat.format("Unreferenced markdown files: {0}", unreferencedFiles.size()));
 
-
-        System.out.println("\nUnreferenced markdown files:" + unreferencedFiles.size());
         for (String file : unreferencedFiles) {
-            System.out.println(" - " + file);
+            log.info(()-> MessageFormat.format(" - {0}", file));
         }
     }
 
@@ -57,18 +60,24 @@ public class MarkdownFileReferences {
                     referencedFiles.addAll(getReferencedFiles(entry.toString()));
                 }
                 if(entry.getFileName().toString().endsWith(".md")) {
-                    List<String> lines = Files.readAllLines(entry);
-                    for (String line : lines) {
-                        // Assuming that references to other markdown files follow the format "[filename]"
-                        int start = line.indexOf('(');
-                        int end = line.indexOf(')');
-                        if (start != -1 && end != -1 && end > start) {
-                            String referencedFile = line.substring(start + 1, end);
-                            if(referencedFile.endsWith(".md"))
-                                referencedFiles.add(getFileNameOnly(referencedFile));
-                        }
-                    }
+                    referencedFiles.addAll(processFileName(entry));
                 }
+            }
+        }
+        return referencedFiles;
+    }
+
+    private static Set<String> processFileName(Path entry) throws IOException {
+        Set<String> referencedFiles = new HashSet<>();
+        List<String> lines = Files.readAllLines(entry);
+        for (String line : lines) {
+            // Assuming that references to other markdown files follow the format "(filename)"
+            int start = line.indexOf('(');
+            int end = line.indexOf(')');
+            if (start != -1 && end != -1 && end > start) {
+                String referencedFile = line.substring(start + 1, end);
+                if(referencedFile.endsWith(".md"))
+                    referencedFiles.add(getFileNameOnly(referencedFile));
             }
         }
         return referencedFiles;

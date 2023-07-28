@@ -12,6 +12,7 @@
     * [Set Interface](#set-interface)
     * [Map Interface](#map-interface)
     * [Queue Interface](#queue-interface)
+    * [Comparison Table](#comparison-table)
   * [Comparing](#comparing)
     * [Comparable](#comparable)
       * [Consistent compareTo() and equals()](#consistent-compareto-and-equals-)
@@ -33,6 +34,8 @@
 ---
 
 ## Overview
+
+- See also [Original Collections API](../java-1_2/collections-api.md)
 
 The addition of **generics** in Java 5 brought significant enhancements to the Collections Framework.
 
@@ -69,6 +72,8 @@ list.add("C++");
 System.out.println(list); // Output: [Java, Python, C++]
 ```
 
+- See also: [List Interface](list-interface.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 ### Set Interface
@@ -85,6 +90,8 @@ set.add(1); // This will not be added as duplicates are not allowed
 System.out.println(set); // Output: [1, 2]
 ```
 
+- See also: [Set Interface](set-interface.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 
@@ -100,6 +107,7 @@ map.put("apple", 10);
 map.put("orange", 5);
 System.out.println(map.get("apple")); // Output: 10
 ```
+- Se also: [Map Interface](../java-7/map-interface.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -116,6 +124,11 @@ queue.offer("First");
 queue.offer("Second");
 System.out.println(queue.poll()); // Output: First
 ```
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+### Comparison Table
 
 | Type  | duplicate elements? | ordered?                         | keys and values? | add/remove in order? |
 |-------|---------------------|----------------------------------|------------------|----------------------|
