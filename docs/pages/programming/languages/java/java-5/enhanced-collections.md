@@ -11,7 +11,8 @@
     * [List Interface](#list-interface)
     * [Set Interface](#set-interface)
     * [Map Interface](#map-interface)
-    * [Queue Interface](#queue-interface)
+    * [Queue and Deque Interface](#queue-and-deque-interface)
+    * [Comparison Table](#comparison-table)
   * [Comparing](#comparing)
     * [Comparable](#comparable)
       * [Consistent compareTo() and equals()](#consistent-compareto-and-equals-)
@@ -34,13 +35,15 @@
 
 ## Overview
 
+- See also [Original Collections API](../java-1_2/collections-api.md)
+
 The addition of **generics** in Java 5 brought significant enhancements to the Collections Framework.
 
-- See also: [Generics](../java-5/generics.md)
+- See also: [Generics](generics.md)
 
 The **diamond operator** is a feature introduced in Java 7 to simplify the usage of generics in collections.
 
-- See also: [Diamond Operator](diamond-operator.md)
+- See also: [Diamond Operator](../java-7/diamond-operator.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -69,6 +72,8 @@ list.add("C++");
 System.out.println(list); // Output: [Java, Python, C++]
 ```
 
+- See also: [List Interface](list-interface.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 ### Set Interface
@@ -85,6 +90,8 @@ set.add(1); // This will not be added as duplicates are not allowed
 System.out.println(set); // Output: [1, 2]
 ```
 
+- See also: [Set Interface](set-interface.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 
@@ -100,13 +107,20 @@ map.put("apple", 10);
 map.put("orange", 5);
 System.out.println(map.get("apple")); // Output: 10
 ```
+- Se also: [Map Interface](map-interface.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 
-### Queue Interface
+### Queue and Deque Interface
 
-The Queue interface represents a collection that holds elements **in a specific order**. 
+The Queue and Deque interfaces were added to the Java Collections Framework in Java 1.5 (also known as Java 5) as part of the major enhancements made to the collections API.
+
+- See also: [Java 5](../versions.md#java-5)
+
+The Queue interface represents a collection that holds elements **in a specific order**. Typically processed in a *first-in-first-out (FIFO)* manner
+
+The Deque interface interface extends the `Queue` interface and represents a queue where you *can add or remove elements from both ends* *first-in-first-out (FIFO)* and *last-in-first-out (LIFO)*. You can treat a `Deque` *as both a queue and a stack*
 
 Common implementations include: `LinkedList` and `PriorityQueue`.
 
@@ -116,6 +130,13 @@ queue.offer("First");
 queue.offer("Second");
 System.out.println(queue.poll()); // Output: First
 ```
+
+- See also: [Queue and Deque Interfaces](queue-deque-interfaces.md)
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+### Comparison Table
 
 | Type  | duplicate elements? | ordered?                         | keys and values? | add/remove in order? |
 |-------|---------------------|----------------------------------|------------------|----------------------|
@@ -500,6 +521,6 @@ https://www.geeksforgeeks.org/how-to-learn-java-collections-a-complete-guide/
 [Get Started](../../../../../get-started.md) |
 [Languages](../../../../../get-started.md#languages) |
 [Java Development](../develop.md#reflection-and-dynamic-class-loading) |
-[Java 7](../versions.md#java-7) |
+[Java 7](../versions.md#java-7) 
 
 ---

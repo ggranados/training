@@ -67,15 +67,15 @@
 
   - [Working with Generics](java-5/generics.md)
   - [Diamond Operator](java-7/diamond-operator.md)
-  - [Using Common Collection APIs](java-7/updated-collections.md#using-common-collection-apis)
-  - List Interface
-  - Set Interface
-  - Queue and Deque Interfaces
-  - Map interface
+  - [Using Common Collection APIs](java-5/enhanced-collections.md#using-common-collection-apis)
+  - [List Interface](java-5/list-interface.md)
+  - [Set Interface](java-5/set-interface.md)
+  - [Queue and Deque Interfaces](java-5/queue-deque-interfaces.md)
+  - [Map interface](java-5/map-interface.md)
   - [Streams](java-8/stream-api.md)
-  - [Comparing](java-7/updated-collections.md#comparing)
-  - [Sorting](java-7/updated-collections.md#sorting)
-  - [Searching](java-7/updated-collections.md#searching-and-other-utilities)
+  - [Comparing](java-5/enhanced-collections.md#comparing)
+  - [Sorting](java-5/enhanced-collections.md#sorting)
+  - [Searching](java-5/enhanced-collections.md#searching-and-other-utilities)
   - [Optionals](java-8/stream-api.md#optional)
   
 

@@ -102,6 +102,7 @@ ___
 (released in September 2004)
 
 - [Generics](java-5/generics.md)
+- [Collections API Major Enhancements](java-5/enhanced-collections.md)
 - Annotations
 - Autoboxing/unboxing
 - Enumerations
@@ -135,7 +136,7 @@ ___
  - Strings in switch
  - Automatic resource management in try-statement
  - [The Diamond Operator](java-7/diamond-operator.md)
- - [Updated Collections API](java-7/updated-collections.md)
+ - [Updated Collections API](java-5/enhanced-collections.md)
  - Simplified varargs method declaration
  - Binary integer literals
  - Underscores in numeric literals

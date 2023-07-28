@@ -13,7 +13,8 @@
     * [List Interface](#list-interface)
     * [Set Interface](#set-interface)
     * [Map Interface](#map-interface)
-    * [Updated Java Collections API](#updated-java-collections-api)
+  * [Explicit Type Casting](#explicit-type-casting)
+  * [Updated Java Collections API](#updated-java-collections-api)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -75,6 +76,8 @@ Integer secondElement = (Integer) list.get(1); // Explicit cast needed
 
 ```
 
+- Se also: [List Interface](../java-5/list-interface.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 
@@ -86,6 +89,9 @@ set.add("apple");
 set.add(42);
 String element = (String) set.iterator().next(); // Explicit cast needed
 ```
+
+- Se also: [Set Interface](../java-5/set-interface.md)
+
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -99,20 +105,28 @@ map.put("number", 42);
 String value = (String) map.get("key"); // Explicit cast needed
 ```
 
+- Se also: [Map Interface](../java-5/map-interface.md)
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Explicit Type Casting
+
 As you can see, without generics, you had to rely on **explicit type casting**, which could lead to `ClassCastException` at runtime if the wrong type was used. This lack of compile-time type-checking made the code less reliable and harder to maintain.
 
 Additionally, before generics, the collections **didn't provide any compile-time type safety**, which meant that you could inadvertently insert the wrong type of elements into a collection, leading to unexpected behavior and bugs in the code.
 
+- See also: [Generics](../java-5/generics.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 
-### Updated Java Collections API
+## Updated Java Collections API
 
 The Java Collections API was updated with the introduction of generics in Java 5 (also known as Java 1.5). Java 5 was released by Sun Microsystems (now Oracle Corporation) in September 2004.
 
 The addition of generics in Java 5 brought significant enhancements to the Collections Framework.
 
-- See also: [Updated Collections API](../java-7/updated-collections.md)
+- See also: [Updated Collections API](../java-5/enhanced-collections.md)
 - See also: [Generics](../java-5/generics.md)
 - See also: [Diamond Operator](../java-7/diamond-operator.md)
 - See also: [Stream API](../java-8/stream-api.md)
