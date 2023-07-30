@@ -274,6 +274,7 @@
 - API Design Principles
 - Data Formats
 - Authentication and Authorization
+  - [JSON Web Token (JWT)](pages/web-services-and-api-design/authentication-and-authorization/jwt.md)
 - API Security
 - Error Handling and Validation
 - Documentation and Discovery
