@@ -273,7 +273,10 @@
 - HTTP and HTTPS
 - API Design Principles
 - Data Formats
-- Authentication and Authorization
+- Authentication (AuthN) and Authorization (AuthZ)
+  - OAuth
+  - OpenID Connect
+  - SSO
   - [JSON Web Token (JWT)](pages/web-services-and-api-design/authentication-and-authorization/jwt.md)
 - API Security
 - Error Handling and Validation
