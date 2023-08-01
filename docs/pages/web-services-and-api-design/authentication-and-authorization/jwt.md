@@ -106,7 +106,7 @@ The process of using a JWT in a web application generally follows these steps:
 
 
   
-![img.png](jwt-authn-authz-flow.png)
+![img.png](../../../img/jwt-authn-authz-flow.png)
 
 - See also: [AuthN & AuthZ](authn-authz.md)
 
