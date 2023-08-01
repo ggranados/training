@@ -94,9 +94,21 @@ The process of using a JWT in a web application generally follows these steps:
 ### Authorization
 
 - The user includes the JWT in the header or as a parameter in subsequent requests to protected resources (e.g., accessing an API endpoint).
+
+
 - The server validates the JWT's signature using the secret key it possesses.
+
+
 - If the signature is valid, the server parses the payload and checks the necessary claims to authorize the user's request.
+
+
 - If the claims are valid and the user is authorized, the server processes the request and sends the response.
+
+
+  
+![img.png](jwt-authn-authz-flow.png)
+
+- See also: [AuthN & AuthZ](authn-authz.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -115,9 +127,9 @@ SECRET_KEY = "your_secret_key_here"
 
 # Example payload with user information
 payload = {
-    "user_id": 123,
-    "username": "john_doe",
-    "exp": datetime.datetime.utcnow() + datetime.timedelta(days=1)  # Expiration time (1 day from now)
+"user_id": 123,
+"username": "john_doe",
+"exp": datetime.datetime.utcnow() + datetime.timedelta(days=1)  # Expiration time (1 day from now)
 }
 
 # Generate a JWT token
@@ -127,12 +139,12 @@ print("Generated JWT:", token)
 
 # Demonstrate decoding and verification
 try:
-    decoded_payload = jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
+decoded_payload = jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
     print("Decoded payload:", decoded_payload)
 except jwt.ExpiredSignatureError:
     print("Token has expired.")
 except jwt.InvalidTokenError:
-    print("Token is invalid.")
+print("Token is invalid.")
 ```
 
 Remember to use a strong and secure secret key in production applications, and avoid storing sensitive information in the JWT payload as it is easily accessible to anyone who has the token.
@@ -142,34 +154,38 @@ Remember to use a strong and secure secret key in production applications, and a
 
 ## JWT Bearer Token Flow
 
-The *JWT Bearer Flow*, also known as *JWT Bearer Token Authentication*, is a specific authentication flow used in **OAuth 2.0** and **OpenID Connect** protocols. It allows clients (such as web applications or mobile apps) to request access tokens from an authorization server and use those tokens to access protected resources on a resource server (API).
+The **JWT Bearer Flow**, also known as **JWT Bearer Token Authentication**, is a specific authentication flow used in **OAuth 2.0** and **OpenID Connect** protocols. 
 
-<!-- TODO:- See also: [OAuth]() -->
+It allows clients (such as web applications or mobile apps) to request access tokens from an authorization server and use those tokens to access protected resources on a resource server (API).
+
+- See also: [OAuth](oauth.md)
 <!-- TODO:- See also: [OpenID Connect]() -->
 
-Let's outline the steps involved in the JWT Bearer Flow:
+Let's outline the steps involved in the **JWT Bearer Flow**:
 
 1. **Client Request for Access Token**:
-    - The client (e.g., web application) requests an access token from the authorization server by sending its credentials and authentication grant (e.g., username/password, client credentials, etc.).
-    - The authorization server validates the client's credentials and grant and issues an access token.
+     - The client (e.g., web application) requests an access token from the authorization server by sending its credentials and authentication grant (e.g., username/password, client credentials, etc.).
+     - The authorization server validates the client's credentials and grant and issues an access token.
+
 
 2. **Accessing Protected Resources**:
-    - With the access token obtained in Step 1, the client includes the token in the `Authorization` header of subsequent requests to the resource server (API).
-    - The resource server receives the request and validates the access token.
+     - With the access token obtained in Step 1, the client includes the token in the `Authorization` header of subsequent requests to the resource server (API).
+     - The resource server receives the request and validates the access token.
+
 
 3. **Token Validation**:
-   - The resource server verifies the signature of the JWT using the public key of the authorization server (since JWTs are typically signed by the authorization server).
-   
+    - The resource server verifies the signature of the JWT using the public key of the authorization server (since JWTs are typically signed by the authorization server).
+
    - The resource server checks the token's expiration and other relevant claims to ensure the token is valid.
 
    - If the token is valid, the resource server processes the request and sends the response.
 
+
 4. Token Expiration and Refresh:
-    - If the access token has expired, the client can request a new one using a *refresh token* (if provided during Step 1) without requiring the user to re-enter their credentials.
+     - If the access token has expired, the client can request a new one using a *refresh token* (if provided during Step 1) without requiring the user to re-enter their credentials.
 
-    - The client can repeat the process of obtaining a new access token as needed.
+     - The client can repeat the process of obtaining a new access token as needed.
 
-The JWT Bearer Flow is widely used in modern web applications and APIs for secure authentication and access control. It leverages the self-contained nature of JWTs to carry authentication information and is suitable for scenarios where the client and resource server are closely related, such as in single-page applications (SPAs) and mobile apps.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
