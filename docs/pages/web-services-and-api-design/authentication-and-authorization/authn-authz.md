@@ -2,7 +2,17 @@
 
 ---
 
-## Table of Content
+## Table of Contents
+<!-- TOC -->
+* [Authentication (AuthN) and Authorization (AuthZ)](#authentication-authn-and-authorization-authz)
+  * [Table of Contents](#table-of-contents)
+  * [Overview](#overview)
+  * [Authentication (AuthN):](#authentication-authn)
+    * [Authentication Methods (AuthN):](#authentication-methods-authn)
+  * [Authorization (AuthZ):](#authorization-authz)
+    * [Authorization Methods (AuthZ):](#authorization-methods-authz)
+  * [Ref.](#ref)
+<!-- TOC -->
 
 ---
 
@@ -10,6 +20,8 @@
 AuthN and AuthZ refer to two fundamental aspects of controlling access to resources and ensuring the confidentiality and integrity of sensitive information within a system.
 
 By combining strong authentication and precise authorization mechanisms, IT systems can enforce security and prevent unauthorized access to sensitive data and resources, thereby protecting against data breaches and unauthorized activities.
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Authentication (AuthN):
 *AuthN*, short for "*Authentication*," is the process of verifying the identity of a user, system, or device attempting to access a particular resource or service. The primary goal of authentication is to ensure that *only legitimate and authorized entities are granted access while keeping unauthorized users out*.
@@ -31,6 +43,8 @@ Common authentication factors include:
 
 >To enhance security, many systems now employ Multi-Factor Authentication (MFA) where users must provide two or more of these factors for an extra layer of protection.
 
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### Authentication Methods (AuthN):
 
@@ -68,6 +82,8 @@ Public Key Infrastructure (PKI): Uses public and private key pairs for authentic
 - **Certificate-based authentication**: Users provide a digital certificate to verify their identity.
 
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Authorization (AuthZ):
 
 Authorization is the process of determining *what actions, resources, or services an authenticated user or entity is permitted to access*. It involves granting appropriate privileges and permissions to users based on their *role*, *identity*, or *attributes*.
@@ -76,6 +92,8 @@ Authorization is typically governed by access control policies that define the r
 
 >The authorization mechanism ensures that users are only allowed to perform actions that are within their defined scope and permissions.
 
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### Authorization Methods (AuthZ):
 
@@ -105,6 +123,8 @@ Authorization is typically governed by access control policies that define the r
 - **Claims-based Access Control**: Access decisions are made based on claims or attributes associated with the user.
 
 
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 
 
