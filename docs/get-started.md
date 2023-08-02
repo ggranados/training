@@ -108,35 +108,35 @@
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Networking Concepts
-   - IP Addressing
-   - Subnetting
-   - Routing
-   - Switching
-   - TCP/IP
-   - DNS (Domain Name System)
-   - DHCP (Dynamic Host Configuration Protocol)
-   - Firewall
-   - VPN (Virtual Private Network)
-   - OSI Model (Open Systems Interconnection Model)
-   - NAT (Network Address Translation)
-   - VLAN (Virtual Local Area Network)
-   - Load Balancing
-   - Bandwidth
-   - Latency
+- IP Addressing
+- Subnetting
+- Routing
+- Switching
+- TCP/IP
+- DNS (Domain Name System)
+- DHCP (Dynamic Host Configuration Protocol)
+- Firewall
+- VPN (Virtual Private Network)
+- OSI Model (Open Systems Interconnection Model)
+- NAT (Network Address Translation)
+- VLAN (Virtual Local Area Network)
+- Load Balancing
+- Bandwidth
+- Latency
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Cloud Computing Platform
 - Amazon Web Services (AWS)
 - Microsoft Azure
--  Google Cloud Platform (GCP)
--  IBM Cloud
--  Alibaba Cloud
--  Oracle Cloud Infrastructure (OCI)
--  Salesforce Cloud
--  DigitalOcean
--  VMware Cloud
--  Rackspace
+- Google Cloud Platform (GCP)
+- IBM Cloud
+- Alibaba Cloud
+- Oracle Cloud Infrastructure (OCI)
+- Salesforce Cloud
+- DigitalOcean
+- VMware Cloud
+- Rackspace
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -208,6 +208,7 @@
 - Risk Management
 - Security Governance and Compliance
 - Access Control and Authentication
+  - [Identity and Access Management (IAM)](pages/cyber-security/access-control-and-authn/iam.md)
 - Incident Response and Management
 - Security Awareness and Training
 - Threat Intelligence and Analysis
@@ -273,11 +274,13 @@
 - HTTP and HTTPS
 - API Design Principles
 - Data Formats
-- Authentication (AuthN) and Authorization (AuthZ)
-  - OAuth
-  - OpenID Connect
-  - SSO
+- [Authentication (AuthN) and Authorization (AuthZ)](pages/web-services-and-api-design/authentication-and-authorization/authn-authz.md)
+  - [OAuth](pages/web-services-and-api-design/authentication-and-authorization/oauth.md)
+    - OpenID Connect
   - [JSON Web Token (JWT)](pages/web-services-and-api-design/authentication-and-authorization/jwt.md)
+  - SAML
+  - SSO
+- Identity and Access Management (IAM)
 - API Security
 - Error Handling and Validation
 - Documentation and Discovery
