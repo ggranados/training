@@ -18,6 +18,7 @@
     * [Client Credentials Flow](#client-credentials-flow)
       * [JWT Bearer Token Flow](#jwt-bearer-token-flow)
     * [Resource Owner Password Credentials Flow](#resource-owner-password-credentials-flow)
+  * [Example](#example)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -184,6 +185,9 @@ Flow steps are:
 - The client uses this JWT as a bearer token to access protected resources.
 
 
+  - See also: [JWT](jwt.md)
+
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 
@@ -210,6 +214,98 @@ Flow steps are:
 
 >There are also extension grant types and custom flows that can be implemented based on specific requirements, but the four flows mentioned above are the core flows standardized by OAuth 2.0.
 
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Example
+Basic example of the Authorization Code Flow implemented in an HTML page using JavaScript. Please remember that this example is simplified for educational purposes and may not cover all security considerations or error handling.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorization Code Flow Example</title>
+</head>
+<body>
+    <h1>Authorization Code Flow Example</h1>
+    
+    <button onclick="authorize()">Authorize</button>
+    
+    <script>
+        function authorize() {
+            // Step 1: Redirect user to authorization server for authentication and consent
+            const authorizationEndpoint = 'https://example.com/authorization'; // Replace with your authorization endpoint
+            const clientId = 'your_client_id'; // Replace with your client ID
+            const redirectUri = 'https://your-redirect-uri.com/callback'; // Replace with your redirect URI
+            const scope = 'desired_scope'; // Replace with desired scope
+            
+            const authUrl = `${authorizationEndpoint}?response_type=code&client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
+            
+            window.location.href = authUrl;
+        }
+        
+        // Callback function after user is redirected back from authorization server
+        function handleCallback() {
+            const authorizationCode = getParameterByName('code');
+            
+            // Step 3: Exchange authorization code for an access token
+            const tokenEndpoint = 'https://example.com/token'; // Replace with your token endpoint
+            const clientSecret = 'your_client_secret'; // Replace with your client secret
+            
+            const tokenData = {
+                grant_type: 'authorization_code',
+                code: authorizationCode,
+                redirect_uri: 'https://your-redirect-uri.com/callback',
+                client_id: 'your_client_id',
+                client_secret: clientSecret
+            };
+            
+            fetch(tokenEndpoint, {
+                method: 'POST',
+                body: new URLSearchParams(tokenData),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const accessToken = data.access_token;
+                
+                // Step 4: Use access token to access protected resources
+                const resourceEndpoint = 'https://api.example.com/resource'; // Replace with your protected resource endpoint
+                
+                fetch(resourceEndpoint, {
+                    headers: {
+                        'Authorization': `Bearer ${accessToken}`
+                    }
+                })
+                .then(response => response.json())
+                .then(resourceData => {
+                    console.log('Resource Data:', resourceData);
+                })
+                .catch(error => {
+                    console.error('Error accessing resource:', error);
+                });
+            })
+            .catch(error => {
+                console.error('Error exchanging authorization code for token:', error);
+            });
+        }
+        
+        // Helper function to get query parameter by name from URL
+        function getParameterByName(name) {
+            const url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`),
+            results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+    </script>
+</body>
+</html>
+```
 
 <sub>[Back to top](#table-of-contents)</sub>
 
