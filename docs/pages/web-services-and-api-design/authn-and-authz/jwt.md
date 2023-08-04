@@ -159,7 +159,7 @@ The **JWT Bearer Flow**, also known as **JWT Bearer Token Authentication**, is a
 It allows clients (such as web applications or mobile apps) to request access tokens from an authorization server and use those tokens to access protected resources on a resource server (API).
 
 - See also: [OAuth](oauth.md)
-<!-- TODO:- See also: [OpenID Connect]() -->
+- See also: [OpenID Connect](openid-connect.md)
 
 Let's outline the steps involved in the **JWT Bearer Flow**:
 

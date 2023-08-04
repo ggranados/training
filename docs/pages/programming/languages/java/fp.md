@@ -310,7 +310,7 @@ public class HigherOrderFunctionExample {
 - See also: [Lambda Expression](java-8/lamda-expression.md)
 - See also: [Method References](java-8/method-references.md)
 - See also: [Built-in Functional](java-8/built-in-functional-interfaces.md)
-<!-- TODO:- See also: [Stream API](java-8/stream-api.md) -->
+- See also: [Stream API](java-8/stream-api.md) -->
 
 <sub>[Back to top](#table-of-contents)</sub>
 

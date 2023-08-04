@@ -109,8 +109,8 @@ It offers features like SSO, MFA, and user provisioning to simplify identity man
 
 Each of these commercial implementations offers unique features and capabilities, catering to different use cases and business requirements. Organizations can choose the one that best suits their needs to implement a secure and scalable identity and access management solution.
 
-- See also: [OAuth](../../web-services-and-api-design/authn-and-authz/oauth.md)
-  <!-- TODO:- Se also: [OpenId Connect]()-->
+- See also: [OAuth](../../web-services-and-api-design/authn-and-authz/oauth.md) 
+- See also: [OpenId Connect](../../web-services-and-api-design/authn-and-authz/openid-connect.md)
 
 
 <sub>[Back to top](#table-of-contents)</sub>
