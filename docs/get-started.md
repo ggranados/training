@@ -275,11 +275,11 @@
 - API Design Principles
 - Data Formats
 - [Authentication (AuthN) and Authorization (AuthZ)](pages/web-services-and-api-design/authn-and-authz/authn-authz.md)
+  - [SSO](pages/web-services-and-api-design/authn-and-authz/sso.png)
   - [OAuth](pages/web-services-and-api-design/authn-and-authz/oauth.md)
-    - [OpenID Connect](pages/web-services-and-api-design/authn-and-authz/openid-connect.md)
+  - [OpenID Connect](pages/web-services-and-api-design/authn-and-authz/openid-connect.md)
   - [JSON Web Token (JWT)](pages/web-services-and-api-design/authn-and-authz/jwt.md)
   - SAML
-  - SSO
 - Identity and Access Management (IAM)
 - API Security
 - Error Handling and Validation
