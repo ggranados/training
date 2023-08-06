@@ -33,12 +33,12 @@ IAM plays a critical role in ensuring data security, protecting sensitive inform
 
 - **Authentication**: Verifying the identity of users or entities through various means such as passwords, biometrics, security tokens, or multi-factor authentication (MFA).
 
-    - See also: [AuthN](../../web-services-and-api-design/authn-and-authz/authn-authz.md#authentication-authn)
+    - See also: [AuthN](../../ws-and-api-design/authn-and-authz/authn-authz.md#authentication-authn)
 
 
 - **Authorization**: The process of granting appropriate access rights and permissions to authenticated users based on their roles, responsibilities, and the resources they need to access.
 
-  - See also: [AuthZ](../../web-services-and-api-design/authn-and-authz/authn-authz.md#authorization-authz)
+  - See also: [AuthZ](../../ws-and-api-design/authn-and-authz/authn-authz.md#authorization-authz)
 
 
 - **Access Control**: Enforcing policies that determine what resources (e.g., files, applications, databases) users are allowed to access and what actions they can perform on those resources.
@@ -109,8 +109,8 @@ It offers features like SSO, MFA, and user provisioning to simplify identity man
 
 Each of these commercial implementations offers unique features and capabilities, catering to different use cases and business requirements. Organizations can choose the one that best suits their needs to implement a secure and scalable identity and access management solution.
 
-- See also: [OAuth](../../web-services-and-api-design/authn-and-authz/oauth.md) 
-- See also: [OpenId Connect](../../web-services-and-api-design/authn-and-authz/openid-connect.md)
+- See also: [OAuth](../../ws-and-api-design/authn-and-authz/oauth.md) 
+- See also: [OpenId Connect](../../ws-and-api-design/authn-and-authz/openid-connect.md)
 
 
 <sub>[Back to top](#table-of-contents)</sub>
