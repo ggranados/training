@@ -16,7 +16,7 @@
 
 ## What's Imperative Programming
 
-Imperative programming focuses on explicitly specifying a sequence of statements that modify program state. It emphasizes how to achieve a result through step-by-step instructions and control flow structures like loops and conditionals. 
+Imperative programming focuses on *explicitly specifying a sequence of statements* that modify program state. It emphasizes how to achieve a result through step-by-step instructions and control flow structures like loops and conditionals. 
 
 Procedural programming and structured programming are subsets of imperative programming.
 
@@ -24,7 +24,8 @@ Procedural programming and structured programming are subsets of imperative prog
 
 ## Languages
 
-Procedural and [object-oriented programming (OOP)](oop.md) languages fall under imperative programming, such as C, C++, C#, and [Java](../../programming/languages/java).
+[Procedural](procedural/procedural.md) and [object-oriented programming (OOP)](procedural/structured/object-oriented.md) languages fall under imperative programming, such as C, C++, C#, and [Java](../../languages/java).
+
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -40,6 +41,10 @@ for (int i = 1; i <= 10; i++) {
 System.out.println("Sum: " + sum);
 ```
 
+> Declarative style is a contrast to the Imperative style
+
+- See also: [Declarative Programming]()
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 
@@ -52,7 +57,7 @@ System.out.println("Sum: " + sum);
 
 ___
 
-[Get Started](../../../get-started.md#paradigms) |
-[Java](../languages/java/java.md#whats-oop)
+[Get Started](../../../../get-started.md#paradigms) |
+[Java](../../languages/java/java.md#whats-oop)
 
 ---

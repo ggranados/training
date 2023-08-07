@@ -15,7 +15,7 @@
 
 ## What's Procedural Programming
 
-Procedural programming organizes code into reusable procedures or functions that operate on data. It emphasizes the use of procedures to encapsulate behavior and separate it from data.
+Procedural programming organizes code into *reusable procedures or functions* that operate on data. It emphasizes the use of procedures to encapsulate behavior and separate it from data.
 
 ## Examples
 
@@ -51,7 +51,7 @@ The first major procedural programming languages appeared circa 1957–1964, inc
 
 ---
 
-[Get Started](../../../get-started.md#paradigms) 
+[Get Started](../../../../../get-started.md#paradigms) 
 
 ---
 

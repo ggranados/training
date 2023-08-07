@@ -46,9 +46,9 @@ Java is also free for development. [^2]
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## What's OOP?
-[Object-Oriented Programming (OOP)](../../paradigms/oop.md) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
+[Object-Oriented Programming (OOP)](../../paradigms/imperative/procedural/structured/object-oriented.md) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.[^4]
 
-- See also: [Object Oriented Programming](../../paradigms/oop.md)
+- See also: [Object Oriented Programming](../../paradigms/imperative/procedural/structured/object-oriented.md)
 
 - See also: [OOP in Java](oop.md)
 
@@ -105,7 +105,7 @@ Functional programming is a programming paradigm that treats computation as the 
 
 Java introduced functional programming features with the release of [Java 8](versions.md#java-8-lts) in March 2014.
 
-- See also: [Functional Programming](../../paradigms/fp.md)
+- See also: [Functional Programming](../../paradigms/declarative/functional.md)
 - See also: [FP in Java](fp.md)
 
 <sub>[Back to top](#table-of-contents)</sub>

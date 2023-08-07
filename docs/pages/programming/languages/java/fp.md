@@ -139,7 +139,7 @@ These functional programming features added in Java 8 and subsequent versions ma
 
 In Java, a pure function is a function that always produces the same output for the same input and has no side effects, meaning it doesn't modify any state outside of its scope. 
 
-- See also: [Pure Function](../../paradigms/fp.md#pure-functions)
+- See also: [Pure Function](../../paradigms/declarative/functional.md#pure-functions)
 
 ```java
  // Pure function: No side effects, always returns the same output for the same input.
@@ -206,7 +206,7 @@ Pure functions are predictable, easy to test, and have several advantages in ter
 
 Immutable data structures refers to data that cannot be changed after creation.
 
-- See also: [Immutability](../../paradigms/fp.md#immutability)
+- See also: [Immutability](../../paradigms/declarative/functional.md#immutability)
 
 In Java, To make a class fully immutable, you need to take this steps:
 
@@ -276,7 +276,7 @@ public class ImmutablePointExample {
 
 A higher-order function is a function that either takes another function as an argument or returns a function as its result.
 
-- See also: [Higher-order Functions](../../paradigms/fp.md#higher-order-functions)
+- See also: [Higher-order Functions](../../paradigms/declarative/functional.md#higher-order-functions)
 
 In modern Java, you can demonstrate the higher-order functions principle using lambda expressions or method references.
 
@@ -319,7 +319,7 @@ public class HigherOrderFunctionExample {
 Functions can be composed by chaining them together, creating more complex behaviors from simpler functions.
 
 - See also:
-[Function Composition](../../paradigms/fp.md#function-composition)
+[Function Composition](../../paradigms/declarative/functional.md#function-composition)
 
 Function composition in modern Java can be demonstrated using the andThen and compose methods from the java.util.function.Function interface. These methods allow you to combine multiple functions together to create new functions that represent the composition of the original functions.
 
@@ -361,7 +361,7 @@ This example illustrates how the andThen and compose methods affect the function
 
 Recursion is a programming technique where a function calls itself in order to solve a problem. 
 
-- See also: [Recursion](../../paradigms/fp.md#recursion)
+- See also: [Recursion](../../paradigms/declarative/functional.md#recursion)
 
 The process continues until a base case is reached, at which point the function stops calling itself and starts returning results, which are then combined to solve the original problem.
 
@@ -403,7 +403,7 @@ Factorial of 5 is: 120
 ### First-Class Functions
 In languages with first-class functions, functions are treated just like any other data type, enabling powerful functional programming paradigms.This means that functions can be assigned to variables, passed as arguments to other functions, returned as values from functions, and stored in data structures like arrays or lists.
 
-- See also: [First-Class Funtions](../../paradigms/fp.md#first-class-functions)
+- See also: [First-Class Funtions](../../paradigms/declarative/functional.md#first-class-functions)
 
 ```java
 import java.util.function.Function;
@@ -445,7 +445,7 @@ In this example, we demonstrate the features of first-class functions in modern 
 
 In simple terms, a closure is a function bundled together with its lexical environment (the set of variables and their values) from the outer scope where it was created.
 
-- See also: [Closures](../../paradigms/fp.md#closures)
+- See also: [Closures](../../paradigms/declarative/functional.md#closures)
 
 In Java, we can create an equivalent closure using anonymous inner classes or lambda expressions. Prior to Java 8, anonymous inner classes were commonly used to achieve closure-like behavior. However, with the introduction of lambda expressions, creating closures in Java became more concise and expressive.
 

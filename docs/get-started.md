@@ -49,17 +49,19 @@
   - TypeScript
 
 ### Paradigms
-  - [Imperative Programming](pages/programming/paradigms/ip.md)
-  - [Procedural Programming](pages/programming/paradigms/pp.md)
-  - [Structured programming](pages/programming/paradigms/sp.md)
-  - [Object Oriented Programming (OOP)](pages/programming/paradigms/oop.md)
-  - [Functional Programming](pages/programming/paradigms/fp.md)
-  - Declarative Programming
-  - Logic Programming
-  - Event-Driven Programming
-  - Concurrent Programming
-  - Aspect-Oriented Programming (AOP)
-  - Domain-Specific Languages (DSLs)
+  - [Imperative Programming](pages/programming/paradigms/imperative/imperative.md)
+    - [Procedural Programming](pages/programming/paradigms/imperative/procedural/procedural.md)
+      - [Structured Programming](pages/programming/paradigms/imperative/procedural/structured/structured.md)
+        - [Object Oriented Programming (OOP)](pages/programming/paradigms/imperative/procedural/structured/object-oriented.md)
+        - Event-Driven Programming
+          - Reactive Programming
+        - Concurrent Programming
+        - Aspect-Oriented Programming (AOP)
+        - Logic Programming
+        - Domain-Specific Languages (DSLs)
+  - [Declarative Programming](pages/programming/paradigms/declarative/declarative.md)
+    - [Functional Programming](pages/programming/paradigms/declarative/functional.md)
+
 
 <sub>[Back to top](#table-of-contents)</sub>
 
