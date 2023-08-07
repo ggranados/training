@@ -10,6 +10,11 @@
     * [Scenario:](#scenario)
     * [Steps:](#steps)
   * [Benefits of SSO:](#benefits-of-sso)
+  * [SSO Protocols](#sso-protocols)
+    * [SAML](#saml)
+    * [OAuth](#oauth)
+    * [OIDC](#oidc)
+    * [Kerberos](#kerberos)
   * [Disadvantages of SSO](#disadvantages-of-sso)
   * [Ref.](#ref)
 <!-- TOC -->
