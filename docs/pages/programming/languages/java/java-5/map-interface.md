@@ -106,17 +106,25 @@ Steps:
 
 1. **Hashing the Key**: When put a key-value pair into a `HashMap`, Java calculates the *hash code* of the key using the `hashCode()` method of the key object. The hash code is an integer value that determines the bucket in the hash table where the key-value pair will be stored.
 
+
 2. **Index Calculation**: To convert the hash code into a valid index in the hash table, Java applies the following computation: `index = hashcode & (table.length - 1)`. The `table.length` represents the current size of the hash table, which is usually a power of two. The `&` operation with `(table.length - 1)` ensures that the index stays within the valid range of the array.
+
 
 3. **Handling Collisions**: If two different keys produce the same index after hashing, a collision occurs. To handle collisions, Java uses *separate chaining*: each bucket in the hash table can hold multiple `Node` objects (key-value pairs) forming a linked list or a balanced tree (in case of high collisions).
 
+
 4. **Linked List or Balanced Tree**: In older versions of Java, collisions are resolved using a linked list. In Java 8 and later, if a bucket's linked list exceeds a certain threshold (`TREEIFY_THRESHOLD`, 8 by default), the linked list is transformed into a balanced tree (red-black tree) to improve lookup time in case of high collisions.
+
 
 5. **Performance and Load Factor**: The `HashMap` maintains a load factor, which represents the ratio of the number of key-value pairs to the number of buckets in the hash table. When the number of elements exceeds the load factor threshold (`LOAD_FACTOR`, 0.75 by default), the hash table is resized to accommodate more buckets and reduce the chance of collisions, thereby maintaining performance.
 
+
 6. **Resizing**: When resizing occurs, the number of buckets (array size) is doubled, and each key-value pair is rehashed to determine its new bucket in the resized hash table. This operation may be expensive, but it ensures that the `HashMap` remains efficient even with a large number of elements.
 
+
 7. **Iterating through HashMap**: Iterating through a `HashMap` can be done using an iterator or by using enhanced for-each loop through the `entrySet()`, `keySet()`, or `values()`.
+
+![img.png](../../../../../img/map-internally.png)
 
 >Keep in mind that the `HashMap` is not thread-safe. If you need a thread-safe version of `HashMap`, you can use `ConcurrentHashMap`, which provides better concurrency and performance in multi-threaded environments.
 
