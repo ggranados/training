@@ -24,7 +24,7 @@ Procedural programming and structured programming are subsets of imperative prog
 
 ## Languages
 
-[Procedural](procedural/procedural.md) and [object-oriented programming (OOP)](procedural/structured/object-oriented.md) languages fall under imperative programming, such as C, C++, C#, and [Java](../../languages/java).
+[Procedural](procedural.md) and [object-oriented programming (OOP)](object-oriented.md) languages fall under imperative programming, such as C, C++, C#, and [Java](../languages/java).
 
 
 <sub>[Back to top](#table-of-contents)</sub>
@@ -57,7 +57,7 @@ System.out.println("Sum: " + sum);
 
 ___
 
-[Get Started](../../../../get-started.md#paradigms) |
-[Java](../../languages/java/java.md#whats-oop)
+[Get Started](../../../get-started.md#paradigms) |
+[Java](../languages/java/java.md#whats-oop)
 
 ---
