@@ -215,7 +215,7 @@ A pure functional programming language is a programming language that adheres st
 Non-pure functional programming languages combine functional programming concepts with other programming paradigms, such as object-oriented programming or imperative programming. These languages provide support for functional programming features but also allow for mutable state, side effects, and imperative constructs.
 
   - Java (with the addition of lambda expressions and the Stream API in Java 8)
-    - See also: [FP in Java](../languages/java/fp.md)
+    - See also: [FP in Java](../../languages/java/fp.md)
 - JavaScript (with functional programming libraries like Ramda and lodash-fp)
 - Scala
 - F#
@@ -239,7 +239,7 @@ https://www.baeldung.com/java-functional-programming#:~:text=Basically%2C%20func
 
 ---
 
-[Get Started](../../../get-started.md#paradigms) 
+[Get Started](../../../../get-started.md#paradigms) 
 
 ---
 

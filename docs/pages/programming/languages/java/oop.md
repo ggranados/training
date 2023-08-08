@@ -336,7 +336,7 @@ ___
 
 [Get Started](../../../../get-started.md) |
 [Paradigms](../../../../get-started.md#paradigms) |
-[OOP](../../paradigms/oop.md) |
+[OOP](../../paradigms/imperative/procedural/structured/object-oriented.md) |
 [Java](java.md#whats-oop)
 
 ___

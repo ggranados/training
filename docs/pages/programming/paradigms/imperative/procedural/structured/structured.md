@@ -15,15 +15,17 @@
 
 ## What's Structured Programming
 
-Structured programming is a programming paradigm that aims to improve the clarity, maintainability, and efficiency of code by enforcing a set of structured control flow constructs. It advocates for the use of structured control flow statements like loops and conditionals to create well-organized and readable code.
+Structured programming is a programming paradigm that aims to improve the clarity, maintainability, and efficiency of code *by enforcing a set of structured control flow constructs*. It advocates for the use of structured control flow statements like loops and conditionals to create well-organized and readable code.
 
 Key principles of structured programming include:
 
-- Sequential Execution: Code is executed in a linear, top-down order, with one statement following another.
+- **Sequential Execution**: Code is executed in a linear, top-down order, with one statement following another.
 
-- Selection (Conditionals): The use of conditional statements, such as if-else and switch-case, to make decisions based on certain conditions.
 
-- Iteration (Loops): The use of loop statements, such as for, while, and do-while, to repeat a block of code until a certain condition is met.
+- **Selection (Conditionals)**: The use of conditional statements, such as if-else and switch-case, to make decisions based on certain conditions.
+
+
+- **Iteration (Loops)**: The use of loop statements, such as for, while, and do-while, to repeat a block of code until a certain condition is met.
 
 By following these principles, structured programming promotes code that is easier to understand, debug, and modify.
 
@@ -73,7 +75,7 @@ By structuring the code in this way, it becomes more organized, easier to follow
 - Ada
 - Modula-2
 - PL/I
-- [Java](../../programming/languages/java)
+- [Java](../../../../languages/java)
 - C++
 - Python
 - C#
@@ -100,6 +102,6 @@ By structuring the code in this way, it becomes more organized, easier to follow
 
 ---
 
-[Get Started](../../../get-started.md#paradigms)
+[Get Started](../../../../../../get-started.md#paradigms)
 
 ---
