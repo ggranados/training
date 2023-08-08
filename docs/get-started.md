@@ -23,6 +23,7 @@
   * [Algorithms](#algorithms)
   * [Cyber-security Fundamentals](#cyber-security-fundamentals)
   * [Design Patterns](#design-patterns)
+  * [Architectural Patterns](#architectural-patterns)
   * [Web Services and API Design](#web-services-and-api-design)
 <!-- TOC -->
 
@@ -53,14 +54,14 @@
     - [Procedural Programming](pages/programming/paradigms/imperative/procedural/procedural.md)
       - [Structured Programming](pages/programming/paradigms/imperative/procedural/structured/structured.md)
         - [Object Oriented Programming (OOP)](pages/programming/paradigms/imperative/procedural/structured/object-oriented.md)
-        - Event-Driven Programming
-          - Reactive Programming
         - Concurrent Programming
         - Aspect-Oriented Programming (AOP)
         - Logic Programming
         - Domain-Specific Languages (DSLs)
   - [Declarative Programming](pages/programming/paradigms/declarative/declarative.md)
     - [Functional Programming](pages/programming/paradigms/declarative/functional.md)
+    - Event-Driven Programming
+    - [Reactive Programming]()
 
 
 <sub>[Back to top](#table-of-contents)</sub>
@@ -149,14 +150,13 @@
 - Configuration Management
 - Continuous Deployment
 - Continuous Monitoring
-- Microservices Architecture
 - Agile Development
 - Automated Testing
 - Collaboration and Communication
 - Version Control
 - DevOps Culture
 
-<sub>[Back to top](#table-of-contents)</sub>
+  <sub>[Back to top](#table-of-contents)</sub>
 
 ## Data Structures
 - Array
@@ -249,23 +249,31 @@
   - Chain of Responsibility
   - Interpreter
   - Memento
-- Architectural Patterns:
-  - Model-View-Controller (MVC)
-  - Model-View-ViewModel (MVVM)
-  - Repository Pattern
-  - Layered Architecture
-  - Hexagonal Architecture
-  - CQRS
 - ACID
 - SOLID
 - Inversion of Control (IoC)
   - Dependency Injection (DI)
   - Template Method Pattern
-  - Event-driven Architecture (EDA)
   - Aspect-Oriented Programming (AOP)
   - Service Locator
 
-<sub>[Back to top](#table-of-contents)</sub>
+    <sub>[Back to top](#table-of-contents)</sub>
+
+## Architectural Patterns
+  - Model-View-Controller (MVC)
+  - Model-View-ViewModel (MVVM)
+  - Monolithic
+  - Repository Pattern
+  - Layered
+  - Microkernel
+  - Hexagonal
+  - Microservices
+  - Message-Driven
+  - [Reactive Systems](pages/architectural-patterns/reactive.md)
+  - Event-driven Architecture (EDA)
+  - Command and Query Responsibility Segregation (CQRS)
+   
+  <sub>[Back to top](#table-of-contents)</sub>  
 
 ## Web Services and API Design
 - RESTful Architecture
@@ -282,8 +290,8 @@
   - [OpenID Connect](pages/ws-and-api-design/authn-and-authz/openid-connect.md)
   - [JSON Web Token (JWT)](pages/ws-and-api-design/authn-and-authz/jwt.md)
   - [SAML](pages/ws-and-api-design/authn-and-authz/saml.md)
-  <!--TODO:Kerberos-->
-  <!--TODO:LDAP-->
+  - Kerberos
+  - LDAP
 - API Security
 - Error Handling and Validation
 - Documentation and Discovery
