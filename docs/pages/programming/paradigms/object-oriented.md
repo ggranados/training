@@ -26,9 +26,9 @@ ___
 
 ## What's OOP
 
-Object-Oriented Programming (OOP) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects. There are many object-oriented programming languages, including JavaScript, C++, [Java](../../../../languages/java/java.md#whats-oop), and Python.[^1]
+Object-Oriented Programming (OOP) is a programming paradigm in computer science that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects. There are many object-oriented programming languages, including JavaScript, C++, [Java](../languages/java/java.md#whats-oop), and Python.[^1]
 
-![class-diagram.png](../../../../../../img/class-diagram.png)
+![class-diagram.png](../../../img/class-diagram.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -39,14 +39,14 @@ The core concepts of object-oriented programming (OOP) include:
 ### Encapsulation 
 Encapsulation is the principle of bundling data and the methods that operate on that data into a single unit called an object. It allows for data hiding and abstraction, ensuring that the internal representation and behavior of an object are hidden from the outside and can only be accessed through well-defined interfaces.
 
-![encapsulation.jpg](../../../../../../img/encapsulation.jpg)
+![encapsulation.jpg](../../../img/encapsulation.jpg)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 ### Inheritance 
 Inheritance enables the creation of new classes (derived classes) based on existing classes (base or parent classes). Derived classes inherit properties and behaviors from their parent classes, allowing for code reuse and the creation of class hierarchies.
 
-![InheritanceinObjectOrientedProgramming.png](../../../../../../img/InheritanceinObjectOrientedProgramming.png)
+![InheritanceinObjectOrientedProgramming.png](../../../img/InheritanceinObjectOrientedProgramming.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -66,7 +66,7 @@ Static polymorphism is achieved through method overloading and operator overload
 #### Dynamic (Runtime) Polymorphism:
 Dynamic polymorphism is achieved through method overriding and inheritance. Method overriding allows a subclass to provide a different implementation of a method that is already defined in its superclass. The decision on which implementation to execute is made at runtime based on the actual type of the object being referenced. This allows for the invocation of the appropriate method based on the specific object's type during runtime. Dynamic polymorphism is commonly associated with the "IS-A" relationship, where a subclass is considered an instance of its superclass.
 
-![PolymorphisminObjectOrientedProgramming.png](../../../../../../img/PolymorphisminObjectOrientedProgramming.png)
+![PolymorphisminObjectOrientedProgramming.png](../../../img/PolymorphisminObjectOrientedProgramming.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -93,7 +93,7 @@ In OOP, communication between objects occurs through message passing. Objects se
 ## OOP Languages
 
 - Java
-  - Visit: [OOP in Java](../../../../languages/java/oop.md)
+  - Visit: [OOP in Java](../languages/java/oop.md)
 - C++
 - C#
 - Python
@@ -154,7 +154,7 @@ ___
 
 ___
 
-[Get Started](../../../../../../get-started.md#paradigms) |
-[Java](../../../../languages/java/java.md#whats-oop)
+[Get Started](../../../get-started.md#paradigms) |
+[Java](../languages/java/java.md#whats-oop)
 
 ---

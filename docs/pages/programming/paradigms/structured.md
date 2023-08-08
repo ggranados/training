@@ -75,7 +75,7 @@ By structuring the code in this way, it becomes more organized, easier to follow
 - Ada
 - Modula-2
 - PL/I
-- [Java](../../../../languages/java)
+- [Java](../languages/java)
 - C++
 - Python
 - C#
@@ -102,6 +102,6 @@ By structuring the code in this way, it becomes more organized, easier to follow
 
 ---
 
-[Get Started](../../../../../../get-started.md#paradigms)
+[Get Started](../../../get-started.md#paradigms)
 
 ---

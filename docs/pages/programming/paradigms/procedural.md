@@ -51,7 +51,7 @@ The first major procedural programming languages appeared circa 1957–1964, inc
 
 ---
 
-[Get Started](../../../../../get-started.md#paradigms) 
+[Get Started](../../../get-started.md#paradigms) 
 
 ---
 

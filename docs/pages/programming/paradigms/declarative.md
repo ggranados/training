@@ -79,7 +79,7 @@ Declarative programming is a high-level programming concept, which is the opposi
 
 Declarative programming relies on underlying components of a given language to carry out the necessary steps to reach the stated outcome. In declarative programming, typical programming constructs such as loops and if/then conditions do not exist, because they are **instructional**
 
-- See also: [Imperative Programming](../imperative/imperative.md)
+- See also: [Imperative Programming](imperative.md)
 
 ---
 
@@ -89,7 +89,7 @@ Declarative programming relies on underlying components of a given language to c
 
 ---
 
-[Get Started](../../../../get-started.md#paradigms)
+[Get Started](../../../get-started.md#paradigms)
 
 ---
 

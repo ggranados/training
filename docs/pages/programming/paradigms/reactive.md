@@ -167,6 +167,6 @@ ___
 - 
 ___
 
-[Get Started](../../../../../../get-started.md#paradigms)
+[Get Started](../../../get-started.md#paradigms)
 
 ---
