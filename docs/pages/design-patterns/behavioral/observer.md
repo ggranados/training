@@ -14,9 +14,9 @@
 
 ---
 
-The Observer Pattern is a behavioral design pattern used in software engineering to establish a `one-to-many dependency between objects`. This pattern defines a relationship where when one object (known as the `subject` or `observable`) undergoes a change in its state, all its dependent objects (known as `observers`) are automatically notified and updated accordingly.
+The Observer Pattern is a behavioral design pattern used in software engineering to establish a *one-to-many dependency between objects*. This pattern defines a relationship where when one object (known as the `subject` or `observable`) undergoes a change in its state, all its dependent objects (known as `observers`) are automatically notified and updated accordingly.
 
-The Observer Pattern is particularly useful in scenarios where multiple `objects need to be informed about changes to a certain object's state`, without tightly coupling the objects together. This promotes a more flexible and modular design, allowing changes to one part of the system without affecting other parts.
+The Observer Pattern is particularly useful in scenarios where multiple *objects need to be informed about changes to a certain object's state*, without tightly coupling the objects together. This promotes a more flexible and modular design, allowing changes to one part of the system without affecting other parts.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -32,7 +32,7 @@ The Observer Pattern is particularly useful in scenarios where multiple `objects
 
 - **Concrete Observers**: These are specific implementations of the observer interface. They define how they should respond to notifications from the subject. Each concrete observer can have its own behavior when it receives an update from the subject.
 
-![img.png](../pages/design-patterns/behavioral/observer.png)
+![img.png](../../../img/observer.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -77,8 +77,8 @@ Consider a weather monitoring system. The weather station (*subject*) gathers we
 
 ___
 
-[Get Started](../../../../get-started.md) |
-[Design Patterns](../get-started.md#design-patterns)
+[Get Started](../../../get-started.md) |
+[Design Patterns](../../../get-started.md#design-patterns)
 
 ___
 

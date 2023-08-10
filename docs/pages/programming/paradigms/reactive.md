@@ -55,9 +55,9 @@ console.log(a) // 12
 
 Reactive programming is a broader paradigm that encompasses the principles of the *Observer Pattern* but extends them to provide more comprehensive and powerful tools for handling asynchronous and event-driven programming.
 
-Reactive programming often employs the *Observer Pattern* as a fundamental building block. In reactive programming, you have a source of data (the `observable`) that emits events or data changes, and you have subscribers (the `observers`) that react to these events. This is analogous to the traditional *Observer Pattern*, where `a subject notifies its observers about state changes`.
+Reactive programming often employs the *Observer Pattern* as a fundamental building block. In reactive programming, you have a source of data (the `observable`) that emits events or data changes, and you have subscribers (the `observers`) that react to these events. This is analogous to the traditional *Observer Pattern*, where *a subject notifies its observers about state changes*.
 
-- See also: [Observer Pattern](../../design-patterns/behavioral/observer.png)
+- See also: [Observer Pattern](../../../img/observer.png)
 
 > Reactive programming goes beyond the basic Observer Pattern by providing operators and functions for composing, transforming, filtering, and manipulating data streams. 
 
@@ -86,7 +86,7 @@ print("Result:", result)
 print("Finished")
 ```
 
-In this case, if `perform_synchronous_io()` blocks, the `entire thread is blocked`, and the program will not proceed until the I/O operation completes.
+In this case, if `perform_synchronous_io()` blocks, the *entire thread is blocked*, and the program will not proceed until the I/O operation completes.
 
 <sub>[Back to top](#table-of-contents)</sub>
 

@@ -238,7 +238,7 @@
   - Bridge
   - Flyweight
 - Behavioral Patterns:
-  - [Observer](img/observer.md)
+  - [Observer](pages/design-patterns/behavioral/observer.md)
   - Strategy
   - Template Method
   - Command
