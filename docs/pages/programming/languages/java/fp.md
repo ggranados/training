@@ -505,16 +505,19 @@ public class ClosureExample {
 }
 ```
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 
 ## Ref.
 
-https://www.baeldung.com/java-8-lambda-expressions-tips
-https://www.baeldung.com/java-8-functional-interfaces
+- https://www.baeldung.com/java-8-lambda-expressions-tips
+- https://www.baeldung.com/java-8-functional-interfaces
 
 ___
 
 [Get Started](../../../../get-started.md) |
-[Back to top](#table-of-contents)
+[Paradigms](../../../../get-started.md#paradigms)
+
 
 ___
 

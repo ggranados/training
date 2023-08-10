@@ -13,8 +13,9 @@
     * [Java Standard Library](#java-standard-library)
     * [Generics and Collections](#generics-and-collections)
     * [Lambdas and Functional Interfaces](#lambdas-and-functional-interfaces)
-    * [Functional Programming (FP)](#functional-programming-fp)
+    * [Functional Programming (FP)](#functional-programming--fp-)
     * [Multithreading and Concurrency](#multithreading-and-concurrency)
+    * [Reactive Programming](#reactive-programming)
     * [Input/Output (I/O)](#inputoutput-io)
     * [Connecting to databases](#connecting-to-databases)
     * [New Features](#new-features)
@@ -85,7 +86,7 @@
   - [Method References](java-8/method-references.md)
   - [Built in Functional Interfaces](java-8/built-in-functional-interfaces.md)
 
-### Functional Programming (FP)
+### [Functional Programming (FP)](fp.md)
   - [Pure Functions](fp.md#pure-functions)
   - [Immutability](fp.md#immutability)
   - [Higher-order Functions](fp.md#higher-order-functions)
@@ -101,6 +102,17 @@
   - Inter-thread communication
   - Parallel streams
   - Executors and thread pools
+
+### Reactive Programming
+
+  - Reactive Streams
+  - Reactive Libraries for Java
+  - Publishers and Subscribers
+  - Operators and Transformations
+  - Error Handling in Reactive Programming
+  - Dealing with Time
+  - Combining Streams
+  - Resource Management
 
 ### Input/Output (I/O)
 
@@ -199,7 +211,6 @@ _____
 ___
 
 [Get Started](../../../../get-started.md) |
-[Languages](../../../../get-started.md#languages) |
-[Java](java.md#how-to-develop-with-java)
+[Languages](../../../../get-started.md#languages)
 
 ___
