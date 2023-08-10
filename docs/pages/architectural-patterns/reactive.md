@@ -128,6 +128,7 @@ ___
 
 ___
 
-[Get Started](../../get-started.md#architectural-patterns) 
+[Get Started](../../get-started.md) |
+[Architectural Patterns](../../get-started.md#architectural-patterns) 
 
 ---
