@@ -176,7 +176,7 @@ ___
 - Modular system (Project Jigsaw)
 - JShell (interactive Java shell)
 - HTTP/2 client
-- Reactive Streams API
+- [Reactive Streams API (Flow API)](java-9/reactive-streams.md)
 - Process API updates
 - Private methods in interfaces
 - Improved version string scheme 

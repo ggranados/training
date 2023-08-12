@@ -516,7 +516,10 @@ public class ClosureExample {
 ___
 
 [Get Started](../../../../get-started.md) |
-[Paradigms](../../../../get-started.md#paradigms)
+[Paradigms](../../../../get-started.md#paradigms) |
+[Functional Programming](../../paradigms/functional.md) |
+[Java](java.md)
+
 
 
 ___

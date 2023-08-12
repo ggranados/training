@@ -103,10 +103,10 @@
   - Parallel streams
   - Executors and thread pools
 
-### Reactive Programming
+### [Reactive Programming](reactive.md)
 
-  - Reactive Streams
-  - Reactive Libraries for Java
+  - [Reactive Streams](java-9/reactive-streams.md)
+  - [Reactive Libraries for Java](reactive.md#reactive-libraries-for-java)
   - Publishers and Subscribers
   - Operators and Transformations
   - Error Handling in Reactive Programming
