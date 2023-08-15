@@ -276,7 +276,7 @@
   <sub>[Back to top](#table-of-contents)</sub>  
 
 ## Web Services and API Design
-- RESTful Architecture
+- [RESTful Architecture](pages/ws-and-api-design/restful/restful.md)
 - SOAP
 - RPC
 - gRPC
