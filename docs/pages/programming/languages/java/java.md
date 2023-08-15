@@ -17,6 +17,7 @@
   * [How to Develop With Java?](#how-to-develop-with-java)
   * [How is Java Versioned?](#how-is-java-versioned)
   * [Functional Programing in Java](#functional-programing-in-java)
+  * [Reactive Programing in Java](#reactive-programing-in-java)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -109,6 +110,19 @@ Java introduced functional programming features with the release of [Java 8](ver
 - See also: [FP in Java](fp.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
+
+## Reactive Programing in Java
+
+Java is widely used for reactive programming, especially with the introduction of the [Reactive Streams API](../../../programming/languages/java/java-9/reactive-streams.md) and libraries like [Project Reactor](../../../programming/languages/java/java-9/reactor-core.md) and **Akka Streams**. Spring Framework also provides support for building reactive applications ([Spring WebFlux]()).
+
+Java introduced functional programming features with the release of [Java 9](versions.md#java-9) in September 2017.
+
+
+- See also: [Reactive Programming](../../../programming/paradigms/reactive.md)
+- See also: [Reactive Programming in Java](../../../programming/languages/java/reactive.md)
+- See also: [Reactive Streams](../../../programming/languages/java/java-9/reactive-streams.md)
+- See also: [Project Reactor](../../../programming/languages/java/java-9/reactor-core.md)
+- See also: [Spring WebFlux]()
 
 ___
 

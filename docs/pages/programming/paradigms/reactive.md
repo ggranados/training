@@ -159,9 +159,13 @@ In this example:
 
 Several modern programming languages and frameworks are commonly used for reactive programming due to their strong support for asynchronous and event-driven programming paradigms. Some of the most popular ones include:
 
-- **Java**: Java is widely used for reactive programming, especially with the introduction of the **Reactive Streams API** and libraries like **Project Reactor** and **Akka Streams**. Spring Framework also provides support for building reactive applications (**Spring WebFlux**).
+- **Java**: Java is widely used for reactive programming, especially with the introduction of the [Reactive Streams API](../../programming/languages/java/java-9/reactive-streams.md) and libraries like [Project Reactor](../../programming/languages/java/java-9/reactor-core.md) and **Akka Streams**. Spring Framework also provides support for building reactive applications ([Spring WebFlux]()).
 
-<!--TODO:See also: [Reactive Programming in Java]()-->
+  - See also: [Reactive Programming in Java](../../programming/languages/java/reactive.md)
+  - See also: [Reactive Streams](../../programming/languages/java/java-9/reactive-streams.md)
+  - See also: [Project Reactor](../../programming/languages/java/java-9/reactor-core.md)
+  - See also: [Spring WebFlux]()
+
 
 - **JavaScript/TypeScript**: JavaScript is commonly used for building reactive web applications, especially with the rise of front-end libraries and frameworks like **React**, **Angular**, and **Vue.js**. **TypeScript**, a statically typed superset of JavaScript, is also widely adopted for building reactive systems.
 

@@ -28,8 +28,8 @@ The *Reactive Streams Specification* doesn't provide a concrete implementation b
 
 By adhering to the *Reactive Streams Specification*, different reactive libraries can interoperate seamlessly, and users can switch between libraries without significant code changes, ensuring a consistent and standardized approach to reactive programming in Java.
 
-- See also[Reactive Streams](java-9/reactive-streams.md)
-- See also[Flow API](java-9/reactive-streams.md#jdk9-javautilconcurrentflow)
+- See also: [Reactive Streams](java-9/reactive-streams.md)
+- See also: [Flow API](java-9/reactive-streams.md#jdk9-javautilconcurrentflow)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
