@@ -8,6 +8,10 @@
   * [Table of Contents](#table-of-contents)
     * [Core interfaces](#core-interfaces)
   * [Reactive Streams Workflow](#reactive-streams-workflow)
+  * [Operators and Transformations](#operators-and-transformations)
+    * [Operator](#operator)
+    * [Transformation](#transformation)
+    * [Common Operators and Transformations](#common-operators-and-transformations)
   * [JDK9 java.util.concurrent.Flow](#jdk9-javautilconcurrentflow)
   * [Ref.](#ref)
 <!-- TOC -->
@@ -20,47 +24,75 @@ Is a set of interfaces and rules that define a standard for *asynchronous stream
 
 ### Core interfaces
 
-- **Publisher**: Represents a source of data that emits items to subscribers. Publishers emit items one by one in response to subscriber requests.
+- #### Publisher
+  Represents a source of data that emits items to subscribers. Publishers emit items one by one in response to subscriber requests.
+  
+  ```java
+  import org.reactivestreams.Subscriber;
+  
+  public interface Publisher<T> {
+      void subscribe(Subscriber<? super T> subscriber);
+  }
+  ```
 
-```java
-import org.reactivestreams.Subscriber;
+  Publishers emit three types of signals: `onNext`, `onError`, and `onComplete`:
+  - `onNext`: represents a regular data item
+  - `onError`: indicates an error condition
+  - `onComplete`: signals the end of the stream
 
-public interface Publisher<T> {
-    void subscribe(Subscriber<? super T> subscriber);
-}
-```
+<sub>[Back to top](#table-of-contents)</sub>
 
-- **Subscriber**: Represents a consumer of data emitted by a publisher. Subscribers signal demand for items and receive them asynchronously.
+- #### Subscriber
+  Represents a consumer of data emitted by a publisher. Subscribers signal demand for items (or signals) and receive them asynchronously.
 
-```java
-import org.reactivestreams.Subscription;
+  ```java
+  import org.reactivestreams.Subscription;
+  
+  public interface Subscriber<T> {
+      void onSubscribe(Subscription subscription);
+      void onNext(T item);
+      void onError(Throwable throwable);
+      void onComplete();
+  }
+  ```
+  A `Subscriber` requests a certain number of items from the Publisher (`request(n)`) and processes them as they arrive.
 
-public interface Subscriber<T> {
-    void onSubscribe(Subscription subscription);
-    void onNext(T item);
-    void onError(Throwable throwable);
-    void onComplete();
-}
-```
+  Subscribers provide methods for handling each type of signal: 
+    - `onNext` for processing data items
+    - `onError` for handling errors
+    - `onComplete` for handling the completion of the stream
 
-- **Subscription**: Represents the connection between a subscriber and a publisher. It allows subscribers to request items and cancel their subscription.
+<sub>[Back to top](#table-of-contents)</sub>
 
-```java
-public interface Subscription {
-    void request(long n);
-    void cancel();
-}
-```
+- #### Subscription
+  Represents the connection between a subscriber and a publisher. It allows subscribers to request items and cancel their subscription.
 
-- **Processor**: Combines the roles of both publisher and subscriber. Processors transform, filter, or otherwise process items as they flow through the stream.
+  ```java
+  public interface Subscription {
+      void request(long n);
+      void cancel();
+  }
+  ```
+  A Subscription has several important responsibilities:
 
-```java
-import org.reactivestreams.Publisher;
-import org.reactivestreams.Subscriber;
+  - **Requesting Data**: The `Subscriber` uses the `Subscription` to *request a certain number of data items from the Publisher*. This is done through the `request(long n)` method provided by the Subscription. The Publisher then sends the requested number of items to the Subscriber.
+  
+  - **Cancelling Subscription**: The `Subscriber` can use the `Subscription` to cancel (`cancel()`) its subscription to the Publisher at any time. This *is important for managing resources* and ensuring that the Publisher stops emitting data if the Subscriber is no longer interested.
+  
+  - **Backpressure**: The `Subscription` allows the `Subscriber` to implement backpressure, which is a mechanism that allows the Subscriber to *control the rate at which it receives data from the Publisher*. If the Subscriber becomes overwhelmed by data, it can use backpressure to signal the Publisher to slow down or stop emitting data temporarily.
 
-public interface Processor<T, R> extends Subscriber<T>, Publisher<R> {
-}
-```
+<sub>[Back to top](#table-of-contents)</sub>
+
+- #### Processor
+  Combines the roles of both publisher and subscriber. Processors transform, filter, or otherwise process items as they flow through the stream.
+  
+  ```java
+  import org.reactivestreams.Publisher;
+  import org.reactivestreams.Subscriber;
+  
+  public interface Processor<T, R> extends Subscriber<T>, Publisher<R> {
+  }
+  ```
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -118,6 +150,42 @@ High-level description of the Reactive Streams workflow:
 
 ![reactive-streams.png](../../../../../img/reactive-streams.png)
 
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Operators and Transformations
+
+Operators and Transformations are used to _modify_, _filter_, _combine_, or otherwise _transform_ the data as it flows through the stream. Let's define these terms:
+
+### Operator
+- Operators are used to modify or manipulate the data emitted by a publisher (source) before it reaches a subscriber (consumer). They can perform operations like _filtering_, _mapping_, _merging_, and more. 
+
+
+- Operators are typically chained together to create a pipeline of data transformations.
+
+### Transformation
+A transformation is a specific type of operator that _takes an input stream and produces an output stream where each element has been transformed in some way_.
+
+### Common Operators and Transformations
+
+- **map**: Transforms each element emitted by the source stream using a provided function. For example, you can transform a stream of integers to their squares using the map operator.
+
+
+- **filter**: Filters the elements emitted by the source stream based on a provided predicate. Only elements that satisfy the predicate are allowed to pass through.
+
+
+- **flatMap**: Applies a function to each element emitted by the source stream, resulting in multiple output elements for each input element. The output elements are then merged into a single output stream.
+
+
+- **merge**: Combines multiple streams into a single output stream, interleaving the elements as they arrive from different sources.
+
+
+- **concat**: Concatenates multiple streams in a sequential manner, ensuring that the elements from the first stream are emitted before the elements from the second stream, and so on.
+
+
+- **reduce**: Aggregates the elements emitted by the source stream using an accumulator function, producing a single output element.
+
+>These are just a few examples, and there are many more operators and transformations available in Reactive Streams libraries like Reactor or RxJava.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
