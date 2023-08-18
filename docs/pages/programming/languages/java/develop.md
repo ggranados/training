@@ -108,13 +108,14 @@
   - [Reactive Streams](java-9/reactive-streams.md)
   - [Publishers and Subscribers](java-9/reactive-streams.md#core-interfaces)
   - [Operators and Transformations](java-9/reactive-streams.md#operators-and-transformations)
-  - Error Handling in Reactive Programming
-  - Dealing with Time
-  - Combining Streams
-  - Resource Management
   - [Reactive Libraries for Java](reactive.md#reactive-libraries-for-java)
     - [Project Reactor](java-8/project-reactor.md)
       - [Reactive Data Types](java-8/project-reactor.md#reactive-data-types)
+      - [Combining Streams](java-8/project-reactor.md#combining-two-streams)
+      - [Dealing with Time](java-8/project-reactor.md#dealing-with-time)
+      - Error Handling in Reactive Programming
+      - Resource Management
+      - Concurrency
 
 ### Input/Output (I/O)
 

@@ -24,6 +24,8 @@
   * [Backpressure](#backpressure)
   * [Operating on a Stream](#operating-on-a-stream)
     * [Combining Two Streams](#combining-two-streams)
+    * [Dealing with Time](#dealing-with-time)
+    * [Choose the Appropriate Operator](#choose-the-appropriate-operator)
   * [Hot Streams](#hot-streams)
     * [Creating a ConnectableFlux](#creating-a-connectableflux)
     * [Throttling](#throttling)
@@ -456,7 +458,7 @@ With logging in place, we can use it to visualize how the data is flowing throug
 This is the flow laid out in the Subscriber interface as part of the Reactive Streams Specification, and in reality, that's what's been instantiated behind the scenes in our call to `onSubscribe()`. It's a useful method, but to better understand what's happening let's provide a Subscriber interface directly:
 
 ```java
-List<Integer> elements = new ArrayList<>();
+  List<Integer> elements = new ArrayList<>();
 
   Flux.just(1, 2, 3, 4)
     .log()
@@ -527,6 +529,55 @@ The next thing to notice is a Streams terminal operator is just that, terminal, 
 
 ## Backpressure
 Backpressure is when a downstream can tell an upstream to send it less data in order to prevent it from being overwhelmed.
+
+Let's tell the upstream to only send two elements at a time by using request()
+
+```java
+ List<Integer> elements = new ArrayList<>();
+
+ Flux.just(1, 2, 3, 4)
+        .log()
+        .subscribe(new Subscriber<Integer>() {
+            private Subscription s;
+            int onNextAmount;
+            
+            @Override
+            public void onSubscribe(Subscription s) {
+                this.s = s;
+                s.request(2);
+            }
+        
+            @Override
+            public void onNext(Integer integer) {
+                elements.add(integer);
+                onNextAmount++;
+                if (onNextAmount % 2 == 0) {
+                    s.request(2);
+                }
+            }
+        
+            @Override
+            public void onError(Throwable t) {}
+        
+            @Override
+            public void onComplete() {}
+        });
+```
+
+Output:
+```bash
+23:31:15.395 [main] INFO  reactor.Flux.Array.1 - | onSubscribe([Synchronous Fuseable] FluxArray.ArraySubscription)
+23:31:15.397 [main] INFO  reactor.Flux.Array.1 - | request(2)
+23:31:15.397 [main] INFO  reactor.Flux.Array.1 - | onNext(1)
+23:31:15.398 [main] INFO  reactor.Flux.Array.1 - | onNext(2)
+23:31:15.398 [main] INFO  reactor.Flux.Array.1 - | request(2)
+23:31:15.398 [main] INFO  reactor.Flux.Array.1 - | onNext(3)
+23:31:15.398 [main] INFO  reactor.Flux.Array.1 - | onNext(4)
+23:31:15.398 [main] INFO  reactor.Flux.Array.1 - | request(2)
+23:31:15.398 [main] INFO  reactor.Flux.Array.1 - | onComplete()
+```
+
+Essentially, this is reactive pull backpressure. We are requesting the upstream to only push a certain amount of elements, and only when we are ready.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -643,20 +694,326 @@ Tuple: (4, 9)
 Tuple: (5, 10)
 ```
 
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+### Dealing with Time
+Project Reactor provides a variety of operators and tools for dealing with time in reactive programming. These operators allow you to work with time-related aspects, such as _delaying emissions_, _setting timeouts_, _scheduling tasks_, and more. 
+
+Common time-related operators and techniques you can use in Reactor:
+
+- #### delayElements
+  This operator delays the emission of each element by a specified duration.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  import java.time.Duration;
+  
+  public class DelayExample {
+  public static void main(String[] args) {
+      Flux.range(1, 5)
+        .delayElements(Duration.ofSeconds(1))
+        .subscribe(System.out::println);
+        
+      // Wait for a moment to allow emissions to complete
+      try {
+          Thread.sleep(6000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+- #### delay
+  The delay operator introduces a delay between the time an element is emitted by the source publisher and the time it reaches the subscriber. It shifts the entire sequence of emissions in time, affecting each emitted element.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  import java.time.Duration;
+  
+  public class DelayExample {
+  public static void main(String[] args) {
+      Flux.range(1, 5)
+          .delay(Duration.ofSeconds(2))
+          .subscribe(System.out::println);
+    
+      // Wait for a moment to allow emissions
+      try {
+        Thread.sleep(10000);
+      } catch (InterruptedException e) {
+             e.printStackTrace();
+      }
+    }
+  }
+  ```
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+- #### timeout
+  This operator allows you to set a timeout for each element emitted by the stream. If an element takes longer than the specified duration to emit, an error is triggered.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  import java.time.Duration;
+  
+  public class TimeoutExample {
+  public static void main(String[] args) {
+      Flux.range(1, 5)
+        .delayElements(Duration.ofSeconds(2))
+        .timeout(Duration.ofSeconds(3))
+        .subscribe(
+          System.out::println,
+          error -> System.err.println("Timeout error: " + error)
+        );
+  
+      // Wait for a moment to allow emissions to complete
+      try {
+          Thread.sleep(7000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+- #### interval
+  The interval operator creates a `Flux` that emits a sequence of `Long` values representing an increasing clock time at specified intervals. It can be used to simulate periodic emissions or to create a stream of values over time.
+
+- #### take
+  This operator  is used to limit the number of elements emitted by a `Flux` or `Mono` stream. It ensures that only the first `n` elements are allowed to pass through the stream, while any subsequent elements are ignored.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  import java.time.Duration;
+  
+  public class SchedulingExample {
+  public static void main(String[] args) {
+      Flux.interval(Duration.ofSeconds(1))
+       .take(5)
+       .subscribe(System.out::println);
+      
+      // Wait for a moment to allow emissions to complete
+      try {
+          Thread.sleep(6000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+
+
+- #### timer
+  The timer operator creates a `Flux` that emits a single item after a specified delay. It's useful when you want to introduce a delay before emitting a particular element or signal.
+
+  ```java
+  import reactor.core.publisher.Mono;
+  import java.time.Duration;
+  
+  public class TimerExample {
+  public static void main(String[] args) {
+      Mono.timer(Duration.ofSeconds(2))
+          .map(value -> "Delayed value")
+          .subscribe(System.out::println);
+  
+      // Wait for a moment to allow emissions
+      try {
+          Thread.sleep(3000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+
+- #### delaySubscription
+  The delaySubscription operator introduces a delay before subscribing to the source Flux. This can be useful to postpone the start of subscription or to synchronize the subscription with other operations.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  import java.time.Duration;
+  
+  public class DelaySubscriptionExample {
+  public static void main(String[] args) {
+      Flux.range(1, 5)
+        .delaySubscription(Duration.ofSeconds(2))
+        .subscribe(System.out::println);
+  
+      // Wait for a moment to allow emissions to complete
+      try {
+          Thread.sleep(3000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+  
+>These are just a few examples of how Reactor enables you to work with time in reactive programming
+
+### Choose the Appropriate Operator
+
+- `ìnterval`: simulates periodic emissions in time
+- `delay`: shifts the entire sequence of emissions in time.
+- `delayElement`: introduces a delay between individual elements.
+- `delaySubscription`: affects the timing of the subscription itself.
+- `timer`: emits a value after a specified delay.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 ## Hot Streams
+Currently, we've focused primarily on _cold streams_. These are static, fixed-length streams that are easy to deal with. A more realistic use case for reactive might be something that happens infinitely.
+
+These types of streams are called hot streams, as they are always running and can be subscribed to at any point in time, missing the start of the data.
+
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 ### Creating a ConnectableFlux
 
+`ConnectableFlux` is a special type of `Flux` provided by Project Reactor that allows you to control the timing of the subscription to the underlying data source. It is often used in scenarios where you want to share a single source of data among multiple subscribers, but you want to control when the actual data flow starts.
+
+>`ConnectableFlux` doesn't start emitting data to subscribers as soon as you subscribe to it. Instead, it requires an explicit call to the `connect()` method to begin emitting data to all subscribed consumers simultaneously.
+
+Let's create a Flux that lasts forever, outputting the results to the console, which would simulate an infinite stream of data coming from an external resource:
+
+```java
+ConnectableFlux<Object> publish = Flux.create(fluxSink -> {
+          while(true) {
+              fluxSink.next(System.currentTimeMillis());
+          }
+        })
+        .publish();
+```
+
+By calling `publish()` we are given a `ConnectableFlux`. This means that calling `subscribe()` won't cause it to start emitting, allowing us to add multiple subscriptions:
+
+```java
+publish.subscribe(System.out::println);        
+publish.subscribe(System.out::println);
+```
+
+If we try running this code, nothing will happen. It's not until we call `connect()`, that the Flux will start emitting:
+
+```java
+publish.connect();
+```
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Throttling
+Throttling in reactive programming refers to controlling the rate at which events are emitted or processed
+
+Here are a few throttling operators you can use:
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+- #### sample
+  The sample operator emits the most recent value from the source at a regular interval, effectively reducing the rate of emissions to match the specified interval.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  import java.time.Duration;
+  
+  public class SampleOperatorExample {
+  public static void main(String[] args) {
+      Flux.interval(Duration.ofMillis(300))
+        .sample(Duration.ofSeconds(1))
+        .subscribe(System.out::println);
+  
+      // Wait for a moment to allow emissions
+      try {
+          Thread.sleep(5000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+
+  In this example, the `Flux.interval` emits values every 300 milliseconds, and the `.sample(Duration.ofSeconds(1))` operator samples the most recent value every 1 second. As a result, _only one value is emitted every second_.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+- #### throttleFirst
+  The throttleFirst operator emits the first event within a specified time window and then ignores subsequent events until the window expires.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  import java.time.Duration;
+  
+  public class ThrottleFirstExample {
+  public static void main(String[] args) {
+      Flux.interval(Duration.ofMillis(300))
+        .throttleFirst(Duration.ofSeconds(1))
+        .subscribe(System.out::println);
+  
+      // Wait for a moment to allow emissions
+      try {
+          Thread.sleep(5000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+  In this example, the `Flux.interval` emits values every 300 milliseconds, and the `.throttleFirst(Duration.ofSeconds(1))` operator allows the first event to pass through within a 1-second window, ignoring subsequent events until the window resets.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+- #### throttleLast
+  The throttleLast operator emits the most recent event within a specified time window and then ignores subsequent events until the window expires.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  import java.time.Duration;
+  
+  public class ThrottleLastExample {
+  public static void main(String[] args) {
+      Flux.interval(Duration.ofMillis(300))
+        .throttleLast(Duration.ofSeconds(1))
+        .subscribe(System.out::println);
+  
+      // Wait for a moment to allow emissions
+      try {
+          Thread.sleep(5000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
+    }
+  }
+  ```
+  In this example, the `Flux.interval` emits values every 300 milliseconds, and the `.throttleLast(Duration.ofSeconds(1))` operator emits the most recent value within a 1-second window, ignoring intermediate values until the window resets.
+
+  Both the `sample` operator and the `throttleLast` operator have a similar effect: _they emit the most recent event within a specified time window while ignoring intermediate events_.
+
+  >The key difference between them is in naming and documentation conventions. In Project Reactor, the `sample` operator is generally associated with the concept of sampling the source stream at a regular interval, while the `throttleLast` operator is associated with throttling by only emitting the most recent event within a specified time window.
+
+  However, functionally speaking, they achieve the same result of emitting the most recent event within a time window and ignoring the rest.
+
+> These are just a few examples of how you can use throttling operators in Project Reactor to control the rate of emissions in your reactive streams
+
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ## Concurrency
 
+<sub>[Back to top](#table-of-contents)</sub>
 
+---
 
 ## Ref.
 
 - https://projectreactor.io/
 - https://github.com/reactor/reactor-core
 - https://www.baeldung.com/reactor-core
+
+---
