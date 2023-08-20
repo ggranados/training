@@ -7,6 +7,7 @@
 * [Reactive Programming](#reactive-programming)
   * [Table of Contents](#table-of-contents)
   * [What's Reactive Programming](#whats-reactive-programming)
+  * [Observer Pattern](#observer-pattern)
   * [Asynchronous vs Synchronous](#asynchronous-vs-synchronous)
     * [Thread Management in Synchronous Programming](#thread-management-in-synchronous-programming)
     * [Thread Management in Asynchronous Programming](#thread-management-in-asynchronous-programming)
@@ -24,6 +25,42 @@
 Reactive programming is a programming paradigm that focuses on asynchronous data streams and the propagation of changes. It is often used to handle events and data flow in a more responsive and efficient manner, particularly in user interfaces and systems where events occur frequently.
 
 At the core of reactive programming is the concept of `reactive streams`. A reactive stream represents a `sequence of events or data changes over time`. These events can be anything from user interactions, sensor readings, database updates, or any other asynchronous events. Reactive programming provides tools and abstractions to process, transform, and react to these events in a declarative and composable way.
+
+
+For example, in an imperative programming setting, `a := b + c` would mean that `a` is being assigned the result of `b + c` in the instant the expression is evaluated, and later, the values of `b` and `c` can be changed with no effect on the value of `a`. On the other hand, in reactive programming, the value of `a` is automatically updated whenever the values of `b` or `c` change, without the program having to explicitly re-execute the statement `a := b + c` to determine the presently assigned value of a.
+
+
+```javascript
+var b = 1
+var c = 2
+var a = b + c
+b = 10
+console.log(a) // 3 (not 12 because "=" is not a reactive assignment operator)
+
+```
+
+Now imagine you have a special operator "$=" that changes the value of a variable (executes code on the right side of the operator and assigns result to left side variable) not only when explicitly initialized, but also when referenced variables (on the right side of the operator) are changed
+
+```javascript
+var b = 1
+var c = 2
+var a $= b + c
+b = 10
+console.log(a) // 12
+```
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Observer Pattern
+
+Reactive programming is a broader paradigm that encompasses the principles of the *Observer Pattern* but extends them to provide more comprehensive and powerful tools for handling asynchronous and event-driven programming.
+
+Reactive programming often employs the *Observer Pattern* as a fundamental building block. In reactive programming, you have a source of data (the `observable`) that emits events or data changes, and you have subscribers (the `observers`) that react to these events. This is analogous to the traditional *Observer Pattern*, where *a subject notifies its observers about state changes*.
+
+- See also: [Observer Pattern](../../../img/observer.png)
+
+> Reactive programming goes beyond the basic Observer Pattern by providing operators and functions for composing, transforming, filtering, and manipulating data streams. 
+
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -49,7 +86,7 @@ print("Result:", result)
 print("Finished")
 ```
 
-In this case, if `perform_synchronous_io()` blocks, the `entire thread is blocked`, and the program will not proceed until the I/O operation completes.
+In this case, if `perform_synchronous_io()` blocks, the *entire thread is blocked*, and the program will not proceed until the I/O operation completes.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -74,7 +111,7 @@ In this case, when perform_asynchronous_io() is called, the thread is not blocke
 >Asynchronous programming is particularly useful in scenarios where tasks can be performed concurrently, such as handling multiple network requests or responding to various user interactions in a responsive way.
 
 
-![img.png](reactive-programming.png)
+![img.png](../../../img/reactive-programming.png)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -122,9 +159,13 @@ In this example:
 
 Several modern programming languages and frameworks are commonly used for reactive programming due to their strong support for asynchronous and event-driven programming paradigms. Some of the most popular ones include:
 
-- **Java**: Java is widely used for reactive programming, especially with the introduction of the **Reactive Streams API** and libraries like **Project Reactor** and **Akka Streams**. Spring Framework also provides support for building reactive applications (**Spring WebFlux**).
+- **Java**: Java is widely used for reactive programming, especially with the introduction of the [Reactive Streams API](../../programming/languages/java/java-9/reactive-streams.md) and libraries like [Project Reactor](../languages/java/java-8/project-reactor.md) and **Akka Streams**. Spring Framework also provides support for building reactive applications ([Spring WebFlux]()).
 
-<!--TODO:See also: [Reactive Programming in Java]()-->
+  - See also: [Reactive Programming in Java](../../programming/languages/java/reactive.md)
+  - See also: [Reactive Streams](../../programming/languages/java/java-9/reactive-streams.md)
+  - See also: [Project Reactor](../languages/java/java-8/project-reactor.md)
+  - See also: [Spring WebFlux]()
+
 
 - **JavaScript/TypeScript**: JavaScript is commonly used for building reactive web applications, especially with the rise of front-end libraries and frameworks like **React**, **Angular**, and **Vue.js**. **TypeScript**, a statically typed superset of JavaScript, is also widely adopted for building reactive systems.
 
@@ -164,7 +205,8 @@ ___
 
 - https://www.lightbend.com/white-papers-and-reports/reactive-programming-versus-reactive-systems
 - https://www.baeldung.com/cs/reactive-programming
-- 
+- https://en.wikipedia.org/wiki/Reactive_programming
+
 ___
 
 [Get Started](../../../get-started.md#paradigms)

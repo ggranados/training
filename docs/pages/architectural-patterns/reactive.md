@@ -35,25 +35,25 @@ The Reactive Manifesto defines four key principles that reactive systems should 
 
 ### Responsiveness
 
-Reactive Systems prioritize responsiveness by `ensuring that the system reacts quickly` to incoming events and requests, providing timely and consistent feedback to users. This responsiveness enhances the user experience and allows the system to adapt to varying workloads.
+Reactive Systems prioritize responsiveness by *ensuring that the system reacts quickly* to incoming events and requests, providing timely and consistent feedback to users. This responsiveness enhances the user experience and allows the system to adapt to varying workloads.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 ### Resilience
 
-Reactive Systems are built to `remain operational even in the face of failures, errors, or unexpected events`. They use techniques such as isolation, replication, and error recovery mechanisms to ensure that failures in one part of the system do not lead to complete system outages.
+Reactive Systems are built to *remain operational even in the face of failures, errors, or unexpected events*. They use techniques such as isolation, replication, and error recovery mechanisms to ensure that failures in one part of the system do not lead to complete system outages.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 ### Elasticity
 
-Reactive Systems can `dynamically scale their resources up or down` based on the current workload and demand. This elasticity allows them to handle varying levels of traffic and resource requirements efficiently, optimizing resource utilization.
+Reactive Systems can *dynamically scale their resources up or down* based on the current workload and demand. This elasticity allows them to handle varying levels of traffic and resource requirements efficiently, optimizing resource utilization.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
 ### Message-Driven
 
-Communication between different components and services in a Reactive System `is typically asynchronous and message-driven`. This approach allows components to interact in a decoupled manner, enabling better isolation, fault tolerance, and scalability.
+Communication between different components and services in a Reactive System *is typically asynchronous and message-driven*. This approach allows components to interact in a decoupled manner, enabling better isolation, fault tolerance, and scalability.
 
 ![img.png](../../img/reactive.png)
 
@@ -61,22 +61,22 @@ Communication between different components and services in a Reactive System `is
 
 ## Characteristics of Reactive Systems
 
-- **Event-Driven**: Reactive Systems are often built around the concept of events, where `changes or occurrences are represented as events` that trigger reactions within the system. Event-driven architectures enable real-time processing and the handling of continuous streams of data.
+- **Event-Driven**: Reactive Systems are often built around the concept of events, where *changes or occurrences are represented as events* that trigger reactions within the system. Event-driven architectures enable real-time processing and the handling of continuous streams of data.
 
 
-- **Data Streaming**: Many Reactive Systems involve processing and reacting to streams of data, such as sensor readings, user interactions, or real-time analytics. They leverage technologies like stream processing frameworks to `handle and analyze data in motion`.
+- **Data Streaming**: Many Reactive Systems involve processing and reacting to streams of data, such as sensor readings, user interactions, or real-time analytics. They leverage technologies like stream processing frameworks to *handle and analyze data in motion*.
 
 
-- **Location Transparency**: Components within a Reactive System can be distributed across different locations, data centers, or cloud providers. Location transparency means that the `system handles communication and data exchange seamlessly regardless of where the components are located`.
+- **Location Transparency**: Components within a Reactive System can be distributed across different locations, data centers, or cloud providers. Location transparency means that the *system handles communication and data exchange seamlessly regardless of where the components are located*.
 
 
-- **Autonomy**: Components within a Reactive System are designed to be autonomous and independent. This autonomy allows for better isolation, resilience, and the `ability to update or replace components without affecting the entire system`.
+- **Autonomy**: Components within a Reactive System are designed to be autonomous and independent. This autonomy allows for better isolation, resilience, and the *ability to update or replace components without affecting the entire system*.
 
 
-- **Consistency and Eventual Consistency**: Reactive Systems may prioritize availability and partition tolerance over strict consistency in distributed scenarios. They often embrace eventual consistency, where `data consistency is achieved over time as the system processes events and transactions`.
+- **Consistency and Eventual Consistency**: Reactive Systems may prioritize availability and partition tolerance over strict consistency in distributed scenarios. They often embrace eventual consistency, where *data consistency is achieved over time as the system processes events and transactions*.
 
 
-- **Reactive Streams**: Reactive Streams is a specification for handling asynchronous stream processing, providing standardized interfaces for handling data streams with backpressure, allowing for `better control of resource usage and avoiding overload`.
+- **Reactive Streams**: Reactive Streams is a specification for handling asynchronous stream processing, providing standardized interfaces for handling data streams with backpressure, allowing for *better control of resource usage and avoiding overload*.
 
 
 <sub>[Back to top](#table-of-contents)</sub>
@@ -128,6 +128,7 @@ ___
 
 ___
 
-[Get Started](../../get-started.md#architectural-patterns) 
+[Get Started](../../get-started.md) |
+[Architectural Patterns](../../get-started.md#architectural-patterns) 
 
 ---

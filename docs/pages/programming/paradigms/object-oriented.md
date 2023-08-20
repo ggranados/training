@@ -154,7 +154,8 @@ ___
 
 ___
 
-[Get Started](../../../get-started.md#paradigms) |
+[Get Started](../../../get-started.md) |
+[Paradigms](../../../get-started.md#paradigms) |
 [Java](../languages/java/java.md#whats-oop)
 
 ---
