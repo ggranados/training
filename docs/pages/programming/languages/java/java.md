@@ -120,7 +120,7 @@ Java introduced functional programming features with the release of [Java 9](ver
 
 - See also: [Reactive Programming](../../../programming/paradigms/reactive.md)
 - See also: [Reactive Programming in Java](../../../programming/languages/java/reactive.md)
-- See also: [Reactive Streams](../../../programming/languages/java/java-9/reactive-streams.md)
+- See also: [Java 9 Reactive Streams](../../../programming/languages/java/java-9/reactive-streams.md)
 - See also: [Project Reactor](../../../programming/languages/java/java-9/reactor-core.md)
 - See also: [Spring WebFlux]()
 
