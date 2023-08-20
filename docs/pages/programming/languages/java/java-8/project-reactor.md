@@ -30,6 +30,7 @@
     * [Creating a ConnectableFlux](#creating-a-connectableflux)
     * [Throttling](#throttling)
   * [Concurrency](#concurrency)
+    * [Example](#example)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -1005,6 +1006,57 @@ Here are a few throttling operators you can use:
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Concurrency
+
+All of our above examples have currently run on the main thread. However, we can control which thread our code runs on if we want.
+
+Concurrency management in Project Reactor is achieved through its scheduler system. Reactor provides a scheduler abstraction that allows you to control the execution of reactive streams on different threads and thread pools
+
+Some common implementations include:
+
+- ### Schedulers.immediate()
+  This scheduler *executes tasks on the calling thread synchronously*. It is primarily used for testing or situations where you want to ensure that an operation runs immediately.
+
+- ### Schedulers.single()
+  This scheduler *uses a single worker thread to execute tasks*. It's useful when you want to ensure that operations are executed sequentially and don't overlap.
+
+- ### Schedulers.parallel()
+  This scheduler *provides a pool of worker threads*, suitable for *parallelizing operations*. It's often used when you have CPU-bound or parallelizable tasks.
+
+- ### Schedulers.elastic()
+  This scheduler is designed to handle I/O-bound tasks. It *adapts its thread pool size dynamically* based on demand and is optimized for long-running tasks with potentially blocking behavior.
+
+- ### Schedulers.fromExecutorService()
+  You can create a custom scheduler by providing your own `ExecutorService`. This allows you to have fine-grained control over thread management.
+
+### Example
+
+```java
+import reactor.core.publisher.Flux;
+import reactor.core.scheduler.Schedulers;
+
+public class SchedulersExample {
+    public static void main(String[] args) throws InterruptedException {
+        Flux<Integer> flux = Flux.range(1, 10);
+
+        flux
+            .map(value -> {
+                System.out.println("Mapping on thread: " + Thread.currentThread().getName());
+                return value * 2;
+            })
+            .subscribeOn(Schedulers.parallel())
+            .subscribe(value -> System.out.println("Received value: " + value));
+
+        // Wait for a moment to allow emissions
+        Thread.sleep(1000);
+    }
+}
+```
+
+In this example, we're using the `Schedulers.parallel()` scheduler to parallelize the map operation. This means that the map function *will execute on multiple threads* from the parallel scheduler's thread pool. 
+
+The `subscribeOn` operator indicates on which scheduler the whole stream should start executing.
+
+>The choice of scheduler depends on the nature of your operations and the concurrency requirements of your application. Reactor's scheduler system provides you with tools to manage concurrency effectively and efficiently while maintaining the principles of reactive programming.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
