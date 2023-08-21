@@ -113,9 +113,9 @@
       - [Reactive Data Types](java-8/project-reactor.md#reactive-data-types)
       - [Combining Streams](java-8/project-reactor.md#combining-two-streams)
       - [Dealing with Time](java-8/project-reactor.md#dealing-with-time)
-      - Error Handling in Reactive Programming
-      - Resource Management
-      - Concurrency
+      - [Concurrency](java-8/project-reactor.md#concurrency)
+      - [Error Handling](java-8/project-reactor.md#error-handling)
+      - [Resource Management](java-8/project-reactor.md#resource-management)
 
 ### Input/Output (I/O)
 
