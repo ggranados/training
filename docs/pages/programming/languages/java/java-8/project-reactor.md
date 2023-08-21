@@ -32,6 +32,7 @@
   * [Concurrency](#concurrency)
     * [Example](#example)
   * [Error Handling](#error-handling)
+  * [Resource Management](#resource-management)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -1169,6 +1170,58 @@ Error handling is an important aspect of reactive programming, and Project React
 
 <sub>[Back to top](#table-of-contents)</sub>
 
+## Resource Management
+
+Resource management is a crucial aspect of reactive programming, as it's important to ensure that resources such as _file handles_, _network connections_, and _database connections_ are properly managed and released when they are no longer needed. 
+
+Project Reactor provides mechanisms to manage resources effectively in a reactive context.
+
+- ### using Operator
+  The using operator is used to create a resource and *ensure it's automatically closed or disposed of when it's no longer needed*. It's especially useful when working with resources that need to be explicitly closed, like database connections or I/O streams.
+
+  ```java
+  import reactor.core.publisher.Mono;
+  import reactor.core.publisher.Flux;
+  import java.io.FileReader;
+  import java.io.IOException;
+  
+  public class ResourceManagementExample {
+    public static void main(String[] args) {
+      Mono.using(
+              () -> new FileReader("file.txt"), // Resource creation
+              reader -> {
+                // Use the resource (in this case, read from the FileReader)
+                char[] buffer = new char[1024];
+                reader.read(buffer);
+                return Flux.just(buffer);
+              },
+              reader -> {
+                try {
+                  reader.close(); // Resource cleanup
+                } catch (IOException e) {
+                  e.printStackTrace();
+                }
+              }
+      ).subscribe(
+              data -> System.out.println("Received data: " + new String(data)),
+              error -> System.err.println("Error: " + error)
+      );
+    }
+  }
+  ```
+
+  In this example, the using operator ensures that the `FileReader` resource is properly closed after being used.
+
+  - #### Scopes
+    Reactor provides various scopes for controlling resource lifecycle, such as `usingWhen`, `usingWhenMany`,` deferContextual`, and more. These operators are used to manage resources based on the lifecycle of the reactive context.
+
+  - #### Schedulers
+    Using the appropriate scheduler for resource-intensive operations can help manage resources effectively. For example, you might use the `Schedulers.elastic()` scheduler for I/O-bound operations that require resource management.
+
+  - #### Custom Resource Management
+    Depending on your use case, you might need to implement custom resource management techniques using Project Reactor's operators and mechanisms. This could involve combining operators like `flatMap`, `map`, and `doOnTerminate` to ensure proper resource handling.
+
+>When working with reactive programming and managing resources, it's important to consider the specific characteristics of your resources, the concurrency model, and the operators you use. By leveraging Reactor's built-in resource management features and adopting best practices, you can effectively manage resources in your reactive applications.
 
 
 <sub>[Back to top](#table-of-contents)</sub>
