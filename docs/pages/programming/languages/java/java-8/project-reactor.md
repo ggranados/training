@@ -31,6 +31,7 @@
     * [Throttling](#throttling)
   * [Concurrency](#concurrency)
     * [Example](#example)
+  * [Error Handling](#error-handling)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -1059,6 +1060,119 @@ The `subscribeOn` operator indicates on which scheduler the whole stream should 
 >The choice of scheduler depends on the nature of your operations and the concurrency requirements of your application. Reactor's scheduler system provides you with tools to manage concurrency effectively and efficiently while maintaining the principles of reactive programming.
 
 <sub>[Back to top](#table-of-contents)</sub>
+
+## Error Handling
+
+Error handling is an important aspect of reactive programming, and Project Reactor provides several operators and techniques to handle errors gracefully in your reactive streams. Here's an overview of error handling mechanisms in Reactor:
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+- ### onError and onErrorResume
+  These operators handle errors emitted by the source `Flux` or `Mono` by executing a fallback behavior or providing an alternative value.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  
+  public class ErrorHandlingExample {
+    public static void main(String[] args) {
+      Flux.just(1, 2, 0, 4)
+              .map(number -> 10 / number) // This will cause a division by zero error
+              .onErrorResume(throwable -> Flux.just(-1)) // Fallback to -1 on error
+              .subscribe(
+                      value -> System.out.println("Received value: " + value),
+                      error -> System.err.println("Error: " + error)
+              );
+    }
+  }
+  ```
+
+  In this example, the onErrorResume operator catches the division by zero error and resumes the stream with a fallback value of -1.
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+- ### onErrorReturn
+  This operator handles errors by replacing the errored element with a specific value and continues the stream.
+
+  
+  ```java
+  import reactor.core.publisher.Flux;
+  import reactor.core.publisher.Mono;
+  
+  public class OnErrorResumeWithExample {
+    public static void main(String[] args) {
+      Flux.just(1, 2, 0, 4)
+              .flatMap(number -> divideByNumber(number))
+              .onErrorResume(error -> handleDivisionError(error))
+              .subscribe(
+                      value -> System.out.println("Received value: " + value),
+                      error -> System.err.println("Final Error: " + error)
+              );
+    }
+  
+    static Mono<Integer> divideByNumber(int number) {
+      return Mono.just(10 / number);
+    }
+  
+    static Flux<Integer> handleDivisionError(Throwable error) {
+      System.err.println("Handling Error: " + error);
+      return Flux.just(-1);
+    }
+  }
+  ```
+
+  - The `divideByNumber` method returns a `Mono` that attempts to perform a division operation.
+  - The `handleDivisionError` method returns a Flux that emits a single value of -1 and handles the division error by printing a message.
+  In the main method:
+
+  - The `flatMap` operator is used to transform each element of the `Flux` into a `Mono` and then flatten those Mono instances into a single `Flux` stream
+
+  - The `onErrorResumeWith` operator catches any errors emitted by the `divideByNumber` method and resumes with the `handleDivisionError` method, which emits a fallback value of `-1`.
+  
+  The output will be:
+
+  ```bash
+  Received value: 10
+  Received value: 5
+  Received value: -1
+  Handling Error: java.lang.ArithmeticException: / by zero
+  ```
+  
+  As you can see, the division by zero error is caught and handled by the `onErrorResumeWith` operator, which triggers the `handleDivisionError` method to emit a fallback value of `-1`. The subsequent elements are also processed after the error is handled.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+- ### retry
+  The retry operator allows you to retry a failed Flux or Mono a certain number of times before giving up.
+
+  ```java
+  import reactor.core.publisher.Flux;
+  
+  public class RetryExample {
+    public static void main(String[] args) {
+      Flux.just(1, 2, 0, 4)
+              .map(number -> 10 / number) // This will cause a division by zero error
+              .retry(2) // Retry twice
+              .subscribe(
+                      value -> System.out.println("Received value: " + value),
+                      error -> System.err.println("Error: " + error)
+              );
+    }
+  }
+  ```
+  
+  In this example, the retry operator attempts to retry the division by zero error twice before giving up.
+
+> These are just a few examples of how you can handle errors in reactive programming using `Project Reactor`. Error handling is crucial to ensure the robustness and stability of your reactive applications.
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 
 ---
 
