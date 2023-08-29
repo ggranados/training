@@ -1,7 +1,30 @@
 # API Design Principles
 
 ## Table of Contents
-
+<!-- TOC -->
+* [API Design Principles](#api-design-principles)
+  * [Table of Contents](#table-of-contents)
+  * [API First](#api-first)
+    * [API First approach](#api-first-approach)
+    * [Automatic Implementation from API](#automatic-implementation-from-api)
+  * [Consistency](#consistency)
+  * [Simplicity](#simplicity)
+  * [Clarity and Intuitiveness](#clarity-and-intuitiveness)
+  * [Predictability](#predictability)
+  * [Versioning](#versioning)
+  * [Error Handling](#error-handling)
+  * [Idempotency](#idempotency)
+  * [Security](#security)
+  * [Performance](#performance)
+  * [Scalability](#scalability)
+  * [Documentation](#documentation)
+  * [Testing](#testing)
+  * [Feedback](#feedback)
+  * [RESTful Principles (if applicable)](#restful-principles-if-applicable)
+  * [Statelessness](#statelessness)
+  * [HATEOAS (Hypermedia as the Engine of Application State)](#hateoas-hypermedia-as-the-engine-of-application-state)
+  * [Ref.](#ref)
+<!-- TOC -->
 ---
 
 API design principles are guidelines and best practices that help ensure that an Application Programming Interface (API) is well-designed, user-friendly, maintainable, and effective in meeting its intended purpose. Here are some common API design principles:
@@ -241,19 +264,51 @@ POST /checkout
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## HATEOAS (Hypermedia as the Engine of Application State)
-In a RESTful context, consider including hypermedia links in API responses to guide clients on how to interact with the API further.
+In a RESTful context, consider _including hypermedia links in API responses to guide clients on how to interact with the API further_.
+
+This enables clients to interact with the API more dynamically and autonomously, as they can navigate the application's state based on the links provided in the responses.
 
 - Hypermedia links in response:
-```json
-{
-    "title": "Sample Article",
-    "content": "This is a sample article.",
-    "_links": {
-        "self": { "href": "/articles/123" },
-        "author": { "href": "/users/456" }
-    }
-}
-```
+  ```json
+  {
+      "title": "Sample Article",
+      "content": "This is a sample article.",
+      "_links": {
+          "self": { "href": "/articles/123" },
+          "author": { "href": "/users/456" }
+      }
+  }
+  ```
+
+- With **HATEOAS**, a client can start at a known entry point (usually called a "root" resource) and explore the API by following links in the responses
+
+  Suppose you have a blog API, and you're using HATEOAS:
+  
+  A client requests the list of blog posts:
+  
+  ```http request
+  GET /api/posts
+  ```
+  
+  The response not only contains the list of posts but also links to related resources, such as the author's profile and comments:
+  
+  ```json
+  {
+    "posts": [
+      {
+        "id": 1,
+        "title": "Introduction to HATEOAS",
+        "_links": {
+          "self": { "href": "/api/posts/1" },
+          "author": { "href": "/api/users/123" },
+          "comments": { "href": "/api/posts/1/comments" }
+        }
+      },
+      // ...
+    ]
+  }
+  ```
+  The client can now navigate to the author's profile or the comments section by following the links provided in the response.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
