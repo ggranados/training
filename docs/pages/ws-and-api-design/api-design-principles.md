@@ -182,7 +182,7 @@ Implement proper _authentication_ and _authorization_ mechanisms to ensure that 
 ```http request
 GET /secure/resource?api_key=your_api_key
 ```
-- See also: [Authentication and Authorization](../../ws-and-api-design/authn-and-authz/authn-authz.md)
+- See also: [Authentication and Authorization](authn-and-authz/authn-authz.md)
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -322,7 +322,7 @@ This enables clients to interact with the API more dynamically and autonomously,
 
 ---
 
-[Get Started](../../../get-started.md) |
-[Web Services and API Design](../../../get-started.md#web-services-and-api-design)
+[Get Started](../../get-started.md) |
+[Web Services and API Design](../../get-started.md#web-services-and-api-design)
 
 ___
