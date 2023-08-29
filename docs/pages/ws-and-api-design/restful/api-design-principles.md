@@ -59,7 +59,7 @@ Once the API is developed and tested, frontend developers can start building use
 ### Automatic Implementation from API
 There are several automated tools and frameworks available that can generate implementation code from an API definition. These tools help streamline the development process by automatically generating boilerplate code, handling request and response serialization, and providing a starting point for developers to build upon. Here are a few examples:
 
-- [Swagger (OpenAPI Generator)](<!--TODO-->)
+- [Swagger (OpenAPI Generator)]()<!--TODO-->
 - Retrofit (for Android)
 - NSwag
 - LoopBack (for Node.js)
@@ -137,7 +137,7 @@ Informative error response:
     }
 }
 ```
-- See also: [HTTP Error Codes](<!--TODO-->)
+- See also: [HTTP Error Codes]()<!--TODO-->
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -148,7 +148,7 @@ Design methods and endpoints to be idempotent where possible. This means that _m
 ```http request
 DELETE /cart/{itemId}
 ```
-- See also: [Idempotency](<!--TODO-->)
+- See also: [Idempotency]()<!--TODO-->
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -190,8 +190,8 @@ Provide comprehensive and well-structured documentation. Include clear usage exa
 ```http request
 GET /docs/api-reference
 ```
-- See also: [OpenAPI](<!--TODO-->)
-- See also: [Swagger](<!--TODO-->)
+- See also: [OpenAPI]()<!--TODO-->
+- See also: [Swagger]()<!--TODO-->
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -263,7 +263,7 @@ In a RESTful context, consider including hypermedia links in API responses to gu
 
 ## Ref.
 
-- 
+- https://www.contentstack.com/blog/tech-talk/effective-restful-api-design-principles
 
 ---
 
