@@ -277,12 +277,12 @@
 
 ## Web Services and API Design
 - [RESTful Architecture](pages/ws-and-api-design/restful/restful.md)
+  - [API Design Principles](pages/ws-and-api-design/restful/api-design-principles.md)
 - SOAP
 - RPC
 - gRPC
 - GraphQL
 - HTTP and HTTPS
-- API Design Principles
 - Data Formats
 - [Authentication (AuthN) and Authorization (AuthZ)](pages/ws-and-api-design/authn-and-authz/authn-authz.md)
   - [SSO](img/sso.png)
