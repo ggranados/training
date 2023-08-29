@@ -276,8 +276,44 @@
   <sub>[Back to top](#table-of-contents)</sub>  
 
 ## Web Services and API Design
+- [API Design Principles](pages/ws-and-api-design/api-design-principles.md)
 - [RESTful Architecture](pages/ws-and-api-design/restful/restful.md)
-  - [API Design Principles](pages/ws-and-api-design/restful/api-design-principles.md)
+  - Resource Design and Representation
+    - Identifying Resources and Resource Hierarchy
+    - Resource Representation Formats (XML, JSON, etc.)
+    - Data Modeling for REST APIs
+    - Handling Relationships between Resources
+  - RESTful API Design
+    - Defining Endpoints and URI Patterns
+    - Query Parameters and Filtering
+    - Pagination and Data Limiting
+    - Versioning APIs
+    - Hypermedia as the Engine of Application State (HATEOAS)
+  - Statelessness and Caching
+    - Stateless Architecture in REST
+    - Benefits and Challenges of Statelessness
+    - Caching Strategies and HTTP Caching Headers
+  - Security and Authentication
+    - Authentication vs. Authorization
+    - Token-based Authentication (JWT, OAuth)
+    - Securing REST APIs (TLS, HTTPS, CORS)
+  - Error Handling and Exception Management
+    - Common Error Response Patterns
+    - Handling Errors and Exception Scenarios
+    - Providing Meaningful Error Messages
+  - Best Practices and Guidelines
+    - Naming Conventions for Resources and Endpoints
+    - Keeping APIs Consistent and Predictable
+    - Performance Optimization Techniques
+    - Documentation and API Contracts
+  - Real-world Examples and Case Studies
+    - Building a RESTful API for a Blogging Platform
+    - Integrating Third-Party Services via REST
+    - Scaling and Load Balancing REST APIs
+  - Future Trends in REST Architecture
+    - GraphQL vs. REST
+    - Serverless Architectures and REST
+    - Webhooks and Event-Driven REST APIs
 - SOAP
 - RPC
 - gRPC
