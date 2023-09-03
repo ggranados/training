@@ -85,6 +85,17 @@
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Database Management Systems
+ - [ACID](pages/dbms/acid.md)
+ - BASE
+ - CAP Theorem
+ - CRDTs
+ - Snapshot Isolation
+ - Two-Phase Commit (2PC)
+ - Eventual Consistency
+ - MVCC (Multi-Version Concurrency Control)
+ - Read Committed Isolation
+ - Distributed Databases
+  
 ### SQL
 - MySQL
 - PostgreSQL
@@ -249,7 +260,6 @@
   - Chain of Responsibility
   - Interpreter
   - Memento
-- ACID
 - SOLID
 - Inversion of Control (IoC)
   - Dependency Injection (DI)
