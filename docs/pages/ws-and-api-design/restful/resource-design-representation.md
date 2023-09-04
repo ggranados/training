@@ -233,6 +233,7 @@ This would move the book from being authored by F. Scott Fitzgerald to the new a
 
 ---
 
-[Get Started](../../../get-started.md)
+[Get Started](../../../get-started.md) |
+[Web Services and API Design](../../../get-started.md#web-services-and-api-design)
 
 ___
