@@ -39,6 +39,8 @@
   - Control flow statements (if-else, loops)
   - Arrays and collections
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Object-Oriented Programming (OOP)
 
   - [Objects](oop.md#what-is-an-object)
@@ -49,12 +51,16 @@
   - [Abstraction and interfaces](oop.md#what-is-an-interface)
   - [Packages and modules](oop.md#what-is-a-package)
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Exception Handling
 
   - Handling and throwing exceptions
   - Using try-catch blocks
   - Checked and unchecked exceptions
   - Custom exceptions
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### Java Standard Library
 
@@ -63,6 +69,8 @@
   - File handling
   - Regular expressions
   - Date and time
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### Generics and Collections
 
@@ -78,13 +86,17 @@
   - [Sorting](java-5/enhanced-collections.md#sorting)
   - [Searching](java-5/enhanced-collections.md#searching-and-other-utilities)
   - [Optionals](java-8/stream-api.md#optional)
-  
+
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### Lambdas and Functional Interfaces
   - [Lambda Expression](java-8/lamda-expression.md)
   - [Functional Interfaces](java-8/functional-interfaces.md)
   - [Method References](java-8/method-references.md)
   - [Built in Functional Interfaces](java-8/built-in-functional-interfaces.md)
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### [Functional Programming (FP)](fp.md)
   - [Pure Functions](fp.md#pure-functions)
@@ -94,7 +106,9 @@
   - [Recursion](fp.md#recursion)
   - [First-Class Functions](fp.md#first-class-functions)
   - [Closures](fp.md#closures)
-  
+
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Multithreading and Concurrency
 
   - Creating and managing threads
@@ -102,6 +116,8 @@
   - Inter-thread communication
   - Parallel streams
   - Executors and thread pools
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### [Reactive Programming](reactive.md)
 
@@ -117,6 +133,8 @@
       - [Error Handling](java-8/project-reactor.md#error-handling)
       - [Resource Management](java-8/project-reactor.md#resource-management)
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Input/Output (I/O)
 
   - Reading from and writing to files
@@ -126,12 +144,16 @@
   - NIO (non-blocking I/O)
   - Java Database Connectivity (JDBC)
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Connecting to databases
 
   - Executing SQL queries
   - Prepared statements
   - Handling result sets
   - Transactions
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### New Features
 
@@ -141,6 +163,8 @@
   - Records (immutable data classes)
   - Switch expressions and yield
   - Text blocks (multi-line strings)
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### Java Tools and Development
 
@@ -153,6 +177,8 @@
   - Profiling and optimizing code
   - Unit testing with JUnit
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Java Best Practices
 
   - Writing clean and maintainable code
@@ -162,6 +188,8 @@
   - Security considerations
   - Advanced Java Topics
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Reflection and dynamic class loading
 
   - Annotations and custom annotations
@@ -170,6 +198,8 @@
   - JavaFX for desktop applications
   - Java Servlets and JavaServer Pages (JSP)
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Java Frameworks and Libraries
 
   - Spring Framework
@@ -177,6 +207,8 @@
   - JavaFX
   - Apache Kafka
   - JUnit and Mockito
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### Java for Web Development
 
@@ -190,6 +222,8 @@
   - 	Struts
   - 	Struts2
 
+<sub>[Back to top](#table-of-contents)</sub>
+
 ### Java for Android Development
 
   - Android application structure
@@ -197,6 +231,8 @@
   - UI design with XML layouts
   - Android SDK and API usage
   - Database integration with SQLite
+
+<sub>[Back to top](#table-of-contents)</sub>
 
 ### Java Security
 
