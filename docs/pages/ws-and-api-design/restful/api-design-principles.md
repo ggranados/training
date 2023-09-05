@@ -310,6 +310,9 @@ This enables clients to interact with the API more dynamically and autonomously,
   ```
   The client can now navigate to the author's profile or the comments section by following the links provided in the response.
 
+
+- See also: [HATEOAS](restful-api-design.md#hateoas)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 

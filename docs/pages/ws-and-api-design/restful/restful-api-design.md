@@ -7,17 +7,26 @@
   * [Defining Endpoints and URI Patterns](#defining-endpoints-and-uri-patterns)
     * [Example](#example)
   * [Query Parameters and Filtering](#query-parameters-and-filtering)
-    * [Query Parameters:](#query-parameters)
-    * [Filtering:](#filtering)
+    * [Query Parameters](#query-parameters)
+    * [Filtering](#filtering)
     * [Validation and Security](#validation-and-security)
     * [Documentation](#documentation)
   * [Pagination and Data Limiting](#pagination-and-data-limiting)
     * [Pagination Basics](#pagination-basics)
-    * [Implementing Pagination:](#implementing-pagination)
+    * [Implementing Pagination](#implementing-pagination)
     * [Handling Edge Cases](#handling-edge-cases)
     * [Sorting and Filtering with Pagination](#sorting-and-filtering-with-pagination)
     * [Default Values](#default-values)
     * [Caching and Optimization](#caching-and-optimization)
+  * [Versioning APIs](#versioning-apis)
+    * [Common Approaches to Versioning REST APIs](#common-approaches-to-versioning-rest-apis)
+  * [HATEOAS](#hateoas)
+    * [How to implement HATEOAS in a REST API](#how-to-implement-hateoas-in-a-rest-api)
+    * [Include Link Relations](#include-link-relations)
+    * [Hypermedia Controls](#hypermedia-controls)
+    * [API Documentation](#api-documentation)
+    * [Client Implementation](#client-implementation)
+    * [Error Handling](#error-handling)
   * [Ref.](#ref)
 <!-- TOC -->
 
@@ -121,46 +130,46 @@ Here's an example of URI patterns for a simple library management API:
 
 ## Query Parameters and Filtering
 
-### Query Parameters:
+### Query Parameters
 
 Query parameters are _key-value pairs included in the URL_ of an HTTP request after a question mark `?` and separated by ampersands `&`. They are used to customize the behavior of a request, such as _filtering_, _sorting_, or _paginating_ the data. Query parameters are optional, and clients can include one or more of them in a request to tailor the response to their needs.
 
 Common query parameters include:
 
-- #### Filtering Parameters:
+- #### Filtering Parameters
   Used to filter resources based on specific criteria.
   
   - `/books?author=Stephen+King`: fetches all books written by Stephen King
 
 
-- #### Sorting Parameters:
+- #### Sorting Parameters
   Used to specify the sorting order of the results. 
   - `/books?sort=title`: retrieves books sorted by title in ascending order.
   
 
-- #### Pagination Parameters:
+- #### Pagination Parameters
   Used to control the number of results per page and navigate through large data sets.
 
   - `/books?page=2&per_page=10`: retrieves the second page of 10 books per page.
   
  
-- #### Search Parameters: 
+- #### Search Parameters
   Used for full-text search or keyword-based filtering.
 
   - `/books?query=science+fiction`: searches for books containing the term "science fiction."
 
-- #### Fields Parameters:
+- #### Fields Parameters
   Used to specify which fields of a resource should be included in the response.
 
   - `/books?fields=title,author`: fetches only the title and author fields of books.
   
-- #### Custom Parameters:
+- #### Custom Parameters
   You can define custom query parameters to support specific functionalities in your API.
 
 
   <sub>[Back to top](#table-of-contents)</sub>
   
-### Filtering:
+### Filtering
 
 Filtering is the process of selecting a subset of resources from a collection based on specific conditions or criteria. It allows clients to narrow down their search and retrieve only the data that meets their requirements. Filtering is often accomplished using query parameters.
 
@@ -223,7 +232,7 @@ Pagination divides a large dataset into smaller **"pages"** or chunks of data, m
 
 For example, if you have a collection of 100 books and you set per_page to 10, you can retrieve the first 10 books on page 1, the next 10 books on page 2, and so on.
 
-### Implementing Pagination:
+### Implementing Pagination
 
  - #### Add Pagination Parameters to the Endpoint:
   Modify your endpoint to accept the `page` and `per_page` query parameters. For example:
@@ -232,7 +241,7 @@ For example, if you have a collection of 100 books and you set per_page to 10, y
   GET /books?page=2&per_page=10
 ```
  
- - #### Calculate Offset and Limit:
+ - #### Calculate Offset and Limit
  In your API code, calculate the `offset` and `limit` based on the values of `page` and per_page. 
   The `offset` determines where to start fetching data, and the `limit` specifies the maximum number of items to return.
 
@@ -241,10 +250,10 @@ offset = (page - 1) * per_page
 limit = per_page
 ```
   
-- #### Retrieve and Return Data:
+- #### Retrieve and Return Data
   Use the offset and limit values to retrieve the appropriate subset of data from your database or data source. Return this data as the response to the client.
 
-- #### Include Pagination Metadata:
+- #### Include Pagination Metadata
   In the API response, include metadata that informs clients about the current page, total number of pages, and total count of items. This helps clients navigate through the dataset.
 
 
@@ -287,7 +296,7 @@ GET /books?page=2&per_page=10&sort=title&filter=author:Stephen+King
 
 ### Default Values
 
-Consider providing default values for page and per_page in case clients don't specify them in their requests. This helps ensure a consistent user experience.
+Consider providing default values for `page` and `per_page` in case clients don't specify them in their requests. This helps ensure a consistent user experience.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -303,6 +312,273 @@ Consider providing default values for page and per_page in case clients don't sp
 
 
 >Pagination and data limiting enhance the usability and performance of your API, especially when dealing with large datasets. They provide clients with control over the amount of data they retrieve while maintaining a predictable and user-friendly experience.
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Versioning APIs
+
+Versioning in RESTful APIs is a crucial aspect of API design that _allows you to introduce changes, updates, and improvements to your API while ensuring backward compatibility for existing clients_. It helps prevent breaking changes for existing consumers of your API.
+
+### Common Approaches to Versioning REST APIs
+
+- #### URI Versioning (Path Versioning):
+In URI versioning, the API version is included directly in the URL path. This is one of the most common and straightforward approaches.
+
+
+- **Example URI**: 
+  - `https://api.example.com/v1/resource`
+
+
+- **Advantages**: 
+  - Clear and explicit versioning. 
+  - Easy to implement and understand.
+
+
+- **Considerations**: 
+  - Ensure consistency in versioning across all API endpoints. 
+  - Be mindful of backward compatibility when introducing new versions.
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+    
+- #### Accept Header Versioning
+In this approach, clients specify the desired API version using the Accept header in their HTTP request.
+
+- **Example Header**: 
+  - `Accept: application/vnd.example.v1+json`
+  
+
+- **Advantages**:
+  - Keeps the URI cleaner. 
+  - Allows clients to request specific versions dynamically. 
+  
+
+- **Considerations**:
+  - Requires clients to set the header correctly. 
+  - May be less intuitive for some developers.
+    
+
+<sub>[Back to top](#table-of-contents)</sub>
+    
+- #### Custom Header Versioning
+Similar to Accept Header Versioning, you can define a custom header specifically for versioning, such as `X-API-Version`.
+
+- **Example Header**: 
+  - `X-API-Version: 1`
+  
+
+- **Advantages**:
+  - Separates versioning concerns from content negotiation. 
+  - Customizable to your API's needs.
+
+
+- **Considerations**:
+  - Ensure that clients are aware of the custom header and use it correctly. 
+    
+
+<sub>[Back to top](#table-of-contents)</sub>
+    
+
+- #### Subdomain Versioning
+In subdomain versioning, the API version is included as a subdomain in the URL.
+
+- **Example URI**: 
+  - `https://v1.api.example.com/resource`
+  
+
+- **Advantages**:
+  - Provides a clear and isolated versioning structure. 
+
+
+- **Considerations**:
+  - Requires DNS configuration for subdomains. 
+  - May be less common than URI versioning.
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+    
+
+- #### Query Parameter Versioning
+In this approach, clients specify the API version using a query parameter.
+
+- **Example URI**: 
+  - `https://api.example.com/resource?api_version=1`
+  
+
+- **Advantages**:
+  - Keeps the URI clean. 
+  - Allows clients to request specific versions dynamically. 
+  
+
+- **Considerations**:
+  - May not be as common or intuitive as other versioning methods. 
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+        
+    
+- #### Media Type (Content-Type) Versioning
+You can include the API version within the media type (e.g., JSON or XML) used for request and response bodies.
+
+- **Example Header** 
+  - `Content-Type:application/json; version=1`
+  
+
+- **Advantages**:
+  - Integrates versioning with content negotiation.
+
+
+- **Considerations**:
+  - May require adjustments in content type parsing on the server.
+    
+
+<sub>[Back to top](#table-of-contents)</sub>
+    
+
+- #### No Versioning (HATEOAS)
+
+In some cases, you might choose to implement **HATEOAS** (Hypertext as the Engine of Application State) instead of versioning. With HATEOAS, clients navigate the API using links provided in resource representations, reducing the need for version-specific endpoints.
+
+- **Advantages**:
+  - Allows for more flexible and self-discoverable APIs. 
+  - Minimizes the need for versioning. 
+
+
+- **Considerations**:
+  - Requires careful design and adoption of HATEOAS principles. 
+  - May not be suitable for all API scenarios.
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+    
+
+## HATEOAS
+**HATEOAS**, which stands for "_Hypertext as the Engine of Application State_" is a constraint of the REST architectural style that _encourages the inclusion of hyperlinks within resource representations to enable clients to navigate the API dynamically_. 
+
+HATEOAS makes an API self-discoverable and reduces the need for clients to have prior knowledge of URIs or resource relationships. 
+
+### How to implement HATEOAS in a REST API
+
+- #### Resource Representation with Links
+
+When designing the representation of your API resources, include hyperlinks (links) within the resource representations. These links provide information about related resources and actions that clients can take. Links typically consist of two key components:
+
+  - #### Rel (Relation)
+    Describes the relationship between the current resource and the linked resource or action. It serves as a hint to the client about the purpose of the link.
+  
+  - #### Href (Hypertext Reference)
+    Contains the URI to access the linked resource or perform the linked action. 
+
+Here's an example of how a resource representation with links might look in JSON:
+
+```json
+{
+  "id": 1,
+  "name": "Example Resource",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://api.example.com/resource/1"
+    },
+    {
+      "rel": "author",
+      "href": "https://api.example.com/author/42"
+    },
+    {
+      "rel": "related",
+      "href": "https://api.example.com/related-resource"
+    }
+  ]
+}
+```
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+        
+### Include Link Relations
+
+Choose meaningful and well-defined link relation names (`rels`) to indicate the purpose of each link. 
+
+- #### Common Link Relation Names (rels)
+  - `self`: Indicates the link to the current resource. It's often used to retrieve the resource itself or to confirm the URL of the current resource.
+  - `related`: Points to related resources that might be of interest to the client but aren't part of the primary data. This rel is useful for providing links to related resources, such as authors of a book or comments on a post.
+  - `item`: Used in paginated APIs to link to individual items within a collection. For example, you might have a "next" rel for the next page and an "item" rel for each item on the page.
+  - `collection`: Denotes a link to the entire collection or list of resources. This is often used for paginated results when you want to provide a link to the full list of items.
+  - `prev and next`: Commonly used in paginated APIs to navigate between previous and next pages of results. For example, "prev" points to the previous page, and "next" points to the next page.
+  - `first and last`: Indicate links to the first and last pages of paginated results. These are helpful for users who want to jump to the beginning or end of a large dataset.
+  - `create`: Points to a resource or endpoint where clients can create a new resource. It's often associated with a POST request and includes information about the required fields.
+  - `update`: Indicates a link to update or edit the current resource. It's typically associated with a PUT or PATCH request and may include a link to a form or a template for updating the resource.
+  - `delete`: Points to a resource or endpoint that allows clients to delete the current resource. It's associated with a DELETE request.
+  - `edit`: Similar to "update," this link provides a way to edit the current resource. It's often used interchangeably with "update."
+  - `search`: Used to link to a search endpoint or resource where clients can perform a search operation, specifying search parameters or criteria.
+  - `author`: Links to the author or creator of a resource. For example, in a blog post representation, you might include a link with the "author" rel to the author's profile.
+  - `license`: Indicates the licensing information for the resource, providing clients with information about how the resource can be used.
+  - `alternate`: Specifies alternative representations or formats of the current resource, such as different media types (e.g., JSON, XML, HTML).
+  - `parent and child`: Denote hierarchical relationships between resources, where "parent" links to the parent resource, and "child" links to child resources.
+  - `prev-version and next-version`: Used in versioned APIs to navigate to previous and next versions of a resource.
+  - `up and down`: Indicate upward and downward navigation in a resource hierarchy, such as moving between sections or chapters in a document.
+  - `payment`: Links to a payment or checkout page when dealing with e-commerce or payment processing.
+
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+### Hypermedia Controls
+
+Alongside links, you can include hypermedia controls that provide hints to clients about the actions they can perform. These controls often take the form of link templates or standardized forms that guide clients on how to construct requests for specific actions. 
+
+For example, you might include a form template for creating a new resource with predefined input fields.
+
+```json
+{
+  "id": 1,
+  "name": "Example Resource",
+  "controls": {
+    "create": {
+      "href": "https://api.example.com/resource",
+      "method": "POST",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "text",
+          "required": false
+        }
+      ]
+    }
+  }
+}
+```
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+### API Documentation
+
+Document your API's hypermedia controls and link relations in your API documentation. Clearly explain the purpose of each link and how clients should use hypermedia controls for actions. This documentation helps clients understand how to interact with your API dynamically.
+
+- See also: [OpenAPI]()<!--TODO-->
+- See also: [Swagger]()<!--TODO-->
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+
+### Client Implementation
+
+Clients of your API should be designed to follow links and use hypermedia controls to discover and navigate the API's resources and functionality dynamically. Clients can traverse links by inspecting the "rel" attribute of links and following the associated "href" to access related resources or initiate actions.
+
+
+<sub>[Back to top](#table-of-contents)</sub>
+
+### Error Handling
+
+Implement clear error handling and provide informative error responses that also include links to relevant resources for further actions or guidance.
 
 
 <sub>[Back to top](#table-of-contents)</sub>

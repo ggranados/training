@@ -35,6 +35,7 @@ In REST, resources are typically represented in various formats, such as **JSON*
 When a client requests a resource from a server, the server responds with a representation of that resource. This representation can include the resource's data, metadata, and links to related resources.
  
  - See also: [HATEOAS](api-design-principles.md#hateoas-hypermedia-as-the-engine-of-application-state)
+ - See also: [HATEOAS](restful-api-design.md#hateoas)
 
 The client can manipulate or interact with a resource by sending requests to its URI and including the desired action (e.g., `GET`, `POST`, `PUT`, `DELETE`) and any necessary data (e.g., in the request body or query parameters).
 

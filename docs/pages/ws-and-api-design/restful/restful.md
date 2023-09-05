@@ -225,9 +225,6 @@ HTTP status codes are three-digit numbers sent by the server in response to a cl
 
 
 <--TODO:
-- RESTful API Design
-  - Versioning APIs
-  - Hypermedia as the Engine of Application State (HATEOAS)
 - Statelessness and Caching
   - Stateless Architecture in REST
   - Benefits and Challenges of Statelessness
