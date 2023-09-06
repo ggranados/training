@@ -61,7 +61,7 @@ In Java backend development, reactive programming can offer several benefits:
 - **Backpressure Handling**: Reactive programming libraries often provide mechanisms for handling backpressure, which occurs when the rate of incoming data exceeds the system's processing capacity. This can *prevent resource exhaustion and degradation of system performance*.
 
 
-- *Reactive APIs*: Many modern APIs, such as those in microservices architectures, are designed with reactive principles in mind. Using reactive programming in your backend can make it *easier to integrate and interact with such APIs*.
+- **Reactive APIs**: Many modern APIs, such as those in microservices architectures, are designed with reactive principles in mind. Using reactive programming in your backend can make it *easier to integrate and interact with such APIs*.
 
 
 <sub>[Back to top](#table-of-contents)</sub>
