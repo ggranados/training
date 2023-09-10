@@ -86,7 +86,7 @@
 
 ## Database Management Systems
  - [ACID](pages/dbms/acid.md)
- - BASE
+ - [BASE](pages/dbms/base.md)
  - CAP Theorem
  - CRDTs
  - Snapshot Isolation
