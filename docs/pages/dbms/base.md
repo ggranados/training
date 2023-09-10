@@ -1,7 +1,14 @@
 # BASE
 
 ## Table of Contents
-
+<!-- TOC -->
+* [BASE](#base)
+  * [Table of Contents](#table-of-contents)
+  * [Basically Available](#basically-available)
+  * [Soft State](#soft-state)
+  * [Eventually Consistent](#eventually-consistent)
+  * [Ref.](#ref)
+<!-- TOC -->
 ---
 
 **BASE** is an acronym that represents a set of properties for distributed and NoSQL databases. It stands for:
