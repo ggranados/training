@@ -87,7 +87,7 @@
 ## Database Management Systems
  - [ACID](pages/dbms/acid.md)
  - [BASE](pages/dbms/base.md)
- - CAP Theorem
+ - [CAP Theorem](pages/dbms/cap.md)
  - CRDTs
  - Snapshot Isolation
  - Two-Phase Commit (2PC)
