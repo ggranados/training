@@ -78,7 +78,7 @@ Communication between different components and services in a Reactive System *is
 
 - **Reactive Streams**: Reactive Streams is a specification for handling asynchronous stream processing, providing standardized interfaces for handling data streams with backpressure, allowing for *better control of resource usage and avoiding overload*.
 
-  - See also: [Java 9 Reactive Streams](java-9/reactive-streams.md)
+  - See also: [Java 9 Reactive Streams](../programming/languages/java/java-9/reactive-streams.md)
   
 <sub>[Back to top](#table-of-contents)</sub>
 
