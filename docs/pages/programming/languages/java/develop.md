@@ -109,7 +109,7 @@
 
 <sub>[Back to top](#table-of-contents)</sub>
 
-### Multithreading and Concurrency
+### [Multithreading and Concurrency](java-8/concurrency.md)
 
   - Creating and managing threads
   - Thread synchronization
