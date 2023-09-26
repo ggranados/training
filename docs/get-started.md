@@ -261,7 +261,7 @@
   - Chain of Responsibility
   - Interpreter
   - Memento
-- SOLID
+- [SOLID](pages/design-patterns/solid.md)
 - Inversion of Control (IoC)
   - Dependency Injection (DI)
   - Template Method Pattern
