@@ -85,7 +85,7 @@ dependencies {
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Reactive Data Types
-Reactive Core gives us two data types that enable us to produce a stream of data, `Flux` and `Mono`.
+Reactor Core gives us two data types that enable us to produce a stream of data, `Flux` and `Mono`.
 
 In Project Reactor, `Flux` and `Mono` are examples of Publishers. They represent streams of data that emit elements or signals over time.
 

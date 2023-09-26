@@ -35,6 +35,8 @@
 
 Reactor is a fourth-generation reactive library, based on the `Reactive Streams` specification, for building non-blocking applications on the JVM
 
+- See also: [Java 9 Reactive Streams](reactive-streams.md)
+
 >Reactor 3 requires Java 8 or + to run
 
 <sub>[Back to top](#table-of-contents)</sub>

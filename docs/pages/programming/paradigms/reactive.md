@@ -49,6 +49,8 @@ b = 10
 console.log(a) // 12
 ```
 
+- See also: [Java 9 Reactive Streams](../languages/java/java-9/reactive-streams.md)
+
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Observer Pattern
