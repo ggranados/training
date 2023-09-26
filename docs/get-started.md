@@ -281,10 +281,12 @@
   - Layered
   - Microkernel
   - Hexagonal
-  - Microservices
-  - Message-Driven
-    - Event-Driven Architecture (EDA)
-      - Event Sourcing
+  - [Microservices](pages/architectural-patterns/microservices.md)
+    - [Distributed Transaction]()<!-- TODO: -->
+      - [Saga]()<!-- TODO: -->
+  - [Message-Driven]()<!-- TODO: -->
+    - [Event-Driven]()<!-- TODO: -->
+      - [Event Sourcing]()<!-- TODO: -->
   - [Reactive Systems](pages/architectural-patterns/reactive.md)
   - Command and Query Responsibility Segregation (CQRS)
    
