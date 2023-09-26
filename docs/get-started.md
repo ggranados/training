@@ -69,7 +69,10 @@
 ## Web Development Frameworks
 ### Backend
 - Spring
-- SpringBoot
+  - Spring Cloud
+  - Spring Data
+  - Spring Security
+  - SpringBoot
 - Quarkus
 - Express.js
 - Nest.js
@@ -107,6 +110,7 @@
 - Amazon RDS (Relational Database Service)
 - Google Cloud SQL
 - Azure SQL Database
+
 ### NoSQL
 - MongoDB
 - Cassandra
@@ -277,13 +281,16 @@
   - Layered
   - Microkernel
   - Hexagonal
-  - Microservices
-  - Message-Driven
+  - [Microservices](pages/architectural-patterns/microservices.md)
+    - [Distributed Transaction]()<!-- TODO: -->
+      - [Saga]()<!-- TODO: -->
+  - [Message-Driven]()<!-- TODO: -->
+    - [Event-Driven]()<!-- TODO: -->
+      - [Event Sourcing]()<!-- TODO: -->
   - [Reactive Systems](pages/architectural-patterns/reactive.md)
-  - Event-driven Architecture (EDA)
   - Command and Query Responsibility Segregation (CQRS)
    
-  <sub>[Back to top](#table-of-contents)</sub>  
+    <sub>[Back to top](#table-of-contents)</sub>  
 
 ## Web Services and API Design
 - [RESTful Architecture](pages/ws-and-api-design/restful/restful.md)

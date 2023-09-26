@@ -41,7 +41,7 @@ Reactive Systems prioritize responsiveness by *ensuring that the system reacts q
 
 ### Resilience
 
-Reactive Systems are built to *remain operational even in the face of failures, errors, or unexpected events*. They use techniques such as isolation, replication, and error recovery mechanisms to ensure that failures in one part of the system do not lead to complete system outages.
+Reactive Systems are built to *remain operational even in the face of failures, errors, or unexpected events*. They use techniques such as isolation (containment), replication, delegation, and error recovery mechanisms to ensure that failures in one part of the system do not lead to complete system outages.
 
 <sub>[Back to top](#table-of-contents)</sub>
 
@@ -78,7 +78,8 @@ Communication between different components and services in a Reactive System *is
 
 - **Reactive Streams**: Reactive Streams is a specification for handling asynchronous stream processing, providing standardized interfaces for handling data streams with backpressure, allowing for *better control of resource usage and avoiding overload*.
 
-
+  - See also: [Java 9 Reactive Streams](../programming/languages/java/java-9/reactive-streams.md)
+  
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Examples
@@ -124,6 +125,7 @@ ___
 
 ## Ref.
 
+- https://www.reactivemanifesto.org/
 - https://www.lightbend.com/white-papers-and-reports/reactive-programming-versus-reactive-systems
 
 ___
