@@ -85,6 +85,8 @@
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Database Management Systems
+
+### Concepts
  - [ACID](pages/dbms/acid.md)
  - [BASE](pages/dbms/base.md)
  - [CAP Theorem](pages/dbms/cap.md)
