@@ -88,6 +88,8 @@
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Database Management Systems
+
+### Concepts
  - [ACID](pages/dbms/acid.md)
  - [BASE](pages/dbms/base.md)
  - [CAP Theorem](pages/dbms/cap.md)
@@ -264,7 +266,7 @@
   - Chain of Responsibility
   - Interpreter
   - Memento
-- SOLID
+- [SOLID](pages/design-patterns/solid.md)
 - Inversion of Control (IoC)
   - Dependency Injection (DI)
   - Template Method Pattern
