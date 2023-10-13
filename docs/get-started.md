@@ -14,7 +14,8 @@
     * [Backend](#backend)
     * [Frontend](#frontend)
   * [Database Management Systems](#database-management-systems)
-    * [SQL](#sql)
+    * [Concepts](#concepts)
+    * [Relational (SQL)](#relational--sql-)
     * [NoSQL](#nosql)
   * [Networking Concepts](#networking-concepts)
   * [Cloud Computing Platform](#cloud-computing-platform)
@@ -101,19 +102,21 @@
  - Read Committed Isolation
  - Distributed Databases
   
-### SQL
-- MySQL
-- PostgreSQL
-- Microsoft SQL Server
-- Oracle Database
-- SQLite
-- IBM Db2
-- MariaDB
-- Amazon RDS (Relational Database Service)
-- Google Cloud SQL
-- Azure SQL Database
+### [Relational (SQL)](pages/dbms/relational.md)
+- SQL
+- RDBMS
+  - MySQL
+  - PostgreSQL
+  - Microsoft SQL Server
+  - Oracle Database
+  - SQLite
+  - IBM Db2
+  - MariaDB
+  - Amazon RDS (Relational Database Service)
+  - Google Cloud SQL
+  - Azure SQL Database
 
-### NoSQL
+### [NoSQL](pages/dbms/nosql.md)
 - MongoDB
 - Cassandra
 - Couchbase
