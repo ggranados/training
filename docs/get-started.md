@@ -14,7 +14,8 @@
     * [Backend](#backend)
     * [Frontend](#frontend)
   * [Database Management Systems](#database-management-systems)
-    * [SQL](#sql)
+    * [Concepts](#concepts)
+    * [Relational (SQL)](#relational--sql-)
     * [NoSQL](#nosql)
   * [Networking Concepts](#networking-concepts)
   * [Cloud Computing Platform](#cloud-computing-platform)
@@ -88,6 +89,8 @@
 <sub>[Back to top](#table-of-contents)</sub>
 
 ## Database Management Systems
+
+### Concepts
  - [ACID](pages/dbms/acid.md)
  - [BASE](pages/dbms/base.md)
  - [CAP Theorem](pages/dbms/cap.md)
@@ -99,19 +102,21 @@
  - Read Committed Isolation
  - Distributed Databases
   
-### SQL
-- MySQL
-- PostgreSQL
-- Microsoft SQL Server
-- Oracle Database
-- SQLite
-- IBM Db2
-- MariaDB
-- Amazon RDS (Relational Database Service)
-- Google Cloud SQL
-- Azure SQL Database
+### [Relational (SQL)](pages/dbms/relational.md)
+- SQL
+- RDBMS
+  - MySQL
+  - PostgreSQL
+  - Microsoft SQL Server
+  - Oracle Database
+  - SQLite
+  - IBM Db2
+  - MariaDB
+  - Amazon RDS (Relational Database Service)
+  - Google Cloud SQL
+  - Azure SQL Database
 
-### NoSQL
+### [NoSQL](pages/dbms/nosql.md)
 - MongoDB
 - Cassandra
 - Couchbase
@@ -264,7 +269,7 @@
   - Chain of Responsibility
   - Interpreter
   - Memento
-- SOLID
+- [SOLID](pages/design-patterns/solid.md)
 - Inversion of Control (IoC)
   - Dependency Injection (DI)
   - Template Method Pattern
@@ -293,7 +298,7 @@
     <sub>[Back to top](#table-of-contents)</sub>  
 
 ## Web Services and API Design
-- [RESTful Architecture](pages/ws-and-api-design/restful/restful.md)
+- [RESTful Architecture](pages/ws-and-api-design/restful.md)
   - [API Design Principles](pages/ws-and-api-design/restful/api-design-principles.md)
   - [Resource Design and Representation](pages/ws-and-api-design/restful/resource-design-representation.md)
   - [RESTful API Design](pages/ws-and-api-design/restful/restful-api-design.md)

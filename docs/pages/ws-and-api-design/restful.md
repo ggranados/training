@@ -163,7 +163,7 @@ HTTP headers contain additional information about the request or response. Some 
   Authorization: Bearer your_access_token
   ```
   
-  - See also: [Authentication & Authorization](../authn-and-authz/authn-authz.md)
+  - See also: [Authentication & Authorization](authn-and-authz/authn-authz.md)
 
 
 - **Cache-Control**: Specifies caching directives for both requests and responses.
@@ -224,7 +224,7 @@ HTTP status codes are three-digit numbers sent by the server in response to a cl
 
 
 
-<--TODO:
+<!--TODO:
 - Statelessness and Caching
   - Stateless Architecture in REST
   - Benefits and Challenges of Statelessness
@@ -262,7 +262,7 @@ HTTP status codes are three-digit numbers sent by the server in response to a cl
 
 ---
 
-[Get Started](../../../get-started.md) |
-[Web Services and API Design](../../../get-started.md#web-services-and-api-design)
+[Get Started](../../get-started.md) |
+[Web Services and API Design](../../get-started.md#web-services-and-api-design)
 
 ___

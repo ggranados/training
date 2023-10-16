@@ -14,7 +14,7 @@ In REST, a resource is a key abstraction that represents a piece of data or an e
 
 - ### URI
 Resources are typically identified by URIs (Uniform Resource Identifiers), commonly known as URLs (Uniform Resource Locators). These URIs act as unique addresses for each resource.
- - See also[URL and URI](restful.md#uri-uniform-resource-identifier-and-url-uniform-resource-locator)
+ - See also[URL and URI](../restful.md#uri-uniform-resource-identifier-and-url-uniform-resource-locator)
 
 >Resource design should be based on a clear understanding of your application's domain model. It's crucial to define what resources are available, their properties, relationships, and the operations that can be performed on them.
 
@@ -39,7 +39,7 @@ When a client requests a resource from a server, the server responds with a repr
 
 The client can manipulate or interact with a resource by sending requests to its URI and including the desired action (e.g., `GET`, `POST`, `PUT`, `DELETE`) and any necessary data (e.g., in the request body or query parameters).
 
- - See also: [HTTP Verbs](restful.md#http-verbs)
+ - See also: [HTTP Verbs](../restful.md#http-verbs)
   
 
 The server interprets the client's request, performs the requested action, and sends back a response with the updated representation of the resource or relevant status codes.

@@ -33,7 +33,9 @@ Microservices architecture is a software design approach that _structures an app
 <sub>[Back to top](#table-of-contents)</sub>
 
 - ### APIs and Communication:
-    Microservices communicate with each other through well-defined APIs, often using lightweight protocols like HTTP/REST or message queues. This enables them to exchange data and collaborate on tasks.
+    Microservices communicate with each other through well-defined APIs, often using lightweight protocols like HTTP/REST or message queues. This enables them to exchange data and collaborate on tasks. 
+  - See also: [RESTful](../ws-and-api-design/restful.md)
+     
 
 <sub>[Back to top](#table-of-contents)</sub>
 
