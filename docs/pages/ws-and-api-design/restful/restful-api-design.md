@@ -60,25 +60,25 @@ Endpoints are the specific URLs that clients use to interact with your API, and 
 
   - #### Basic Resource URI:
 
-     `/resource`: Represents a collection of resources.
-     `/resource/{id}`: Represents an individual resource with a unique identifier.
+     `/resources`: Represents a collection of resources.
+     `/resources/{id}`: Represents an individual resource with a unique identifier.
     
   - #### Nested Resource URI:
 
-    `/resource/{id}/subresource`: Represents a nested resource within another resource.
-    `/resource/{id}/subresource/{sub_id}`: Represents an individual nested resource.
+    `/resources/{id}/subresources`: Represents a nested resource within another resource.
+    `/resources/{id}/subresources/{sub_id}`: Represents an individual nested resource.
 
   - #### Action or Operation URI:
 
-    `/resource/{id}/action`: Represents an action or operation that can be performed on a resource.
+    `/resources/{id}/action`: Represents an action or operation that can be performed on a resource.
 
   - #### Filtering and Querying URI:
 
-    `/resource?param1=value1&param2=value2`: Allows clients to filter or query a collection of resources based on parameters.
+    `/resources?param1=value1&param2=value2`: Allows clients to filter or query a collection of resources based on parameters.
 
   - #### Versioning URI:
 
-    `/v1/resource`: To indicate the version of your API (e.g., v1) in the URI.
+    `/v1/resources`: To indicate the version of your API (e.g., v1) in the URI.
 
   - #### Custom URI Patterns: 
     You can define custom URI patterns that make sense for your application's domain and use cases.
@@ -96,7 +96,7 @@ Keep the URI patterns consistent throughout your API to make it easier for devel
 In **REST**, HTTP methods (`GET`, `POST`, `PUT`, `DELETE`, etc.) are used to indicate the action to be taken on a resource. 
 >Avoid using verbs in your URI patterns, as this goes against RESTful principles.
 
- - See also: [HTTP Verbs](restful.md#http-verbs)
+ - See also: [HTTP Verbs](../restful.md#http-verbs)
   
 
   <sub>[Back to top](#table-of-contents)</sub>
@@ -327,7 +327,7 @@ In URI versioning, the API version is included directly in the URL path. This is
 
 
 - **Example URI**: 
-  - `https://api.example.com/v1/resource`
+  - `https://api.example.com/v1/resources`
 
 
 - **Advantages**: 
@@ -384,7 +384,7 @@ Similar to Accept Header Versioning, you can define a custom header specifically
 In subdomain versioning, the API version is included as a subdomain in the URL.
 
 - **Example URI**: 
-  - `https://v1.api.example.com/resource`
+  - `https://v1.api.example.com/resources`
   
 
 - **Advantages**:
@@ -403,7 +403,7 @@ In subdomain versioning, the API version is included as a subdomain in the URL.
 In this approach, clients specify the API version using a query parameter.
 
 - **Example URI**: 
-  - `https://api.example.com/resource?api_version=1`
+  - `https://api.example.com/resources?api_version=1`
   
 
 - **Advantages**:
@@ -479,7 +479,7 @@ Here's an example of how a resource representation with links might look in JSON
   "links": [
     {
       "rel": "self",
-      "href": "https://api.example.com/resource/1"
+      "href": "https://api.example.com/resources/1"
     },
     {
       "rel": "author",
@@ -537,7 +537,7 @@ For example, you might include a form template for creating a new resource with 
   "name": "Example Resource",
   "controls": {
     "create": {
-      "href": "https://api.example.com/resource",
+      "href": "https://api.example.com/resources",
       "method": "POST",
       "fields": [
         {

@@ -298,7 +298,7 @@
     <sub>[Back to top](#table-of-contents)</sub>  
 
 ## Web Services and API Design
-- [RESTful Architecture](pages/ws-and-api-design/restful/restful.md)
+- [RESTful Architecture](pages/ws-and-api-design/restful.md)
   - [API Design Principles](pages/ws-and-api-design/restful/api-design-principles.md)
   - [Resource Design and Representation](pages/ws-and-api-design/restful/resource-design-representation.md)
   - [RESTful API Design](pages/ws-and-api-design/restful/restful-api-design.md)
