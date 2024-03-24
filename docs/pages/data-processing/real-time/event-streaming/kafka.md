@@ -5,11 +5,15 @@
 ## Table of Contents
 
 
-Kafka is an open-source, distributed event streaming platform originally developed by LinkedIn and later adopted and maintained by the Apache Software Foundation. It is designed for the real-time, fault-tolerant, and scalable handling of data streams. Kafka is often used in scenarios that involve ingesting, processing, and transmitting large volumes of data in a real-time or near-real-time fashion.
+Kafka is an open-source, distributed event streaming platform originally developed by LinkedIn and later adopted and maintained by the Apache Software Foundation. _It is designed for the **real-time**, **fault-tolerant**, and **scalable handling** of **data streams**_. Kafka is often used in scenarios that involve ingesting, processing, and transmitting large volumes of data in a real-time or near-real-time fashion.
 
-Key characteristics and components of Apache Kafka include:
 
-Publish-Subscribe Messaging System: Kafka operates as a publish-subscribe messaging system, where producers publish data to topics, and consumers subscribe to those topics to receive and process the data. This decouples producers from consumers, allowing for scalable and flexible data processing.
+<sub>[Back to top](#table-of-contents)</sub>
+
+## Key Characteristics and Components
+
+### Publish-Subscribe Messaging System
+Kafka operates as a publish-subscribe messaging system, where producers publish data to topics, and consumers subscribe to those topics to receive and process the data. This decouples producers from consumers, allowing for scalable and flexible data processing.
 
 Distributed and Scalable: Kafka is designed to be distributed and horizontally scalable. It can handle very high throughput and large amounts of data by distributing data across multiple brokers, making it suitable for big data and high-velocity data processing.
 
